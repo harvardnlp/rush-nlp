@@ -1,5 +1,3 @@
-image:
-  file: Dockerfile
 tasks:
   - command: >
       gem install jekyll
