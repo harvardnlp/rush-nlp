@@ -1,0 +1,7 @@
+image:
+  file: Dockerfile
+tasks:
+  - command: >
+      gem install jekyll
+ports:
+ - port: 4000
