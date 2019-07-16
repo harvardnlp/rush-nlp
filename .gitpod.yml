@@ -1,5 +1,6 @@
 tasks:
   - command: >
       gem install jekyll
+      pip3 install jinja2 jinja2-cli
 ports:
  - port: 4000
