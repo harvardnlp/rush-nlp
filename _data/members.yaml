@@ -1,17 +1,3 @@
-- group : Faculty
-  people :
-    - name : Stuart Shieber
-      github: srush
-      url: "http://www.eecs.harvard.edu/shieber/"
-      pic: "/images/shieber.png"
-      title : Professor
-    - name : Alexander<br> Rush
-      email : srush@seas.harvard.edu
-      github: srush
-      url: "http://rush.seas.harvard.edu/"
-      githubid: 35882
-      title : Assistant Professor
-      
 - group : Graduate Students and Visitors
   people :
     - name : Justin Chiu
