@@ -22,12 +22,6 @@
       github: yoonkim
       githubid: 5378003
       title : PhD Student
-    - name : Allen Schmaltz
-      github: allenschmaltz
-      githubid: 2748209
-      email : schmaltz@seas.harvard.edu
-      url: "http://github.com/allenschmaltz"
-      title: PhD Student
     - name : Kelly Zhang
       email: kz918@nyu.edu
       title: PhD Student
@@ -51,11 +45,7 @@
       title: Undergraduate
       url: https://github.com/demiguo
       githubid: 7954176
-    - name : Carl Denton
-      email: blank
-      title: Undergraduate
-      url: https://github.com/cfdenton
-      githubid: 13823589
+
 
 - group: Grad Alumni
   people:
@@ -64,6 +54,12 @@
       title :
       githubid: 4635868
       url: "https://swiseman.github.io/"
+      title: PhD Student
+    - name : Allen Schmaltz
+      github: allenschmaltz
+      githubid: 2748209
+      email : schmaltz@seas.harvard.edu
+      url: "http://github.com/allenschmaltz"
       title: PhD Student
 
 - group: Undergrad Alumni
@@ -142,3 +138,8 @@
       title: Undergraduate
       url: https://github.com/artidoro
       githubid: 11949572
+    - name : Carl Denton
+      email: blank
+      title: Undergraduate
+      url: https://github.com/cfdenton
+      githubid: 13823589

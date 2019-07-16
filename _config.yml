@@ -6,13 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: harvardnlp
-email: srush@seas.harvard.edu
-description: > # this means to ignore newlines until "baseurl:"
-  Home of the Harvard SEAS natural-language processing group.
+title:
+email: arush@cornell.edu
+description:  # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://nlp.seas.harvard.edu/" # the base hostname & protocol for your site
-twitter_username: harvardnlp
+url: "http://rush-nlp.com/" # the base hostname & protocol for your site
+twitter_username: srush_nlp
 github_username:  harvardnlp
 
 # Build settings
