@@ -25,6 +25,12 @@ papers:
       pdf: https://www.aclweb.org/anthology/P19-1503
       image: /images/Tree.png
       conference: ACL 2019
+    - title: "GLTR: Statistical Detection and Visualization of Generated Text"
+      authors: Sebastian Gehrmann, Hendrik Strobelt, Alexander M Rush 
+      pdf: https://arxiv.org/abs/1906.04043
+      code: http://gltr.io/dist/index.html
+      image: http://rush-nlp.com/images/gltr.png
+      conference: ACL Demo 2019 (Best Demo Nominee)
 
     - title: "Unsupervised Recurrent Neural Network Grammars"
       authors: Yoon Kim, Alexander M. Rush, Lei Yu, Adhiguna Kuncoro, Chris Dyer, Gábor Melis
