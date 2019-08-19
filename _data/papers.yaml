@@ -1,10 +1,18 @@
 papers:
+    - title: "MASR: A Modular Accelerator for Sparse RNNs"
+      authors: Udit Gupta, Brandon Reagen, Lillian Pentecost, Marco Donato, Thierry Tambe, Alexander M. Rush, Gu-Yeon Wei, David Brooks
+      pdf: 
+      image: /images/MASR.png
+      conference: PACT 2019
+
+
     - title: "Compound Probabilistic Context-Free Grammars for Grammar Induction"
       authors: Yoon Kim,  Chris Dyer, Alexander M. Rush
       pdf: https://arxiv.org/pdf/1906.06399.pdf
       code: https://github.com/harvardnlp/compound-pcfg
       image: /images/Tree.png
       conference: ACL 2019
+      
     - title: "Visual Interaction with Deep Learning Models through Collaborative Semantic Inference"
       authors: Gehrmann S, Strobelt H, Krueger R, Pfister H, and Alexander M. Rush 
       pdf: https://arxiv.org/abs/1907.10739
@@ -14,7 +22,7 @@ papers:
       
     - title: "Simple Unsupervised Summarization by Contextual Matching"
       authors: Jiawei Zhou, Alexander M. Rush
-      pdf: Simple Unsupervised Summarization by Contextual Matching
+      pdf: https://www.aclweb.org/anthology/P19-1503
       image: /images/Tree.png
       conference: ACL 2019
 
