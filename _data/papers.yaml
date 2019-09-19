@@ -1,10 +1,14 @@
 papers:
+
     - title: "MASR: A Modular Accelerator for Sparse RNNs"
       authors: Udit Gupta, Brandon Reagen, Lillian Pentecost, Marco Donato, Thierry Tambe, Alexander M. Rush, Gu-Yeon Wei, David Brooks
       pdf: 
       image: /images/MASR.png
       conference: PACT 2019
-
+    - title: "Commonsense Knowledge Mining from Pretrained Models"
+      authors: "Joe Davison, Joshua Feldman and Alexander Rush"
+      pdf: 
+      conference: EMNLP 2019
 
     - title: "Compound Probabilistic Context-Free Grammars for Grammar Induction"
       authors: Yoon Kim,  Chris Dyer, Alexander M. Rush
