@@ -1,4 +1,15 @@
 code:
+    - link: https://github.com/harvardnlp/pytorch-struct
+      title: Pytorch Struct
+      authors: Alexander M. Rush
+      abstract: structured prediction in pytorch
+      image: /images/struct
+    - link: http://steganography.live
+      title: SteganographyLive
+      authors: Zachary Ziegler, Yuntian Deng and Alexander Rush
+      abstract: neural stegonagraphy
+      image: /images/struct
+ 
     - link: https://github.com/harvardnlp/urnng
       title: Unsupervised Recurrent Neural Network Grammars
       authors: Yoon Kim, Alexander M. Rush, Lei Yu, Adhiguna Kuncoro, Chris Dyer, Gábor Melis
