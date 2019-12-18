@@ -24,9 +24,9 @@
 %%% ------------------------------------------------------------------------
 %%% Note
 %%%------------------------------------------------------------------------
-%%% Because this is a hand-tweaked file, be on the look out for \medksip, 
+%%% Because this is a hand-tweaked file, be on the look out for \medksip,
 %%% \bigskip and \newpage commands here and there, which are used to balance
-%%% the layout or avoid widows & orphans, etc. You should of course add or 
+%%% the layout or avoid widows & orphans, etc. You should of course add or
 %%% remove these as needed.
 %%%------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@
 %%% Metadata
 %%%------------------------------------------------------------------------
 
-%% Change as needed. Or just add me as a coauthor. Only some of these are 
+%% Change as needed. Or just add me as a coauthor. Only some of these are
 %% used below in the hyperref declaration and address banner section.
 \def\myauthor{Alexander Rush}
 \def\mytitle{Vita}
@@ -46,23 +46,24 @@
 \def\mybibliostyle{plain}
 \def\mybibliocommand{}
 \def\mysubtitle{}
-\def\myaffiliation{harvard}
+\def\myaffiliation{cornell}
 \def\myaddress{Computer Science Department}
-\def\myemail{srush@seas.harvard.edu}
-\def\myweb{http://nlp.seas.harvard.edu}
+\def\myemail{arush@cornell.edu}
+\def\myweb{http://rush-nlp.com}
 \def\myphone{(215) 317-8089}
-\def\myfax{harvardnlp}
+\def\myfax{srush\_nlp}
 \def\myversion{}
 \def\myrevision{}
 
 
-\def\myaffiliation{Harvard SEAS}
+\def\myaffiliation{Cornell University}
 \def\myauthor{Alexander Rush}
 \date{} % not used (revision control instead)
 \def\mykeywords{Rush, Alexander, Alexander Rush, Vita, CV, Resume, Computer Science}
 
-%%%------------------------------------------------------------------------  
-%%% Git version tracking 
+
+%%%------------------------------------------------------------------------
+%%% Git version tracking
 %%%------------------------------------------------------------------------
 
 %% If you don't use git or the vc package (from CTAN), comment this out.
@@ -79,11 +80,11 @@
 % \usepackage{fontspec}
 % \usepackage{xunicode}
 
-%% color for the links 
+%% color for the links
 \usepackage[usenames,dvipsnames]{xcolor}
 
 %% hyperlinks
-\usepackage[ 
+\usepackage[
 % xetex,
 colorlinks=true,
 	urlcolor=BlueViolet,
@@ -102,13 +103,13 @@ colorlinks=true,
 \begin{document}
 
 %% Choose fonts for use with xelatex
-%% Minion and Myriad are widely available, from Adobe. 
+%% Minion and Myriad are widely available, from Adobe.
 %% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
 %% and is worth every penny. Any good monospace font will work fine, though.
 %% Consolas or inconsolata are good alternatives.
-% \setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures={Common}]{Minion Pro} 
+% \setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures={Common}]{Minion Pro}
 % \setsansfont[Mapping=tex-text,Colour=AA0000]{Myriad Pro}
-% \setmonofont[Mapping=tex-text,Scale=0.9]{Inconsolata} 
+% \setmonofont[Mapping=tex-text,Scale=0.9]{Inconsolata}
 
 
 %%%------------------------------------------------------------------------
@@ -117,8 +118,8 @@ colorlinks=true,
 
 %% Marginal header
 %% Note: as the document goes on you may need to introduce a (gradually increasing)
-%% \vspace element to keep the marginal header pleasingly aligned with the first 
-%% item in the body text. Like this: \marginhead{ {\vskip 0.4em}Grants}, or 
+%% \vspace element to keep the marginal header pleasingly aligned with the first
+%% item in the body text. Like this: \marginhead{ {\vskip 0.4em}Grants}, or
 %% \marginhead{ {\vskip 0.8em}Service}. Experiment as needed.
 \newcommand{\marginhead}[1]{\marginpar{\textsf{ {\footnotesize\vspace{-1em}\flushright #1}}}}
 
@@ -127,7 +128,7 @@ colorlinks=true,
 \newcommand{\amper}{ {\fontspec[Scale=.95,Colour=AA0000]{Minion Pro Medium}\selectfont\&\,}}
 
 %% No bullets on labels
-\renewcommand{\labelitemi}{~} 
+\renewcommand{\labelitemi}{~}
 
 %% Custom hanging indent for vita items
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
@@ -144,23 +145,24 @@ colorlinks=true,
 \fancyfoot{}
 \rhead{ {\scriptsize\thepage}}
 
-%% git revision control footer 
+%% git revision control footer
 %\rfoot{\texttt{\scriptsize \VCRevision\ on \VCDateTEX}} % git revision info inserted via external script -- see docs for vc package for details. comment out this line if you're not using vc, and also remove the \input{vc} line above.
 
 %%%------------------------------------------------------------------------
 %%% Address and contact block
 %%%------------------------------------------------------------------------
 \begin{minipage}[t]{2.95in}
- \flushright {\footnotesize \href{http://seas.harvard.edu}{School of Engineering and Applied Science} \\ Harvard University, \\ \vspace{-0.05in} Cambridge, MA }  
-  
+   \flushright {\footnotesize \href{http://rush-nlp.com}{Cornell University} \\ Cornell Tech, \\ \vspace{-0.05in} New York, NY }
+
+
 \end{minipage}
-\hfill     
+\hfill
 %\begin{minipage}[t]{0.0in}
 % dummy (needed here)
 %\end{minipage}
 \hfill
 \begin{minipage}[t]{1.7in}
-  \flushright \footnotesize Phone: \myphone \\ 
+  \flushright \footnotesize Phone: \myphone \\
   {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}}} \\
   {\scriptsize  \texttt{\href{\myweb}{\myweb}}} \\
   {\scriptsize  \texttt{\href{http://twitter.com/\myfax}{@\myfax}}} \\
@@ -169,18 +171,18 @@ colorlinks=true,
 
 \medskip
 
-%% Name 
+%% Name
 \noindent{\Large {\textsc{alexander m. rush}}}
 \reversemarginpar
 
-\medskip       
+\medskip
 
 
 \marginhead{Appointment}
 \noindent\emph{Harvard University School of Engineering and Applied Sciences \vspace{0.01in}}\\
 \ind 2015-.  Assistant Professor of Computer Science
 
-\medskip       
+\medskip
 \noindent\emph{Facebook Artificial Intelligence Research Lab \vspace{0.01in}}\\
 \ind 2015.  Post-Doctoral Fellowship\\
 \ind Advisor: Yann LeCunn
@@ -189,11 +191,11 @@ colorlinks=true,
 
 \marginhead{Education}
 
- 
+
 \noindent\emph{Massachusetts Institute of Technology \vspace{0.01in}}\\
 \ind 2009-2014.  Ph.D, Computer Science.\\
 \ind Advisor: Michael Collins\\
-\ind Dissertation: \emph{Relaxation Methods for Natural Language Decoding}. %\vspace{-0.1in}  
+\ind Dissertation: \emph{Relaxation Methods for Natural Language Decoding}. %\vspace{-0.1in}
 
 \medskip
 \noindent\emph{Columbia University\vspace{0.02in}}\\
@@ -202,10 +204,10 @@ colorlinks=true,
 
 \medskip
 \noindent\emph{Harvard University\vspace{0.02in}}\\
-\ind 2007. B.A., Computer Science. (Magna Cum Laude With Highest Honors.) 
+\ind 2007. B.A., Computer Science. (Magna Cum Laude With Highest Honors.)
 
 \bigskip
- 
+
 %% Publications
 
 \marginhead{ {\vskip 0.4em}Grants and \newline Awards}
@@ -216,11 +218,53 @@ colorlinks=true,
 2010 & Best Paper Award, Empirical Methods in Natural Language Processing. \\
 2009 & Graduate Research Fellow, National Science Foundation.  \\
 2006 & Outstanding Undergraduate Award Finalist, Computing Research Association. \\
-  
+
 \end{tabular}
 \bigskip
 
 \marginhead{ {\vskip 0.3em} Recent Publications}
+\medskip
+
+
+
+\ind Udit Gupta, Brandon Reagen, Lillian Pentecost, Marco Donato, Thierry Tambe, Alexander M. Rush, Gu-Yeon Wei, David Brooks. \emph{\href{ None }{ MASR: A Modular Accelerator for Sparse RNNs.} }\emph{ PACT 2019 }
+
+\medskip
+
+
+
+\ind Joe Davison, Joshua Feldman and Alexander Rush. \emph{\href{ None }{ Commonsense Knowledge Mining from Pretrained Models.} }\emph{ EMNLP 2019 }
+
+\medskip
+
+
+
+\ind Zachary Ziegler, Yuntian Deng and Alexander Rush. \emph{\href{ https://arxiv.org/abs/1909.01496 }{ Neural Linguistic Steganography.} }\emph{ EMNLP 2019 }
+
+\medskip
+
+
+
+\ind Yoon Kim,  Chris Dyer, Alexander M. Rush. \emph{\href{ https://arxiv.org/pdf/1906.06399.pdf }{ Compound Probabilistic Context-Free Grammars for Grammar Induction.} }\emph{ ACL 2019 }
+
+\medskip
+
+
+
+\ind Gehrmann S, Strobelt H, Krueger R, Pfister H, and Alexander M. Rush. \emph{\href{ https://arxiv.org/abs/1907.10739 }{ Visual Interaction with Deep Learning Models through Collaborative Semantic Inference.} }\emph{ InfoVis 2019 }
+
+\medskip
+
+
+
+\ind Jiawei Zhou, Alexander M. Rush. \emph{\href{ https://www.aclweb.org/anthology/P19-1503 }{ Simple Unsupervised Summarization by Contextual Matching.} }\emph{ ACL 2019 }
+
+\medskip
+
+
+
+\ind Sebastian Gehrmann, Hendrik Strobelt, Alexander M Rush. \emph{\href{ https://arxiv.org/abs/1906.04043 }{ GLTR: Statistical Detection and Visualization of Generated Text.} }\emph{ ACL Demo 2019 (Best Demo Nominee) }
+
 \medskip
 
 
@@ -243,45 +287,17 @@ colorlinks=true,
 
 
 
-\ind Zachary M. Ziegler, Alexander M. Rush. \emph{\href{ https://arxiv.org/pdf/1901.10548 }{ Latent Normalizing Flows for Discrete Sequences.} }\emph{ ICML 2019 }
-
-\medskip
 
 
 
-\ind Yoon Kim, Sam Wiseman, Alexander M. Rush. \emph{\href{ https://github.com/harvardnlp/DeepLatentNLP/raw/master/tutorial_deep_latent.pdf }{ Deep Latent-Variable Models for Natural Language.} }\emph{ EMNLP 2018 (Tutorial) }
-
-\medskip
 
 
 
-\ind Sebastian Gehrmann, Falcon Z. Dai, Henry Elder, Alexander M. Rush. \emph{\href{ https://arxiv.org/pdf/1810.04700 }{ End-to-End Content and Plan Selection for Data-to-Text Generation.} }\emph{ INLG 2018 }
-
-\medskip
 
 
 
-\ind Yuntian Deng*, Yoon Kim*, Justin Chiu, Demi Guo, Alexander M. Rush. \emph{\href{ https://arxiv.org/pdf/1807.03756.pdf }{ Latent Alignment and Variational Attention.} }\emph{ NIPS 2018 }
-
-\medskip
 
 
-
-\ind Sam Wiseman, Stuart M. Shieber, Alexander Rush. \emph{\href{ https://arxiv.org/abs/1808.10122 }{ Learning Neural Templates for Text Generation.} }\emph{ EMNLP 2018 }
-
-\medskip
-
-
-
-\ind Sebastian Gehrmann, Yuntian Deng, Alexander Rush. \emph{\href{ https://arxiv.org/abs/1808.10792 }{ Bottom-Up Abstractive Summarization.} }\emph{ EMNLP 2018 }
-
-\medskip
-
-
-
-\ind Luke Melas-Kyriazi, George Han, Alexander Rush. \emph{\href{ https://www.aclweb.org/anthology/D18-1084 }{ Training for Diversity in Image Paragraph Captioning.} }\emph{ EMNLP 2018 (Short) }
-
-\medskip
 
 
 
@@ -370,7 +386,7 @@ colorlinks=true,
 
 
 \marginhead{ {\vskip 0.4em}Industry }
- 
+
 \bigskip
 
 \ind  Lead Engineer (Platform Team), {\sl Facebook}, June 2007 -- August 2009, Palo Alto, CA.
@@ -385,31 +401,35 @@ colorlinks=true,
 
 
 
+\medskip \ind \href{ https://github.com/harvardnlp/pytorch-struct }{ Pytorch Struct } - structured prediction in pytorch
+% \begin{itemize}
+% \item
+% \end{itemize}
+
+
+
+\medskip \ind \href{ http://steganography.live }{ SteganographyLive } - neural stegonagraphy
+% \begin{itemize}
+% \item
+% \end{itemize}
+
+
+
 \medskip \ind \href{ https://github.com/harvardnlp/urnng }{ Unsupervised Recurrent Neural Network Grammars } - unsupervised learning of recurrent neural network grammars
 % \begin{itemize}
-% \item  
+% \item
 % \end{itemize}
 
 
 
 \medskip \ind \href{ https://github.com/harvardnlp/neural-template-gen }{ Learning Neural Templates for Text Generation } - neural templates for text generation
 % \begin{itemize}
-% \item  
+% \item
 % \end{itemize}
 
 
 
-\medskip \ind \href{ http://nlp.seas.harvard.edu/NamedTensor }{ Tensor Considered Harmful } - extend PyTorch tensor with named dimensions
-% \begin{itemize}
-% \item  
-% \end{itemize}
 
-
-
-\medskip \ind \href{ http://gltr.io/dist/index.html }{ Giant Language model Test Room } - detect whether a text could be real or fake
-% \begin{itemize}
-% \item  
-% \end{itemize}
 
 
 
