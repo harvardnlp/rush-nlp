@@ -15,7 +15,7 @@ papers:
       conference: EMNLP 2019
     - title: "Compound Probabilistic Context-Free Grammars for Grammar Induction"
       authors: Yoon Kim,  Chris Dyer, Alexander M. Rush
-      pdf: https://arxiv.org/pdf/1906.06399.pdf
+      pdf: https://www.aclweb.org/anthology/P19-1228/
       code: https://github.com/harvardnlp/compound-pcfg
       image: /images/Tree.png
       conference: ACL 2019
