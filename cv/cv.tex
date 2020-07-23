@@ -178,22 +178,24 @@ colorlinks=true,
 \noindent\emph{Cornell University Computer Science Department \vspace{0.01in}}\\
 \ind 2019-.  Associate Professor of Computer Science (without Tenure)
 
+\medskip
+\noindent\emph{Hugging Face \vspace{0.01in}}\\
+\ind 2019-.  NLP Open-Source Startup
+
+\medskip
 \noindent\emph{Harvard University School of Engineering and Applied Sciences \vspace{0.01in}}\\
 \ind 2015-2019.  Assistant Professor of Computer Science
 
 \medskip
 \noindent\emph{Facebook Artificial Intelligence Research Lab \vspace{0.01in}}\\
-\ind 2015.  Post-Doctoral Fellowship\\
-\ind Advisor: Yann LeCunn
+\ind 2015.  Post-Doctoral Fellowship Advisor: Yann LeCunn
 
 \bigskip
 
 \marginhead{Education}
 
 \noindent\emph{Massachusetts Institute of Technology \vspace{0.01in}}\\
-\ind 2009-2014.  Ph.D, Computer Science.\\
-\ind 2011-2014. Columbia Visiting Scholar, Department of Computer Science.
-\ind Advisor: Michael Collins\\
+\ind 2009-2014.  Ph.D, Computer Science. Advisor: Michael Collins\\
 \ind Dissertation: \emph{Relaxation Methods for Natural Language Decoding}. %\vspace{-0.1in}
 
 
@@ -207,27 +209,27 @@ colorlinks=true,
 %% Publications
 
 \marginhead{ {\vskip 0.4em} Grants, \newline Awards, \newline and Major Service}
-\medskip
 
 \hspace{-1cm} \begin{tabular}{lp{11.5cm}}
+2020 & Best Demo Paper - Runner-Up, ACL   \\
+& Best Paper - DAC (Hardware)  \\
 2019 & NSF Career Award \\
-     & General Chair, ICLR \\
+& Sony Faculty Awards \\
+     & General Chair and Senior Program Chair , ICLR \\
+& Best Demo Paper - Nominee, ACL   \\
 2018 & Senior Program Chair, ICLR  \\
 & Google, Facebook, and Amazon AWS Faculty Awards \\
 & Best Paper - Runner-Up, VAST (Visualization)  \\
 & Keynote, AMTA (American Machine Translation Association) \\
-2017 & National Science Foundation Award - Medium \\
- & Bloomberg and Intel AI Collaboration Faculty Awards \\
+2017 & Bloomberg and Intel AI Collaboration Faculty Awards \\
 & Best Demo  - Runner-Up, ACL  \\
 2016 & Microsoft Azure  and Samsung AI Award \\
  & Invitation IJCAI Early Research Spotlight \\
 & Best Paper - Runner-Up, EMNLP \\
- & NIPS Deep Learning Symposium (Invited Paper)  \\
 2015 & NIPS Deep Learning Symposium (Invited Paper)   \\
  & Google Faculty Award \\
 2012 & Best Paper Award, NAACL \\
 2010 & Best Paper Award, EMNLP \\
-2009 & NSF Graduate Research Fellow, Computing Research Association\\
 \end{tabular}
 \pagebreak
 % Outstanding Undergraduate Award Finalist, Computing Research Association, 2006 \\
@@ -348,10 +350,10 @@ Proceedings of EMNLP 2012.
 \ind ICLR (Deep Learning) 2019
 
 \ind Senior Area Chair:
-\ind NeurIPS 2019; ACL (Generation) 2019
+\ind NeurIPS 2019; ACL (Generation) 2019; ACL (Generation) 2020
 
 \ind Area Chair:
-\ind NIPS 2018; NAACL (Machine Learning) 2016; ICLR (NLP) 2017, 2018; EMNLP (Generation/Summarization) 2017; ACL (Parsing and Tagging) 2017
+\ind NAACL (Machine Learning) 2020; NIPS 2018; NAACL (Machine Learning) 2016; ICLR (NLP) 2017, 2018; EMNLP (Generation/Summarization) 2017; ACL (Parsing and Tagging) 2017
 
 \ind Tutorial Chair: NAACL 2016
 
@@ -397,36 +399,45 @@ Proceedings of EMNLP 2012.
 
 %% Publications
 
-\marginhead{ {\vskip 0.4em}Libraries}
+\marginhead{ {\vskip 0.4em}Personal Libraries}
 \bigskip
-
-
-\medskip \ind \href{ http://seq2seq-vis.io/ }{ LSTMVis / Seq2Seq-Vis }
+{% for paper in projects %}
+\ind \href{ paper.link } { {{paper.title}}. } 
 \begin{itemize}
-\item Collaboration with IBM to develop an interactive visualization for translation models.
+\item {{paper.abstract}}. 
 \end{itemize}
+\medskip
+
+{% endfor %}
 
 
 
-\medskip \ind \href{ http://opennmt.net }{ OpenNMT }
-\begin{itemize}
-\item  Open-source neural machine translation system. Used in over 200 publications, and
-  deployed by major translation providers such as Systran International.
-\end{itemize}
+% \medskip \ind \href{ http://seq2seq-vis.io/ }{ LSTMVis / Seq2Seq-Vis }
+% \begin{itemize}
+% \item Collaboration with IBM to develop an interactive visualization for translation models.
+% \end{itemize}
 
 
 
-\medskip \ind \href{ http://nlp.seas.harvard.edu/2018/04/03/attention.html }{ The Annotated Transformer }
-\begin{itemize}
-\item  An educational line-by-Line implementation of Google's Transformer architecture.
-  Viewed over 300,000 times.
-\end{itemize}
+% \medskip \ind \href{ http://opennmt.net }{ OpenNMT }
+% \begin{itemize}
+% \item  Open-source neural machine translation system. Used in over 200 publications, and
+%   deployed by major translation providers such as Systran International.
+% \end{itemize}
 
-\medskip \ind \href{ http://nlp.seas.harvard.edu/NamedTensor }{ Named Tensor }
-\begin{itemize}
-\item  An educational view of the use of tensors in Pytorch.
-    Viewed over 50,000 times over the year.
-\end{itemize}
+
+
+% \medskip \ind \href{ http://nlp.seas.harvard.edu/2018/04/03/attention.html }{ The Annotated Transformer }
+% \begin{itemize}
+% \item  An educational line-by-Line implementation of Google's Transformer architecture.
+%   Viewed over 300,000 times.
+% \end{itemize}
+
+% \medskip \ind \href{ http://nlp.seas.harvard.edu/NamedTensor }{ Named Tensor }
+% \begin{itemize}
+% \item  An educational view of the use of tensors in Pytorch.
+%     Viewed over 50,000 times over the year.
+% \end{itemize}
 
 
 % {% for proj in code %}
