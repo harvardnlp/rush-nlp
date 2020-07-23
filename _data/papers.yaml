@@ -1,5 +1,54 @@
 papers:
 
+    - title: "AdaptivFloat: A Floating-point based Data Type for Resilient Deep Learning Inference"
+      authors: Thierry Tambe, En-Yu Yang, Zishen Wan, Yuntian Deng, Vijay Janapa Reddi, Alexander Rush, David Brooks, Gu-Yeon Wei
+      pdf: https://arxiv.org/pdf/1909.13271
+      image: /images/
+      conference: DAC 2020 (Best Paper)
+
+    - title: "Transformers: State-of-the-art Natural Language Processing"
+      authors: Thomas Wolf et al
+      pdf: https://arxiv.org/pdf/1910.03771
+      image: /images/
+      conference: EMNLP Demos 2020 (In Submission)
+    - title: "Cascaded Text Generation with Markov Transformers"
+      authors: Yuntian Deng, Alexander M. Rush
+      pdf: https://arxiv.org/pdf/2006.01112
+      image: /images/
+      conference: Preprint
+    - title: "Movement Pruning: Adaptive Sparsity by Fine-Tuning"
+      authors: Victor Sanh, Thomas Wolf, Alexander M. Rush
+      pdf: https://arxiv.org/pdf/2005.07683
+      image: /images/
+      conference: Preprint
+    - title: "Torch-Struct: Deep Structured Prediction Library"
+      authors: Alexander Rush
+      pdf: https://arxiv.org/pdf/2002.00876
+      image: /images/
+      conference: ACL Demos 2020 (Best Demo Honorable Mention)
+    - title: "What is Learned in Visually Grounded Neural Syntax Acquisition"
+      authors: Noriyuki Kojima, Hadar Averbuch-Elor, Alexander M. Rush, Yoav Artzi
+      pdf: https://arxiv.org/pdf/2005.01678
+      image: /images/
+      conference: ACL 2020  (Short)
+    - title: "Posterior Control of Blackbox Generation"
+      authors: Xiang Lisa Li, Alexander M. Rush
+      pdf: https://arxiv.org/pdf/2005.04560
+      image: /images/
+      conference: ACL 2020 
+
+    - title: "Automating Botnet Detection with Graph Neural Networks"
+      authors:  Jiawei Zhou, Zhiying Xu, Alexander M. Rush, Minlan Yu
+      pdf: https://arxiv.org/pdf/2003.06344
+      image: /images/
+      conference: AutoML for Networking and Systems Workshop
+    - title: "LAN -- A materials notation for 2D layered assemblies"
+      authors: Georgios A. Tritsaris, Yiqi Xie, Alexander M. Rush, Stephen Carr, Marios Mattheakis, Efthimios Kaxiras
+      pdf: https://arxiv.org/pdf/1910.03413
+      image: /images/
+      conference: 
+
+
     - title: "MASR: A Modular Accelerator for Sparse RNNs"
       authors: Udit Gupta, Brandon Reagen, Lillian Pentecost, Marco Donato, Thierry Tambe, Alexander M. Rush, Gu-Yeon Wei, David Brooks
       pdf: 
@@ -37,10 +86,10 @@ papers:
       pdf: https://arxiv.org/abs/1906.04043
       code: http://gltr.io/dist/index.html
       image: http://rush-nlp.com/images/gltr.png
-      conference: ACL Demo 2019 (Best Demo Nominee)
+      conference: ACL Demo 2019 (Best Demo Honorable Mention)
 
     - title: "Unsupervised Recurrent Neural Network Grammars"
-      authors: Yoon Kim, Alexander M. Rush, Lei Yu, Adhiguna Kuncoro, Chris Dyer, Gábor Melis
+      authors: Yoon Kim, Alexander M. Rush, Lei Yu, Adhiguna Kuncoro, Chris Dyer, Gabor Melis
       pdf: https://arxiv.org/pdf/1904.03746.pdf
       code: https://github.com/harvardnlp/urnng
       image: /images/urnng.png
