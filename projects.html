@@ -1,28 +1,26 @@
 ---
 layout: page
-title: Code
+title: Projects
 weight: 2
-permalink: /code/
+permalink: /projects/
 show: 1
 ---
-
-<!-- Open-source implementations of popular deep learning techniques with -->
-<!-- applications to NLP. While this is research code (and usual caveats -->
-<!-- apply), it has been used in industrial teams outside of our group, and -->
-<!-- licenses are included in the repos. -->
-<!-- <br> <br> -->
+<h3>Personal Projects</h3>
 
 
-<!-- <h3>Projects</h3> -->
+The main aspect I love about being a professor is mentoring students and developing their research careers. However, every once in a while I get swept up in an individual project. These are mostly non-research projects that I have personally developed.
+<p>
+  </p>
+
 <table>
-{% for project in site.data.code.code %}
+{% for project in site.data.projects.code %}
   <tr><td style="padding:10px">
-{% if project.image %}<a class="paper" href="{{project.link}}"><img width="150px" src="{{project.image}}"> </a>{% endif %}
+{% if project.image %}<a class="paper" href="{{project.link}}"><img width="200px" src="{{project.image}}"> </a>{% endif %}
 </td><td style="padding:10px">
 <a class="paper" href="{{project.link}}">
 {{project.title}}
 </a><br>
-{{project.authors}}.<br>
+{{project.abstract}}.<br>
 {% if project.link %}<a class="icon pdf label label-info" href="{{project.link}}">github</a> {% endif %}
 {% if project.data %}<a class="icon pdf label label-success" href="{{project.data}}">data</a> {% endif %}
 {% if project.pdf %}<a class="icon pdf label label-info" href="{{project.pdf}}">pdf</a> {% endif %}

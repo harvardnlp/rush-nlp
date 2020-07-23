@@ -1,6 +1,11 @@
 code:
+    - link: https://github.com/huggingface/transformers
+      title: Transformers
+      authors: Thomas Wolf et al. 
+      abstract: transformers 
+      image: /images/transformers.png
     - link: https://github.com/harvardnlp/pytorch-struct
-      title: Pytorch Struct
+      title: Torch Struct
       authors: Alexander M. Rush
       abstract: structured prediction in pytorch
       image: https://github.com/harvardnlp/pytorch-struct/raw/master/download.png

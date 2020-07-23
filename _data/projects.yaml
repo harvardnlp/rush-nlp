@@ -1,0 +1,28 @@
+code:
+    - link: http://www.mini-conf.org/index.html
+      title: MiniConf
+      authors: Alexander Rush, Hendrik Strobelt
+      abstract: MiniConf is a project developed for ICLR as an easy-to-use tool for hosting fully remote asynchronous virtual conferences. It was heavily used in 2020 to host ACL, ICML, AKBC, AIStats, and many other virtual conferences.
+      image: https://raw.githubusercontent.com/Mini-Conf/Mini-Conf/master/miniconf.gif
+    - link: https://huggingface.co/nlp/viewer
+      title: NLP Browser
+      authors: Alexander Rush
+      abstract: NLP Browser is a web app that lets any easily browse through more than 150 datasets used in NLP and hosted by Hugging Face. The app is a pretty addictive way to casually learn about new datasets and challenges.  
+      image: /images/nlp.png
+    - link: http://nlp.seas.harvard.edu/NamedTensor
+      title: NamedTensor (Tensor Considered Harmful)
+      abstract: Named Tensor is a proposal for adding a new datastructure to mathematical libraries to tread tensors more like dicts and less like tuples. This blog post had the impact of getting PyTorch to add a NamedTensor annotation in v1.3 of the libary.
+      image: /images/namedtensor.png
+      authors:  Alexander Rush
+    - link: https://github.com/harvardnlp/pytorch-struct
+      title: Torch Struct
+      authors: Alexander M. Rush
+      abstract: Torch-Struct is a passion project of mine to test out whether deep learning libraries can be used to implement classical structured prediction. It includes heavily-tested reference reimplementations of many core NLP algorithms. 
+      image: https://github.com/harvardnlp/pytorch-struct/raw/master/download.png
+
+    - link: http://nlp.seas.harvard.edu/2018/04/03/attention.html
+      title: The Annotated Transformer
+      abstract: The annotated transformer was an experiment in blogging based on literate papers. The idea was to teach researchers how an important model in NLP works by aligning the paper line-by-line with an implementation. The blog post was widely distributed, and there have been many follow-ups for new model.
+      image: /images/trans.png
+      authors: Alexander Rush
+
