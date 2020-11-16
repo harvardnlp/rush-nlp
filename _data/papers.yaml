@@ -1,10 +1,9 @@
 papers:
-   - title: "Cascaded Text Generation with Markov Transformers"
+    - title: "Cascaded Text Generation with Markov Transformers"
       authors: Yuntian Deng, Alexander M. Rush
       pdf: https://arxiv.org/pdf/2006.01112
       image: /images/cascade.png
       conference: NeurIPS 2020
- 
     - title: "Latent Template Induction with Gumbel-CRFs"
       authors: Yao Fu, Chuanqi Tan, Bin Bi, Mosha Chen, Yansong Feng, Alexander Rush
       pdf: https://github.com/FranxYao/Gumbel-CRF
@@ -15,7 +14,6 @@ papers:
       pdf: https://arxiv.org/pdf/2005.07683
       image: /images/movement.png
       conference: NeurIPS 2020
-
     - title: "Scaling Hidden Markov Language Models" 
       authors: Justin T. Chiu, Alexander M. Rush
       pdf: https://arxiv.org/abs/2011.04640
