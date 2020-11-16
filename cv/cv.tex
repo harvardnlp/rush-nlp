@@ -244,71 +244,38 @@ colorlinks=true,
 
 \medskip
 \noindent
-\textit{Selected Recent Publications}
+\textbf{Highly Cited Publications (Google Scholar Metrics)}
 
-\ind Alexander M. Rush, Sumit Chopra, and Jason Weston. \emph{\href{ http://arxiv.org/pdf/1509.00685.pdf }{ A Neural Attention Model for Abstractive Sentence Summarization.} }\emph{ EMNLP 2015. }
-
-\medskip
-
-
-\ind Yoon Kim, Yacine Jernite, David Sontag, and Alexander M. Rush. \emph{\href{ https://arxiv.org/pdf/1508.06615v4 }{ Character-Aware Neural Language Models.} }\emph{ AAAI 2016 }
+\ind Alexander M. Rush, Sumit Chopra, and Jason Weston. \emph{\href{ http://arxiv.org/pdf/1509.00685.pdf }{ A Neural Attention Model for Abstractive Sentence Summarization.} }\emph{ EMNLP 2015. (1600 citations, 3rd Most Cited AAAI Paper 2015-2020) }
 
 \medskip
 
-\ind Sam Wiseman and Alexander M. Rush. \emph{\href{ http://arxiv.org/pdf/1606.02960.pdf }{ Sequence-to-Sequence Learning as Beam-Search Opimization.} }\emph{ EMNLP 2016 }
+
+\ind Yoon Kim, Yacine Jernite, David Sontag, and Alexander M. Rush. \emph{\href{ https://arxiv.org/pdf/1508.06615v4 }{ Character-Aware Neural Language Models.} }\emph{ AAAI 2016, (1250 citations, 3rd Most Cited AAAI Paper 2015-2020) } 
 
 \medskip
-\noindent\emph{All Conference Papers \vspace{0.01in}}
+
+\ind Hendrik Strobelt, Sebastian Gehrmann, Hanspeter Pfister, and Alexander M. Rush. \emph{\href{ http://lstm.seas.harvard.edu/ }{ LSTMVis: A Tool for Visual Analysis of Hidden State Dynamics in Recurrent Neural Networks.} }\emph{ InfoVis 2017, (139 citations, 12th Most Cited IEEE Transactions on Visualization and Computer Graphics Paper 2015-2020) }
+
+
+
+\medskip
+\ind Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, Alexander M. Rush. \emph{\href{ https://arxiv.org/abs/1701.02810 }{ OpenNMT: Open-Source Toolkit for Neural Machine Translation.} }\emph{ ACL Demo 2017 (900 citations, Best Demo Runner-up, 5th Most Cited ACL Paper 2015-2020) }
+
+\medskip
+
+\noindent\textbf{All Conference Papers \vspace{0.01in}}
 
 {% for paper in papers %}
-\ind {{paper.authors}}. \emph{\href{ {{paper.pdf}} }{ {{paper.title}}.} }\emph{ {{paper.conference}} }
+[{{loop.index}}] \ind {{paper.authors}}. \emph{\href{ {{paper.pdf}} }{ {{paper.title}}.} }\emph{ {{paper.conference}} }
 
 \medskip
 
 {% endfor %}
 
-
-\ind Yin-Wen Chang, Alexander M. Rush, John DeNero, and Michael Collins.
-\emph{\href{http://people.csail.mit.edu/srush/}{A Lagrangian Relaxation Algorithm for Bilingual Word Alignment}}.
-Proceedings of ACL 2014.
-
-\medskip
-
-\ind Alexander M. Rush, Yin-Wen Chang, and Michael Collins.
-\emph{\href{http://people.csail.mit.edu/srush/}{Optimal Beam Search for Machine Translation}}.
-Proceedings of EMNLP 2013.
-
-\medskip
-
-\ind Karl Stratos, Alexander M. Rush, Shay B. Cohen, and Michael Collins.
-\emph{\href{http://www.cs.columbia.edu/~stratos/research/conll13rhmm.pdf}{Spectral Learning of Refinement HMMs}}.
-Proceedings of CoNLL 2013.
-
-\medskip
-
-\ind Alexander M. Rush, Roi Reichert, Michael Collins, and Amir Globerson.
-\emph{\href{http://people.csail.mit.edu/srush/emnlp2012.pdf.pdf}{Improved Parsing and POS Tagging Using Inter-Sentence Consistency Constraints}},
-Proceedings of EMNLP 2012.
-
-\medskip
-
-\ind Alexander M. Rush and Slav Petrov, \emph{\href{http://people.csail.mit.edu/srush/vine-paper.pdf}{Vine Pruning for Efficient Multi-Pass Dependency Parsing}}. Proceedings of NAACL 2012. (Best Paper Award)
-
-
-\medskip
-
-\ind Alexander M. Rush and Michael Collins. \emph{\href{http://people.csail.mit.edu/srush/exdecmt.pdf}{Exact Decoding of Syntactic Translation Models through Lagrangian Relaxation}}. Proceedings of ACL 2011.
-
-\medskip
-
-\ind Terry Koo, Alexander M. Rush, Michael Collins, Tommi Jaakkola, and David Sontag. \emph{\href{http://people.csail.mit.edu/maestro/papers/koo10mstdd.pdf}{Dual Decomposition for Parsing with Non-Projective Head Automata}}. Proceedings of EMNLP 2010. (Best Paper Award)
-
-\medskip
-
-\ind Alexander M. Rush, David Sontag, Michael Collins, and Tommi Jaakkola \emph{\href{http://people.csail.mit.edu/dsontag/papers/RusSonColJaa_emnlp10.pdf}{On Dual Decomposition and Linear Programming Relaxations for Natural Language Processing}}. Proceedings of EMNLP 2010.
-
-\medskip
-\ind Rebecca Nesson, Stuart M. Shieber, and Alexander M. Rush. \emph{\href{http://www.eecs.harvard.edu/~shieber/Biblio/Papers/Nesson-2006-IPS.pdf}{Induction of probabilistic synchronous tree-insertion grammars for machine translation}}. Proceedings of AMTA 2006.
+{% for paper in extrapapers %}
+[{{loop.index + papers|length}}] \ind {{paper.authors}}. \emph{\href{ {{paper.pdf}} }{ {{paper.title}}.} }\emph{ {{paper.conference}} }
+{% endfor %}
 
 \vspace{0.3in}
 

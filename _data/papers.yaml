@@ -1,4 +1,37 @@
 papers:
+   - title: "Cascaded Text Generation with Markov Transformers"
+      authors: Yuntian Deng, Alexander M. Rush
+      pdf: https://arxiv.org/pdf/2006.01112
+      image: /images/cascade.png
+      conference: NeurIPS 2020
+ 
+    - title: "Latent Template Induction with Gumbel-CRFs"
+      authors: Yao Fu, Chuanqi Tan, Bin Bi, Mosha Chen, Yansong Feng, Alexander Rush
+      pdf: https://github.com/FranxYao/Gumbel-CRF
+      image: https://raw.githubusercontent.com/FranxYao/Gumbel-CRF/main/img/model_github.png
+      conference: NeurIPS 2020
+    - title: "Movement Pruning: Adaptive Sparsity by Fine-Tuning"
+      authors: Victor Sanh, Thomas Wolf, Alexander M. Rush
+      pdf: https://arxiv.org/pdf/2005.07683
+      image: /images/movement.png
+      conference: NeurIPS 2020
+
+    - title: "Scaling Hidden Markov Language Models" 
+      authors: Justin T. Chiu, Alexander M. Rush
+      pdf: https://arxiv.org/abs/2011.04640
+      image: /images/hmm.png
+      conference: EMNLP 2020 
+    - title: "Adversarial Semantic Collisions"
+      authors: Congzheng Song, Alexander M. Rush, Vitaly Shmatikov
+      pdf: https://www.cs.cornell.edu/~shmat/shmat_emnlp20.pdf
+      image: /images/shmat_emnlp20.png
+      conference: EMNLP 2020
+    - title: "Sequence-Level Mixed Sample Data Augmentation" 
+      authors: Demi Guo, Yoon Kim, Alexander M. Rush
+      pdf: https://www.aclweb.org/anthology/2020.emnlp-main.447/
+      image: /images/hmm.png
+      conference: EMNLP 2020 
+
     - title: "AdaptivFloat: A Floating-point based Data Type for Resilient Deep Learning Inference"
       authors: Thierry Tambe, En-Yu Yang, Zishen Wan, Yuntian Deng, Vijay Janapa Reddi, Alexander Rush, David Brooks, Gu-Yeon Wei
       pdf: https://arxiv.org/pdf/1909.13271
@@ -8,17 +41,7 @@ papers:
       authors: Thomas Wolf et al
       pdf: https://arxiv.org/pdf/1910.03771
       image: /images/transformers.png
-      conference: EMNLP Demos 2020 (In Submission)
-    - title: "Cascaded Text Generation with Markov Transformers"
-      authors: Yuntian Deng, Alexander M. Rush
-      pdf: https://arxiv.org/pdf/2006.01112
-      image: /images/cascade.png
-      conference: Preprint
-    - title: "Movement Pruning: Adaptive Sparsity by Fine-Tuning"
-      authors: Victor Sanh, Thomas Wolf, Alexander M. Rush
-      pdf: https://arxiv.org/pdf/2005.07683
-      image: /images/movement.png
-      conference: Preprint
+      conference: EMNLP Demos 2020 
     - title: "Torch-Struct: Deep Structured Prediction Library"
       authors: Alexander Rush
       pdf: https://arxiv.org/pdf/2002.00876
