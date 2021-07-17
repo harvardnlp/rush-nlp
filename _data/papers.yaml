@@ -1,4 +1,37 @@
 papers:
+    - title: "Parameter-efficient transfer learning with diff pruning"
+      authors: Demi Guo, Alexander M. Rush, Yoon Kim
+      pdf: https://arxiv.org/pdf/2012.07463.pdf
+      image:
+      conference: ACL 2021
+    - title: "How many data points is a prompt worth?"
+      authors: Teven Le Scao, Alexander M. Rush
+      pdf: https://aclanthology.org/2021.naacl-main.208.pdf
+      image: prompt.png
+      conference: NAACL (Short) 2021 (Best Paper - Runner-Up)
+    - title: "Low-Complexity Probing via Finding Subnetworks"
+      authors: Steven Cao, Victor Sanh, Alexander M. Rush
+      pdf: https://aclanthology.org/2021.naacl-main.74/
+      image: probing.png
+      conference: NAACL (Short) 2021
+    - title: "Template Filling with Generative Transformers"
+      authors: Xinya Du, Alexander M. Rush, Claire Cardie
+      pdf: https://aclanthology.org/2021.naacl-main.70/
+      image:
+      conference: NAACL (Short) 2021
+    - title: "Named Tensor Notation"
+      authors: David Chiang, Alexander M. Rush, Boaz Barak
+      pdf: https://arxiv.org/pdf/2102.13196.pdf
+      image: ntn.png
+      conference: Arxiv
+
+    - title: "9.8 A 25mm2 SoC for IoT Devices with 18ms Noise-Robust Speech-to-Text Latency via Bayesian Speech Denoising and Attention-Based Sequence-to-Sequence DNN Speech Recognition in 16nm FinFET"
+      authors: Thierry Tambe, En-Yu Yang, Glenn G Ko, Yuji Chai, Coleman Hooper, Marco Donato, Paul N Whatmough, Alexander M Rush, David Brooks, Gu-Yeon Wei
+      pdf: https://ieeexplore.ieee.org/abstract/document/9366062
+      image:
+      conference:  IEEE International Solid-State Circuits Conference 2021
+
+
     - title: "Cascaded Text Generation with Markov Transformers"
       authors: Yuntian Deng, Alexander M. Rush
       pdf: https://arxiv.org/pdf/2006.01112
@@ -14,21 +47,23 @@ papers:
       pdf: https://arxiv.org/pdf/2005.07683
       image: /images/movement.png
       conference: NeurIPS 2020
-    - title: "Scaling Hidden Markov Language Models" 
+    - title: "Scaling Hidden Markov Language Models"
       authors: Justin T. Chiu, Alexander M. Rush
       pdf: https://arxiv.org/abs/2011.04640
       image: /images/hmm.png
-      conference: EMNLP 2020 
+      conference: EMNLP 2020
     - title: "Adversarial Semantic Collisions"
       authors: Congzheng Song, Alexander M. Rush, Vitaly Shmatikov
       pdf: https://www.cs.cornell.edu/~shmat/shmat_emnlp20.pdf
       image: /images/shmat_emnlp20.png
       conference: EMNLP 2020
-    - title: "Sequence-Level Mixed Sample Data Augmentation" 
+    - title: "Sequence-Level Mixed Sample Data Augmentation"
       authors: Demi Guo, Yoon Kim, Alexander M. Rush
       pdf: https://www.aclweb.org/anthology/2020.emnlp-main.447/
       image: /images/hmm.png
-      conference: EMNLP 2020 
+      conference: EMNLP 2020
+
+
 
     - title: "AdaptivFloat: A Floating-point based Data Type for Resilient Deep Learning Inference"
       authors: Thierry Tambe, En-Yu Yang, Zishen Wan, Yuntian Deng, Vijay Janapa Reddi, Alexander Rush, David Brooks, Gu-Yeon Wei
@@ -39,7 +74,7 @@ papers:
       authors: Thomas Wolf et al
       pdf: https://arxiv.org/pdf/1910.03771
       image: /images/transformers.png
-      conference: EMNLP Demos 2020 
+      conference: EMNLP Demos 2020
     - title: "Torch-Struct: Deep Structured Prediction Library"
       authors: Alexander Rush
       pdf: https://arxiv.org/pdf/2002.00876
@@ -54,7 +89,7 @@ papers:
       authors: Xiang Lisa Li, Alexander M. Rush
       pdf: https://arxiv.org/pdf/2005.04560
       image: /images/posterior.png
-      conference: ACL 2020 
+      conference: ACL 2020
     - title: "Automating Botnet Detection with Graph Neural Networks"
       authors:  Jiawei Zhou, Zhiying Xu, Alexander M. Rush, Minlan Yu
       pdf: https://arxiv.org/pdf/2003.06344
@@ -64,15 +99,15 @@ papers:
       authors: Georgios A. Tritsaris, Yiqi Xie, Alexander M. Rush, Stephen Carr, Marios Mattheakis, Efthimios Kaxiras
       pdf: https://arxiv.org/pdf/1910.03413
       image: /images/lan.png
-      conference: 
+      conference:
     - title: "MASR: A Modular Accelerator for Sparse RNNs"
       authors: Udit Gupta, Brandon Reagen, Lillian Pentecost, Marco Donato, Thierry Tambe, Alexander M. Rush, Gu-Yeon Wei, David Brooks
-      pdf: 
+      pdf:
       image: /images/MASR.png
       conference: PACT 2019
     - title: "Commonsense Knowledge Mining from Pretrained Models"
       authors: "Joe Davison, Joshua Feldman and Alexander Rush"
-      pdf: 
+      pdf:
       conference: EMNLP 2019
     - title: "Neural Linguistic Steganography"
       authors: Zachary Ziegler, Yuntian Deng and Alexander Rush
@@ -84,21 +119,21 @@ papers:
       code: https://github.com/harvardnlp/compound-pcfg
       image: /images/Tree.png
       conference: ACL 2019
-      
+
     - title: "Visual Interaction with Deep Learning Models through Collaborative Semantic Inference"
-      authors: Gehrmann S, Strobelt H, Krueger R, Pfister H, and Alexander M. Rush 
+      authors: Gehrmann S, Strobelt H, Krueger R, Pfister H, and Alexander M. Rush
       pdf: https://arxiv.org/abs/1907.10739
       code: https://vcg.seas.harvard.edu/publications/visual-interaction-with-deep-learning-models-through-collaborative-semantic-inference
       image: https://vcg.seas.harvard.edu/content/3-publications/20191020-visual-interaction-with-deep-learning-models-through-collaborative-semantic-inference/csiteaser.png
       conference: InfoVis 2019
-      
+
     - title: "Simple Unsupervised Summarization by Contextual Matching"
       authors: Jiawei Zhou, Alexander M. Rush
       pdf: https://www.aclweb.org/anthology/P19-1503
       image: /images/Tree.png
       conference: ACL 2019
     - title: "GLTR: Statistical Detection and Visualization of Generated Text"
-      authors: Sebastian Gehrmann, Hendrik Strobelt, Alexander M Rush 
+      authors: Sebastian Gehrmann, Hendrik Strobelt, Alexander M Rush
       pdf: https://arxiv.org/abs/1906.04043
       code: http://gltr.io/dist/index.html
       image: http://rush-nlp.com/images/gltr.png
@@ -135,14 +170,14 @@ papers:
       pdf: https://github.com/harvardnlp/DeepLatentNLP/raw/master/tutorial_deep_latent.pdf
       code: http://nlp.seas.harvard.edu/latent-nlp-tutorial.html
       image: http://nlp.seas.harvard.edu/images/vae.png
-      
+
     - title: "End-to-End Content and Plan Selection for Data-to-Text Generation"
       authors: Sebastian Gehrmann, Falcon Z. Dai, Henry Elder, Alexander M. Rush
       conference: INLG 2018
       pdf: https://arxiv.org/pdf/1810.04700
       code: https://github.com/sebastianGehrmann/diverse_ensembling
       image: /images/diverse_ensembling.png
-      
+
     - title: "Latent Alignment and Variational Attention"
       authors: Yuntian Deng*, Yoon Kim*, Justin Chiu, Demi Guo, Alexander M. Rush
       conference: NIPS 2018
