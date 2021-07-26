@@ -1,9 +1,29 @@
 projects:
+    - link: https://tech.cornell.edu/impact/break-through-tech/break-through-ai/
+      title: Break Through AI
+      authors: BTT Team, Alexander Rush
+      abstract: Break Through AI is a free summer program for supportign female undergraduates to learn AI and ML skills in an applied environment. I teach an 8 week summer program on the core elements on ML in a coding first environment.
+      image: https://tech.cornell.edu/wp-content/uploads/2021/03/primary-logo_high-res-225x125.png
     - link: http://www.mini-conf.org/index.html
       title: MiniConf
       authors: Alexander Rush, Hendrik Strobelt
-      abstract: MiniConf is a project developed for ICLR as an easy-to-use tool for hosting fully remote asynchronous virtual conferences. It was heavily used in 2020 to host ACL, ICML, AKBC, AIStats, and many other virtual conferences.
+      abstract: MiniConf is a project developed for ICLR as an easy-to-use tool for hosting fully remote asynchronous virtual conferences. It was heavily used in 2020 to host ACL, ICML, AKBC, AIStats, EMNLP, NeurIPS, and many other virtual conferences.
       image: https://raw.githubusercontent.com/Mini-Conf/Mini-Conf/master/miniconf.gif
+    - link: https://minitorch.github.io/
+      title: MiniTorch
+      authors: Alexander Rush, Ge Gao
+      abstract: MiniTorch is a DIY teaching library to walkthrough the process of building a tensor, autodifferentiation library from scratch. It is used to teach machine learning engineering at Cornell Tech.  
+      image: https://minitorch.github.io/_images/threadid@3x.png
+    - link: https://github.com/srush/streambook
+      title: Streambook
+      authors: Alexander Rush
+      abstract: Streambook is a literate programming environment designed to make it easy to write publishable Jupyter notebooks without ever having to open a browser or break your github flow. 
+      image: https://github.com/srush/streambook/raw/main/output.gif
+    - link: https://namedtensor.github.io/
+      title: Named Tensor Notation
+      authors: David Chiang, Alexander Rush, Boaz Barak
+      abstract: Named Tensor Notation was a follow-up to the named tensor proposal to develop a mathematical notation for more explicit multi-dimensional dot products when describing neural network interactions. 
+      image: /images/ntn.png
     - link: https://huggingface.co/nlp/viewer
       title: NLP Browser
       authors: Alexander Rush
@@ -19,7 +39,11 @@ projects:
       authors: Alexander M. Rush
       abstract: Torch-Struct is a passion project of mine to test out whether deep learning libraries can be used to implement classical structured prediction. It includes heavily-tested reference reimplementations of many core NLP algorithms. 
       image: https://github.com/harvardnlp/pytorch-struct/raw/master/download.png
-
+    - link: http://opennmt.net
+      title: OpenNMT
+      abstract: A full service open-source neural machine translation system. Originally developed in Lua with Systran, since ported to PyTorch and TensorFlow and maintained externally.
+      image: /images/aesw2016.png
+      authors: HarvardNLP + Systran
     - link: http://nlp.seas.harvard.edu/2018/04/03/attention.html
       title: The Annotated Transformer
       abstract: The annotated transformer was an experiment in blogging based on literate papers. The idea was to teach researchers how an important model in NLP works by aligning the paper line-by-line with an implementation. The blog post was widely distributed, and there have been many follow-ups for new model.

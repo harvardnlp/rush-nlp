@@ -1,4 +1,14 @@
 papers:
+    - title: "EdgeBERT: Sentence-Level Energy Optimizations for Latency-Aware Multi-Task NLP Inference"
+      authors: Thierry Tambe and Others
+      pdf: 
+      image:
+      conference: IEEE MICRO 2021
+    - title: "GenNI: Human-AI Collaboration for Data-Backed Text Generation"
+      authors: Hendrik Strobelt, Jambay Kinley, Robert Krueger, Johanna Beyer, Alexander M. Rush, Hanspeter Pfister
+      pdf: 
+      image:
+      conference: IEEE VIS 2021
     - title: "Parameter-efficient transfer learning with diff pruning"
       authors: Demi Guo, Alexander M. Rush, Yoon Kim
       pdf: https://arxiv.org/pdf/2012.07463.pdf
@@ -7,31 +17,28 @@ papers:
     - title: "How many data points is a prompt worth?"
       authors: Teven Le Scao, Alexander M. Rush
       pdf: https://aclanthology.org/2021.naacl-main.208.pdf
-      image: prompt.png
-      conference: NAACL (Short) 2021 (Best Paper - Runner-Up)
+      image: /images/prompt.png
+      conference: NAACL Short 2021 (Best Paper - Runner-Up)
     - title: "Low-Complexity Probing via Finding Subnetworks"
       authors: Steven Cao, Victor Sanh, Alexander M. Rush
       pdf: https://aclanthology.org/2021.naacl-main.74/
-      image: probing.png
-      conference: NAACL (Short) 2021
+      image: /images/probing.png
+      conference: NAACL Short 2021
     - title: "Template Filling with Generative Transformers"
       authors: Xinya Du, Alexander M. Rush, Claire Cardie
       pdf: https://aclanthology.org/2021.naacl-main.70/
       image:
-      conference: NAACL (Short) 2021
+      conference: NAACL Short 2021
     - title: "Named Tensor Notation"
       authors: David Chiang, Alexander M. Rush, Boaz Barak
       pdf: https://arxiv.org/pdf/2102.13196.pdf
-      image: ntn.png
+      image: /images/ntn.png
       conference: Arxiv
-
     - title: "9.8 A 25mm2 SoC for IoT Devices with 18ms Noise-Robust Speech-to-Text Latency via Bayesian Speech Denoising and Attention-Based Sequence-to-Sequence DNN Speech Recognition in 16nm FinFET"
       authors: Thierry Tambe, En-Yu Yang, Glenn G Ko, Yuji Chai, Coleman Hooper, Marco Donato, Paul N Whatmough, Alexander M Rush, David Brooks, Gu-Yeon Wei
       pdf: https://ieeexplore.ieee.org/abstract/document/9366062
       image:
       conference:  IEEE International Solid-State Circuits Conference 2021
-
-
     - title: "Cascaded Text Generation with Markov Transformers"
       authors: Yuntian Deng, Alexander M. Rush
       pdf: https://arxiv.org/pdf/2006.01112
@@ -60,11 +67,8 @@ papers:
     - title: "Sequence-Level Mixed Sample Data Augmentation"
       authors: Demi Guo, Yoon Kim, Alexander M. Rush
       pdf: https://www.aclweb.org/anthology/2020.emnlp-main.447/
-      image: /images/hmm.png
+      image: 
       conference: EMNLP 2020
-
-
-
     - title: "AdaptivFloat: A Floating-point based Data Type for Resilient Deep Learning Inference"
       authors: Thierry Tambe, En-Yu Yang, Zishen Wan, Yuntian Deng, Vijay Janapa Reddi, Alexander Rush, David Brooks, Gu-Yeon Wei
       pdf: https://arxiv.org/pdf/1909.13271
