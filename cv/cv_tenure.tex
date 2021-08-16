@@ -1,0 +1,527 @@
+%%% A template to produce a nice-looking Curriculum Vitae.
+%%% Kieran Healy <kjhealy@gmail.com>
+%%% Most recent version is at http://kjhealy.github.com/kjh-vita
+%%%
+%%% ------------------------------------------------------------------------
+%%% Requirements (should be included in a modern tex distribution):
+%%% ------------------------------------------------------------------------
+%%% xelatex
+%%% fontspec.sty
+%%% hyperrref.sty
+%%% xunicode.sty
+%%% color.sty
+%%% url.sty
+%%% fancyhdr.sty
+%%%
+%%% ------------------------------------------------------------------------
+%%% Optional
+%%% ------------------------------------------------------------------------
+%%% git
+%%% vc.sty
+%%% revnum.sty
+%%% Fonts
+%%%
+%%% ------------------------------------------------------------------------
+%%% Note
+%%%------------------------------------------------------------------------
+%%% Because this is a hand-tweaked file, be on the look out for \medksip,
+%%% \bigskip and \newpage commands here and there, which are used to balance
+%%% the layout or avoid widows & orphans, etc. You should of course add or
+%%% remove these as needed.
+%%%------------------------------------------------------------------------
+
+\documentclass[10pt]{article}
+\renewcommand{\arraystretch}{1.3}
+
+%%%------------------------------------------------------------------------
+%%% Metadata
+%%%------------------------------------------------------------------------
+
+%% Change as needed. Or just add me as a coauthor. Only some of these are
+%% used below in the hyperref declaration and address banner section.
+\def\myauthor{Alexander Rush}
+\def\mytitle{Vita}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{cornell}
+\def\myaddress{Computer Science Department}
+\def\myemail{arush@cornell.edu}
+\def\myweb{http://rush-nlp.com}
+\def\myphone{(215) 317-8089}
+\def\myfax{srush\_nlp}
+\def\myversion{}
+\def\myrevision{}
+
+
+\def\myaffiliation{Cornell University}
+\def\myauthor{Alexander Rush}
+\date{} % not used (revision control instead)
+\def\mykeywords{Rush, Alexander, Alexander Rush, Vita, CV, Resume, Computer Science}
+
+%%%------------------------------------------------------------------------
+%%% Git version tracking
+%%%------------------------------------------------------------------------
+
+%% If you don't use git or the vc package (from CTAN), comment this out.
+%% If you comment it out, be sure to remove the \rfoot comment below, too.
+% \input{vc}
+
+%%%------------------------------------------------------------------------
+%%% Required style files
+%%%------------------------------------------------------------------------
+\usepackage{url,fancyhdr}
+%%\usepackage{revnum} % for reverse-numbered publications (revnumerate environment) if needed.
+
+%% needed for xelatex to work
+% \usepackage{fontspec}
+% \usepackage{xunicode}
+
+%% color for the links
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{palatino}
+%% hyperlinks
+\usepackage[
+colorlinks=true,
+	urlcolor=BlueViolet,
+	plainpages=false,
+  	pdfpagelabels,
+  	bookmarksnumbered,
+  	pdftitle={\mytitle},
+  	pagebackref,
+  	pdfauthor={\myauthor},
+  	pdfkeywords={\mykeywords}
+  	]{hyperref}
+
+%%%------------------------------------------------------------------------
+%%% Document
+%%%------------------------------------------------------------------------
+\begin{document}
+
+%% Choose fonts for use with xelatex
+%% Minion and Myriad are widely available, from Adobe.
+%% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
+%% and is worth every penny. Any good monospace font will work fine, though.
+%% Consolas or inconsolata are good alternatives.
+% \setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures={Common}]{arial}
+% \setsansfont[Mapping=tex-text,Colour=AA0000]{Myriad Pro}
+% \setmonofont[Mapping=tex-text,Scale=0.9]{Inconsolata}
+
+
+%%%------------------------------------------------------------------------
+%%% Local commands
+%%%------------------------------------------------------------------------
+
+%% Marginal header
+%% Note: as the document goes on you may need to introduce a (gradually increasing)
+%% \vspace element to keep the marginal header pleasingly aligned with the first
+%% item in the body text. Like this: \marginhead{ {\vskip 0.4em}Grants}, or
+%% \marginhead{ {\vskip 0.8em}Service}. Experiment as needed.
+\newcommand{\marginhead}[1]{\marginpar{\textsf{ {\footnotesize\vspace{-1em}\flushright #1}}}}
+
+
+%% custom ampersand (font consistent with the one chosen above)
+\newcommand{\amper}{ {\fontspec[Scale=.95,Colour=AA0000]{Minion Pro Medium}\selectfont\&\,}}
+
+%% No bullets on labels
+\renewcommand{\labelitemi}{~}
+
+%% Custom hanging indent for vita items
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+%\def\ind{\hangindent=18pt\hangafter=1 \noindent}
+\def\labelitemi{~}
+\renewcommand{\labelitemii}{~}
+
+%%%------------------------------------------------------------------------
+%%% Page layout
+%%%------------------------------------------------------------------------
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyfoot{}
+\rhead{ {\scriptsize\thepage}}
+
+%% git revision control footer
+%\rfoot{\texttt{\scriptsize \VCRevision\ on \VCDateTEX}} % git revision info inserted via external script -- see docs for vc package for details. comment out this line if you're not using vc, and also remove the \input{vc} line above.
+
+%%%------------------------------------------------------------------------
+%%% Address and contact block
+%%%------------------------------------------------------------------------
+\begin{minipage}[t]{2.95in}
+ \flushright {\footnotesize \href{http://rush-nlp.com}{Cornell University} \\ Cornell Tech, \\ \vspace{-0.05in} New York, NY }
+
+\end{minipage}
+\hfill
+%\begin{minipage}[t]{0.0in}
+% dummy (needed here)
+%\end{minipage}
+\hfill
+\begin{minipage}[t]{1.7in}
+  \flushright %\footnotesize Phone: \myphone \\
+  {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}}} \\
+  {\scriptsize  \texttt{\href{\myweb}{\myweb}}} \\
+  {\scriptsize  \texttt{\href{http://twitter.com/\myfax}{@\myfax}}} \\
+\end{minipage}
+
+
+\medskip
+
+%% Name
+\noindent{\Large {Alexander M. Rush}}
+\reversemarginpar
+\medskip
+
+
+\marginhead{Appointment}
+\noindent\emph{Cornell University Computer Science Department \vspace{0.01in}}\\
+\ind 2019-.  Associate Professor of Computer Science (without Tenure)
+
+\medskip
+\noindent\emph{Hugging Face \vspace{0.01in}}\\
+\ind 2019-.  NLP Open-Source Startup
+
+\medskip
+\noindent\emph{Harvard University School of Engineering and Applied Sciences \vspace{0.01in}}\\
+\ind 2015-2019.  Assistant Professor of Computer Science
+
+\medskip
+\noindent\emph{Facebook Artificial Intelligence Research Lab \vspace{0.01in}}\\
+\ind 2015.  Post-Doctoral Fellowship Advisor: Yann LeCunn
+
+\bigskip
+
+\marginhead{Education}
+
+\noindent\emph{Massachusetts Institute of Technology \vspace{0.01in}}\\
+\ind 2009-2014.  Ph.D, Computer Science. Advisor: Michael Collins\\
+\ind Dissertation: \emph{Relaxation Methods for Natural Language Decoding}. %\vspace{-0.1in}
+
+
+
+\medskip
+\noindent\emph{Harvard University\vspace{0.02in}}\\
+\ind 2007. B.A., Computer Science.
+
+\bigskip
+
+\bigskip
+
+
+\marginhead{ {\vskip 0.3em}Publications (A)}
+
+
+\medskip
+
+\noindent\textbf{Refereed Conference Papers \vspace{0.01in}}
+
+{% for paper in papers %}
+[{{loop.index}}] \ind {{paper.authors}}. \emph{\href{ {{paper.pdf}} }{ {{paper.title}}.} }\emph{ {{paper.conference}} }
+
+\medskip
+
+{% endfor %}
+
+{% for paper in extrapapers %}
+[{{loop.index + papers|length}}] \ind {{paper.authors}}. \emph{\href{ {{paper.pdf}} }{ {{paper.title}}.} }\emph{ {{paper.conference}} }
+{% endfor %}
+
+\vspace{0.3in}
+
+\noindent\emph{Refereed Journal Papers \vspace{0.01in}}
+
+\ind Alexander M. Rush and Michael Collins. \emph{\href{http://www.cs.columbia.edu/~mcollins/acltutorial.pdf}{A Tutorial on Dual Decomposition and Lagrangian Relaxation for Inference in Natural Language Processing}}. Journal of Artificial Intelligence Research 2012.
+
+
+\bigskip
+
+\marginhead{ {\vskip 0.4em}Invited Talks (B) \newline}
+\medskip
+\hspace{-1cm} \begin{tabular}{lp{11.5cm}}
+                2021
+                & \ind   Invited Talk, NeurIPS Crowd Source ML. \\
+                & \ind   Invited Talk, NeurIPS Replicable ML. \\
+                & \ind   Invited Talk, Stanford SysML. \\
+                & \ind   Invited Talk, Lisbon Machine Learning. \\
+                 & \ind   Invited Talk, University of Cambridge. \\
+                 & \ind   Invited Talk, Oracle. \\
+                 & \ind   Invited Talk, UCSB. \\
+                2020
+                 & \ind   Invited Talk, ByteDance. \\
+                 & \ind   Invited Talk, Baidu. \\
+                 & \ind   Colloquium, UMass Lowell. \\
+                 & \ind   Invited Talk, London Machine Learning. \\
+                 & \ind   Invited Talk, UCSB. \\
+                 & \ind   Invited Talk, Baidu. \\
+                 & \ind   Invited Talk, Google AI. \\
+                 & \ind   Invited Talk, Oracle AI. \\
+                 & \ind   Invited Talk, EMNLP Structured Prediction WS. \\
+                 & \ind   Invited Talk, EMNLP SustaiNLP WS. \\
+              \end{tabular}
+
+\hspace{-1cm} \begin{tabular}{lp{11.5cm}}
+                2019
+                & \ind   Colloquium, University of Edinburgh, Spring.\\
+                & \ind   Colloquium, Tel Aviv University, Spring. \\
+                 & \ind   Invited Talk, Conversational Intelligence Summer. \\
+                & \ind   Invited Talk, GANocracy, MIT, Summer. \\
+                & \ind   Invited Talk, OpenAI, MIT, Summer. \\
+                & \ind   Invited Talk, NeuralGen Workshop NAACL Summer. \\
+                & \ind   Invited Talk, Berkeley NLP, Fall.\\
+                & \ind   Keynote, PyTorch Developers Conference, Fall. \\
+              \end{tabular}
+
+\hspace{-1cm} \begin{tabular}{lp{11.5cm}}
+                2018
+ & \ind   Invited Talk, University of Washington, Spring. \\
+ & \ind   Invited Talk, Allen Institute for AI, Spring. \\
+ & \ind   Invited Talk, MSR, Spring. \\
+ & \ind   Keynote, American Machine Translation Association, Spring. \\
+ & \ind   Invited Talk, University of Texas, Spring. \\
+ & \ind   Invited Talk, University of Maryland, Spring. \\
+ & \ind   Invited Talk, Georgetown, Spring. \\
+ & \ind   Invited Talk, Lisbon ML Summer School, Summer. \\
+ & \ind   Invited Talk, Columbia University, Fall. \\
+ & \ind   Invited Talk, New York University - Text as Data, Fall. \\
+ & \ind   Tutorial, EMNLP, Fall. \\
+              \end{tabular}
+
+\hspace{-1cm} \begin{tabular}{lp{11.5cm}}
+2017
+ & \ind   Invited Talk, Google Faculty Day, Spring. \\
+ & \ind   Invited Talk, New England Machine Learning Day, Spring. \\
+ & \ind   Invited Talk, Google, Spring. \\
+ & \ind   Invited Talk, Berkeley CS, Spring. \\
+ & \ind   Invited Talk, Notre Dame, Spring. \\
+ & \ind   Colloquium, TTI-Chicago, Spring. \\
+ & \ind   Invited Talk, Apple, Siri Team, Spring. \\
+ & \ind   Colloquium, Samsung Global AI Forum, Fall. \\
+ & \ind   Invited Talk, AMD, Fall. \\
+              \end{tabular}
+
+\hspace{-1cm} \begin{tabular}{lp{11.5cm}}
+ 2016
+ & \ind   Invited Talk, NYU, Fall. \\
+ & \ind   Invited Talk, BBN Research, Fall. \\
+ & \ind   Invited Talk, Bloomberg, Fall. \\
+ & \ind   Invited Talk (Speech Group), MIT, Fall. \\
+ & \ind   Invited Talk, IBM Research, Fall. \\
+ & \ind   Colloquium, CMU, Fall. \\
+ & \ind   Invited Talk, Stanford NLP, Summer. \\
+ & \ind   Invited Talk, Oracle Labs, Summer. \\
+ & \ind   Invited Talk, Twitter, Summer. \\
+ & \ind   Colloquium, John Hopkins University, Spring. \\
+ & \ind   Colloquium, Rakuten, Spring. \\
+\end{tabular}
+\begin{tabular}{lp{11.5cm}}
+
+ 2014
+
+ & \ind   Colloquium, University of Washington, Spring. \\
+
+ & \ind   Colloquium, NYU, Spring. \\
+
+ & \ind   Colloquium, CMU, Spring. \\
+
+ & \ind   Colloquium, MIT, Spring. \\
+
+ & \ind   Colloquium, Harvard, Spring. \\
+
+ & \ind   Colloquium, TTIC, Spring. \\
+
+ & \ind   Colloquium, University of Maryland, Spring. \\
+\end{tabular}
+\hspace{-1cm} \begin{tabular}{lp{11.5cm}}
+ 2013
+ & \ind   Invited Tutorial, UMBC, October. \\
+
+ & \ind   Invited Talk, CS and Social Science Seminar, UMass Amherst, October. \\
+
+ & \ind   Talk, NLP Seminar, Columbia University, October. \\
+ & \ind   Invited Talk, ML Seminar, UMass Amherst, October. \\
+
+  & \ind  Invited Talk, Johnson Research Labs, NY, August. \\
+
+  &  \ind Invited Talk, Society for Historians of American Foreign Relations, Arlington, June. \\
+
+  & \ind  Invited Talk, Columbia University, Spring. \\
+
+  &  \ind    Invited Talk, NLP Seminar, City University of New York, Spring. \\
+ 2012 & \ind   Invited Tutorial, Neural Information Processing Systems (NIPS), December. \\
+ 2011 & \ind  Invited Tutorial, Google Research, Mountain View, August. \\
+  &  \ind Tutorial. Association of Computational Linguistic (ACL), June. \\
+  & \ind  Invited Talk, ML Seminar, University of Massachusetts, Amherst, Spring. \\
+ & \ind   ML Tea, MIT, January. \\
+  2010 & \ind  NLP Seminar, USC/ISI, Summer. \\
+ 2006 &  \ind  Invited Talk, Computational Linguistics Seminar, University of Pennsylvania, November. \\
+\end{tabular}
+
+\bigskip
+\marginhead{ {\vskip 0.3em}Teaching (C)}
+
+\hspace{-1cm} \begin{tabular}{lp{11.5cm}}
+2021 & \ind  Instructor, Topics in Machine Learning and NLP (10 students) , Cornell Tech, Spring. \\
+2020 & \ind  Instructor, Topics in Machine Learning and NLP (100 students), Cornell Tech, Spring. \\
+     & \ind  Instructor,  Machine Learning Engineering (100 students) (Rated 4.75/5), Cornell Tech, Fall. \\
+
+                2019 & \ind  Instructor, Machine Learning for NLP (50 students) , Harvard University, Spring. \\
+
+2018 & \ind  Instructor, Machine Learning for NLP (50 students) (Rated 4.8/5) , Harvard University, Spring. \\
+& \ind  Instructor, Advanced Machine Learning (100 students), Harvard University, Fall. \\
+2017 & \ind  Instructor, Machine Learning (250 students), Harvard University, Spring. \\
+& \ind  Instructor, Advanced Machine Learning (100 students), Harvard University, Fall. \\
+2016 & \ind  Instructor, Machine Learning for NLP (50 students) (Rated 4.9/5), Harvard University, Spring. \\
+2015 & \ind  Instructor, Artificial Intelligence (100 students), Harvard University, Fall. \\
+2013 & \ind  Instructor (with Michael Collins), Natural Language Processing, Columbia University, Fall. \\
+& \ind Head Teaching Assistant, Natural Language Processing , Michael Collins, Columbia University, Spring (taught on Coursera, 30,000+ registered students). \\
+2012 & \ind Head Teaching Assistant, Natural Language Processing, Michael Collins, Columbia University, Fall.\\
+\end{tabular}
+
+\bigskip
+
+\marginhead{ {\vskip 0.4em} Graduate Field Activity (D)}
+\medskip
+
+\ind 1) Field Member - Computer Science
+
+\medskip
+
+\ind 2) Graduated Harvard PhD Students
+
+\begin{itemize}
+\item Sam Wiseman (2019); ``Structured Neural Models for Coreference and Generation'' Assistant Professor, Duke University
+\item Yoon Kim (2020); ``Deep Latent Variable Models of Natural Language'' Assistant Professor, MIT
+\item Sebastian Gehrmann (2020); ``Human-AI Collaboration for Natural Language Generation with Interpretable Neural Networks'' Google NLP
+\end{itemize}
+
+\ind 2) Current Harvard Students
+
+\begin{itemize}
+\item Yuntian Deng (Target 2022)
+\item Jiawei Zhou (Target 2022)
+\end{itemize}
+
+\ind Current Cornell PhD Students
+
+\begin{itemize}
+\item Justin Chiu (Target 2023)
+\item Jack Morris (Admitted)
+\item Woojeong Kim (Admitted)
+\item Celine Lee (Admitted)
+\end{itemize}
+
+\ind Former Masters and Undergraduate Students
+
+\begin{itemize}
+\item Greg Yang (MSR)
+\item Alex Wang (NYU)
+\item Ankit Gupta (Reverie)
+\item Artidoro Pagnoni (CMU)
+\item Katherine Scott (Columbia)
+\item Rachit Singh (DE Shaw)
+\item Demi Guo (Stanford)
+\item Lisa Li (Stanford)
+\item Keyon Vafa (Columbia)
+\end{itemize}
+\bigskip
+
+\marginhead{ {\vskip 0.4em} Grants (E) }
+\medskip
+
+ \begin{tabular}{lp{11.5cm}}
+2019 & NSF Career Award \\
+& Sony Faculty Awards \\
+2018& Google, Facebook, and Amazon AWS Faculty Awards \\
+2017 & Bloomberg and Intel AI Collaboration Faculty Awards \\
+2016 & Microsoft Azure  and Samsung AI Award \\
+2015 & Google Faculty Award \\
+\end{tabular}
+
+\bigskip
+\marginhead{ {\vskip 0.4em} Awards (F)}
+\hspace{-1cm} \begin{tabular}{lp{11.5cm}}
+2021 & Best Short Paper -  EMNLP \\
+     & Sloan Fellowship\\
+2020 & Best Demo Paper (Runner-Up), ACL   \\
+& Best Paper - DAC (Hardware)  \\
+& Best Demo Paper - EMNLP  \\
+2019 & NSF Career Award \\
+& Best Demo Paper - Nominee, ACL   \\
+2018 & Senior Program Chair, ICLR  \\
+& Best Paper - Runner-Up, VAST (Visualization)  \\
+2017 & Best Demo  - Runner-Up, ACL  \\
+ & Invitation IJCAI Early Research Spotlight \\
+& Best Paper - Runner-Up, EMNLP \\
+2015 & NIPS Deep Learning Symposium (Invited Paper)   \\
+2012 & Best Paper Award, NAACL \\
+2010 & Best Paper Award, EMNLP \\
+\end{tabular}
+
+
+
+
+
+
+
+% %\end{revnumerate}
+% \begin{itemize} \itemsep -2pt %
+% \item Helped develop optimized C++ parser and interpreter for FBML, a domain-specific markup language for applications.
+
+% \medskip
+
+% \item Built and designed a distributed system for tracking resource constraints of third-party applications. Awarded patent.
+% \medskip
+
+% \item Contributor on Internationalization project which utilizes crowd-sourcing to translate Facebook into 70+ languages.
+% \end{itemize}
+
+% \ind Technical Associate (Intern), {\sl Bridgewater Associates}  June -- September 2006,
+%  Westport, CT. Implemented trade scheduling and equity analysis algorithms.
+% \begin{itemize} \itemsep -2pt % Reduce space between items
+% \item Designed and implemented large-scale trade scheduling and equity analysis algorithms.
+% \end{itemize}
+
+\bigskip
+
+\marginhead{ {\vskip 0.4em}Professional Service (G)}
+\medskip
+
+
+
+
+\ind Secretary:
+\ind ICLR Board 2021-2024
+
+\ind General  Chair:
+\ind ICLR  2020
+
+\ind Senior Program Chair:
+\ind ICLR  2019
+
+\ind Senior Area Chair:
+\ind TACL 2020; NeurIPS 2019; ACL (Generation) 2019; ACL (Generation) 2020
+
+\ind Area Chair:
+\ind NAACL (Machine Learning) 2020; NIPS 2018; NAACL (Machine Learning) 2016; ICLR (NLP) 2017, 2018; EMNLP (Generation/Summarization) 2017; ACL (Parsing and Tagging) 2017
+
+\ind Tutorial Chair: NAACL 2016
+
+\bigskip
+
+
+\marginhead{ {\vskip 0.4em}Cornell University Service (H)}
+\medskip
+
+\ind Program Director 2020, 2021; Computer Science Masters Program
+\medskip
+
+\ind Admissions Committee 2020
+\medskip
+
+\ind Breakthrough Tech AI Instructor and Course Development 2021
+
+\bigskip
+
+
+\end{document}
