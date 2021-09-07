@@ -13,14 +13,19 @@ show: 1
 <p>
   
   
-Sometimes this page gets a bit out of date. My full list of papers is <a href="https://scholar.google.com/citations?user=LIjnUGgAAAAJ&hl=en">here</a>.
+My full list of papers is <a href="https://scholar.google.com/citations?user=LIjnUGgAAAAJ&hl=en">here</a>.
 </p>
 <table>
 {% for paper in site.data.papers.papers %}
 
 
   <tr><td style="padding:10px">
-{% if paper.image %}<img width="150px" src="{{paper.image}}"> {% endif %}
+      {% if paper.image %}
+      <a href="{{paper.pdf}}"><img width="200px" style="min-width:150px" src="{{paper.image}}"></a>
+      {% else %}
+      <a href="{{paper.pdf}}"><img height="75px" style="min-width:150px" src="https://avatar.tobi.sh/{{paper.title}}"></a>
+
+      {% endif %}
 </td><td style="padding:10px">
 <a class="paper" href="{{paper.pdf}}">
 {{paper.title}}
@@ -28,9 +33,6 @@ Sometimes this page gets a bit out of date. My full list of papers is <a href="h
 {{paper.authors}}.<br>
 {{paper.conference}} <br>
 
-{% if paper.pdf %}<a class="icon pdf label label-info" href="{{paper.pdf}}">pdf</a> {% endif %}
-{% if paper.slides %}<a class="icon slides label label-success" href="{{paper.slides}}">slides</a>{% endif %}
-{% if paper.code %} <a class="icon slides label label-success label-warning" href="{{paper.code}}">code</a>{% endif %}
 <br>
 
 </td></tr>

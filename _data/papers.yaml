@@ -1,18 +1,70 @@
+notable: 
+    - title: "Transformers: State-of-the-art Natural Language Processing"
+      authors: Thomas Wolf et al
+      pdf: https://arxiv.org/pdf/1910.03771
+      image: /images/transformers.png
+      conference: EMNLP Demos 2020
+    - title: "Compound Probabilistic Context-Free Grammars for Grammar Induction"
+      authors: Yoon Kim,  Chris Dyer, Alexander M. Rush
+      pdf: https://www.aclweb.org/anthology/P19-1228/
+      code: https://github.com/harvardnlp/compound-pcfg
+      image: /images/Tree.png
+      conference: ACL 2019
+    - title: "Learning Neural Templates for Text Generation"
+      authors: Sam Wiseman, Stuart M. Shieber, Alexander Rush
+      conference: EMNLP 2018
+      code: https://github.com/harvardnlp/neural-template-gen
+      pdf : https://arxiv.org/abs/1808.10122
+      image: /images/template.png
+    - title: "LSTMVis: A Tool for Visual Analysis of Hidden State Dynamics in Recurrent Neural Networks"
+      authors: Hendrik Strobelt, Sebastian Gehrmann, Hanspeter Pfister, and Alexander M. Rush
+      conference: InfoVis 2017
+      pdf : http://lstm.seas.harvard.edu/
+      code : http://lstm.seas.harvard.edu/
+      image: /images/small_teaser.png
+    - title: "OpenNMT: Open-Source Toolkit for Neural Machine Translation"
+      authors: Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, Alexander M. Rush
+      conference: ACL Demo 2017 
+      pdf : https://arxiv.org/abs/1701.02810
+      image: /images/overview.png
+      slides:
+    - title: Sequence-Level Knowledge Distillation
+      authors: Yoon Kim and Alexander M. Rush
+      conference: EMNLP 2016
+      pdf : http://arxiv.org/pdf/1606.07947v1.pdf
+      image: /images/segknow.png
+      slides : /slides/emnlp16_seqkd.pdf
+      code: https://github.com/harvardnlp/seq2seq-attn
+
+    - title: Character-Aware Neural Language Models
+      authors : Yoon Kim, Yacine Jernite, David Sontag, and Alexander M. Rush
+      conference :  AAAI 2016
+      code : https://github.com/yoonkim/lstm-char-cnn
+      pdf : https://arxiv.org/pdf/1508.06615v4
+      slides : /slides/aaai16.pdf
+      image : /images/charrnn.png
+    - title: A Neural Attention Model for Abstractive Sentence Summarization
+      authors : Alexander M. Rush, Sumit Chopra, and Jason Weston
+      conference :  EMNLP 2015.
+      pdf : http://arxiv.org/pdf/1509.00685.pdf
+      code : https://github.com/facebook/NAMAS
+      slides : /slides/emnlp15.pdf
+      image : /images/summary.png
 papers:
     - title: "EdgeBERT: Sentence-Level Energy Optimizations for Latency-Aware Multi-Task NLP Inference"
       authors: Thierry Tambe and Others
       pdf: 
-      image:
+      image: /images/edgebert.png
       conference: IEEE MICRO 2021
     - title: "GenNI: Human-AI Collaboration for Data-Backed Text Generation"
       authors: Hendrik Strobelt, Jambay Kinley, Robert Krueger, Johanna Beyer, Alexander M. Rush, Hanspeter Pfister
       pdf: 
-      image:
+      image: /images/genni.png
       conference: IEEE VIS 2021
     - title: "Parameter-efficient transfer learning with diff pruning"
       authors: Demi Guo, Alexander M. Rush, Yoon Kim
       pdf: https://arxiv.org/pdf/2012.07463.pdf
-      image:
+      image: /images/diffprune.png
       conference: ACL 2021
     - title: "How many data points is a prompt worth?"
       authors: Teven Le Scao, Alexander M. Rush

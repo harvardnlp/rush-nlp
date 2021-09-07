@@ -13,7 +13,7 @@ show: 1
   </td><td style="padding:10px">
     <center>
     <h1>Alexander Rush </h1>
-    <b>Associate Professor (without tenure).</b> <br> <b>Cornell University</b> <br>
+    <b>Associate Professor (pre-tenure).</b> <br> <b>Cornell University</b> <br>
   CS+Cornell Tech (NYC), <a href="http://nlp.cornell.edu">Cornell NLP</a> <br>
     <span style="font-size:15px"><a href="mailto:arush@cornell.edu">[arush@cornell.edu]</a> <a href="cv/cv.comp.pdf">[cv]</a></span> </h1> <br>
 <b>Researcher.</b> <b>Hugging Face</b> <br>
@@ -27,44 +27,71 @@ show: 1
 </div>
 
 <p style="font-size: 18px">
-My research group studies data-driven, probabilistic systems for
-natural language processing and generation. We are interested in
-empirically accurate methods that, when possible, are rooted in data
-and guided by efficient inference. Our recent work has focused on the
-intersection of deep learning and structured prediction, with an
-application focus on text generation and document-level understanding.
+  
+  My <a href="papers/">research</a> aims to build NLP systems that are safe, fast, and
+  controllable. We are interested primarily in tasks that involve
+  text generation such as machine translation, document summarization,
+  and data-to-text generation. Methodologically, we study
+  data-driven probabilistic methods that combine deep-learning
+  based models with probabilistic controls.
 </p>
 
 <p style="font-size: 18px">
-  I am also interested in open-source NLP, in particular safe,
-  efficient, and declarative deep learning and probabilistic modeling.
-  I work part-time at Hugging Face and like to release various software
+  I am also interested in <a href="projects/">open-source</a> NLP and deep learning, and
+  develop projects to make deep learning systems safer, more clear, and easier to
+  use.
+  I work part-time at <a href="http://huggingface.co">Hugging Face</a> and like to release various software
   projects to support NLP and DL research.
 </p>
 
 
-<h3> Research Areas </h3>
+<h3> Current Research Areas </h3>
 <p style="font-size: 18px">
 <ul style="font-size: 18px">
-  <li> Interpretable and controllable natural language generation for data-to-text summary </li>
+  <li> Interpretable and controllable natural language generation for data-to-text summary. </li>
   <li> Deep generative models for probabilistic text processing and understanding.  </li>
-  <li> Hardware for speech, translation, and dialogue with the <a href="https://vlsiarch.eecs.harvard.edu/">Architecture and Hardware Group.</a> </li>
-  <li> Visual understanding of neural language models in collaboration with <a href="https://vcg.seas.harvard.edu/">VCG</a>. </li>
+  <li> Efficient algorithms and hardware for speech, translation, and dialogue.  </li>
+  <li> Visual tools for understanding of neural language models. </li>
 </ul>
-</p>
-
-<h3>Teaching</h3>
-
-<p style="font-size: 18px">
-In Fall 2021, I will be teaching Machine Learning Engineering at Cornell Tech.
 </p>
 
 <h3> Recognition </h3>
 
 
 <p style="font-size: 18px">
-My group's work has been recognized with an NSF CAREER Award and a Sloan Fellowship. We have also won paper awards for NLP, NLP Demos, Hardware, and Visualization.
+My group's work has been recognized with an NSF CAREER Award and a Sloan Fellowship. We have won paper awards at conferences for NLP, Hardware, and Visualization, as well as awards for best demonstrations for open-source software.
 </p>
+
+<h3>Selected Papers</h3>
+
+<p style="font-size: 18px">
+A selection of papers from the last five years that represent my research interests and style. 
+</p>
+
+<table>
+{% for paper in site.data.papers.notable %}
+
+  <tr><td style="padding:10px">
+      {% if paper.image %}
+      <a href="{{paper.pdf}}"><img width="150px" style="min-width:100px" src="{{paper.image}}"></a>
+      {% else %}
+      <a href="{{paper.pdf}}"><img height="75px" style="min-width:100px" src="https://avatar.tobi.sh/{{paper.title}}"></a>
+
+      {% endif %}
+</td><td style="padding:10px">
+<a class="paper" href="{{paper.pdf}}">
+{{paper.title}}
+</a><br>
+{{paper.authors}}.<br>
+{{paper.conference}} <br>
+
+<br>
+
+</td></tr>
+
+{% endfor %}
+</table>
+
 
 <h3>Contact</h3>
 
@@ -72,7 +99,7 @@ My group's work has been recognized with an NSF CAREER Award and a Sloan Fellows
 <div class="paper-section">
 Sasha Rush <a href="http://en.wikipedia.org/wiki/Sasha_(name)">in person</a>  <br>
 arush at cornell.edu by email <br>
-Office Hours Mon. 3-4:30 and <a href="mailto:arush@.edu">by appointment</a> <br>
+Office Hours Mon. 3-4 and <a href="mailto:arush@.edu">by appointment</a> <br>
 </div>
 <br>
 

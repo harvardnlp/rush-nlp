@@ -22,15 +22,6 @@
       url: https://github.com/zackziegler95
       githubid: 22876306
 
-- group: Undergraduate Researchers
-  people:
-    - name : Demi Guo
-      email: blank
-      title: Undergraduate
-      url: https://github.com/demiguo
-      githubid: 7954176
-
-
 - group: Grad Alumni
   people:
     - name: Sebastian Gehrmann (Google)
@@ -64,6 +55,11 @@
 
 - group: Undergrad Alumni
   people:
+    - name : Demi Guo (Stanford)
+      email: blank
+      title: Undergraduate
+      url: https://github.com/demiguo
+      githubid: 7954176
     - name : Rachit Singh (DE Shaw)
       email: blank
       url: https://github.com/rachtsingh
