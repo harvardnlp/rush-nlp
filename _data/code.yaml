@@ -1,4 +1,19 @@
 code:
+    - link: https://github.com/srush/annotated-s4
+      title: Annotated S4
+      authors: Alexander Rush, Sidd Karamcheti 
+      abstract: s4 implementation
+      image: https://github.com/srush/annotated-s4/raw/main/images/quickdraw/im1.png
+    - link: https://github.com/bigscience-workshop/promptsource
+      title: PromptSource
+      authors: Stephen Bach, Victor Sanh, et al. 
+      abstract: prompting ide
+      image: https://github.com/srush/annotated-s4/raw/main/images/quickdraw/im1.png
+    - link: https://github.com/huggingface/datasets
+      title: Datasets
+      authors: Quentin Lhoest et al. 
+      abstract: datasets 
+      image: https://huggingface.co/docs/datasets/_images/datasets_logo.png
     - link: https://github.com/huggingface/transformers
       title: Transformers
       authors: Thomas Wolf et al. 

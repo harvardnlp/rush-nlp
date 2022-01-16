@@ -1,4 +1,14 @@
 projects:
+    - link: https://github.com/srush/annotated-s4
+      title: Annotated S4
+      authors: Alexander Rush, Sidd Karamcheti 
+      abstract: Annotated S4 isa  pedagogical implementation of the S4 model for very long range sequnece modeling utilizing JAX as a method for explaining mathematically complex code. 
+      image: https://github.com/srush/annotated-s4/raw/main/images/quickdraw/im1.png
+    - link: https://github.com/bigscience-workshop/promptsource
+      title: PromptSource
+      authors: Stephen Bach, Victor Sanh, et al. 
+      abstract: PromptSource is an IDE for producing natural language prompts on real datasets. It was the basis of the T0 model for large-scale multitask training.
+      image: https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png
     - link: https://tech.cornell.edu/impact/break-through-tech/break-through-ai/
       title: Break Through AI
       authors: BTT Team, Alexander Rush

@@ -1,5 +1,23 @@
-- group : Graduate Students and Visitors
+- group : Graduate Students
   people :
+    - name : Jack Morris
+      email : jxm3@cornell.edu
+      url : "https://jxmo.io/"
+      github: jxmorris12
+      githubid: 13238952
+      title : PhD Student
+    - name : Woojeong Kim
+      email : wk247@cornell.edu
+      url : "https://www.wkim.info/"
+      github: friendshipkim
+      githubid: 31445461
+      title : PhD Student
+    - name : Celine Lee
+      email : cl923@cornell.edu
+      url : "https://celine-lee.github.io/"
+      github: celine-lee
+      githubid: 22714518
+      title : PhD Student
     - name : Justin Chiu
       email : yoonkim@seas.harvard.edu
       url : "http://github.com/justinchiu/"
@@ -11,19 +29,24 @@
       title: PhD Student
       url: https://github.com/da03
       githubid: 5753959
+    - name : Wenting Zhao
+      email: wzhao@cs.cornell.edu
+      title: PhD Student
+      url: "https://github.com/wenting-zhao"
+      githubid: 8762524
     - name : Jiawei Zhou
       email: jzhou02@g.harvard.edu
       title: PhD Student
       url: https://github.com/jzhou316
       githubid: 31744226
+
+- group: Grad Alumni
+  people:
     - name : Zachary Ziegler
       email: zachary.ziegler@featurex.ai
       title: PhD Student
       url: https://github.com/zackziegler95
       githubid: 22876306
-
-- group: Grad Alumni
-  people:
     - name: Sebastian Gehrmann (Google)
       githubid: 2212304
       github: sebastianGehrmann

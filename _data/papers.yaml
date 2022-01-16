@@ -51,9 +51,49 @@ notable:
       slides : /slides/emnlp15.pdf
       image : /images/summary.png
 papers:
+    - title: "Multitask prompted training enables zero-shot task generalization"
+      authors: Victor Sanh, et al. 
+      pdf:  https://arxiv.org/pdf/2110.08207
+      image: "https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png" 
+      conference: Preprint
+    - title: "End-to-end learning of multiple sequence alignments with differentiable Smith-Waterman"
+      authors: Samantha Petti, et al. 
+      pdf:  http://repository.cshl.edu/id/eprint/40409/1/2021.Petti.multiple_sequence_alignments.pdf
+      image: "https://pbs.twimg.com/media/FCfRXOJXEAITHZ0?format=jpg&name=large" 
+      conference: Preprint
+    - title: "Developmental Stage Classification of Embryos Using Two-Stream Neural Network with Linear-Chain Conditional Random Field"
+      authors: Stanislav Lukyanenko et al. 
+      pdf:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8526069/
+      image: 
+      conference: MICCAI 2021
+    - title: "Rationales for sequential predictions"
+      authors: Keyon Vafa, Yuntian Deng, David Blei, Alexander Rush 
+      pdf:  https://arxiv.org/pdf/2109.06387
+      image: "https://github.com/keyonvafa/sequential-rationales/raw/main/analysis/figs/sequential_rationale_small.gif"
+      conference: EMNLP 2021
+    - title: "Low-Rank Constraints for Fast Inference in Structured Models"
+      authors: Justin Chiu, Yuntian Deng, and Alexander M. Rush
+      pdf:  "https://proceedings.neurips.cc/paper/2021/file/16c0d78ef6a76b5c247113a4c9514059-Paper.pdf"
+      image:
+      conference: NeurIPS 2021
+    - title: "Conference demographics and footprint changed by virtual platforms"
+      authors: Matthe Skiles et al. 
+      pdf:  https://www.nature.com/articles/s41893-021-00823-2
+      image: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41893-021-00823-2/MediaObjects/41893_2021_823_Fig1_HTML.png?as=webp
+      conference: Nature Sustainability      
+    - title: "Sequence-to-Lattice Models for Fast Translation"
+      authors: Yuntian Deng and Alexander M. Rush
+      pdf:  https://aclanthology.org/2021.findings-emnlp.318.pdf
+      image: "https://github.com/harvardnlp/cascaded-generation/raw/master/cascaded-generation-fastest.gif"
+      conference: EMNLP Findings Short 2021
+    - title: "Datasets: A Community Library for Natural Language Processing"
+      authors: Quentin Lhoest et al
+      pdf: https://arxiv.org/pdf/2109.02846.pdf
+      image: "https://huggingface.co/docs/datasets/_images/datasets_logo.png"
+      conference: EMNLP Demos 2021 (Best Demo)
     - title: "EdgeBERT: Sentence-Level Energy Optimizations for Latency-Aware Multi-Task NLP Inference"
       authors: Thierry Tambe and Others
-      pdf: 
+      pdf: https://arxiv.org/pdf/2011.14203.pdf
       image: /images/edgebert.png
       conference: IEEE MICRO 2021
     - title: "GenNI: Human-AI Collaboration for Data-Backed Text Generation"
@@ -71,6 +111,11 @@ papers:
       pdf: https://aclanthology.org/2021.naacl-main.208.pdf
       image: /images/prompt.png
       conference: NAACL Short 2021 (Best Paper - Runner-Up)
+    - title: "Block pruning for faster transformers"
+      authors: François Lagunas, Ella Charlaix, Victor Sanh, Alexander M Rush
+      pdf: https://arxiv.org/pdf/2109.04838
+      image: 
+      conference: ACL 2021
     - title: "Low-Complexity Probing via Finding Subnetworks"
       authors: Steven Cao, Victor Sanh, Alexander M. Rush
       pdf: https://aclanthology.org/2021.naacl-main.74/
@@ -130,7 +175,7 @@ papers:
       authors: Thomas Wolf et al
       pdf: https://arxiv.org/pdf/1910.03771
       image: /images/transformers.png
-      conference: EMNLP Demos 2020
+      conference: EMNLP Demos 2020 (Best Demo)
     - title: "Torch-Struct: Deep Structured Prediction Library"
       authors: Alexander Rush
       pdf: https://arxiv.org/pdf/2002.00876
