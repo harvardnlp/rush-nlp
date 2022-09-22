@@ -51,16 +51,17 @@ notable:
       slides : /slides/emnlp15.pdf
       image : /images/summary.png
 papers:
-    - title: "Multitask prompted training enables zero-shot task generalization"
-      authors: Victor Sanh, et al. 
-      pdf:  https://arxiv.org/pdf/2110.08207
-      image: "https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png" 
-      conference: Preprint
+
     - title: "End-to-end learning of multiple sequence alignments with differentiable Smith-Waterman"
       authors: Samantha Petti, et al. 
       pdf:  http://repository.cshl.edu/id/eprint/40409/1/2021.Petti.multiple_sequence_alignments.pdf
       image: "https://pbs.twimg.com/media/FCfRXOJXEAITHZ0?format=jpg&name=large" 
       conference: Preprint
+    - title: "Multitask prompted training enables zero-shot task generalization"
+      authors: Victor Sanh, et al. 
+      pdf:  https://arxiv.org/pdf/2110.08207
+      image: "https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png" 
+      conference: ICLR 2022
     - title: "Developmental Stage Classification of Embryos Using Two-Stream Neural Network with Linear-Chain Conditional Random Field"
       authors: Stanislav Lukyanenko et al. 
       pdf:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8526069/
@@ -69,7 +70,7 @@ papers:
     - title: "Rationales for sequential predictions"
       authors: Keyon Vafa, Yuntian Deng, David Blei, Alexander Rush 
       pdf:  https://arxiv.org/pdf/2109.06387
-      image: "https://github.com/keyonvafa/sequential-rationales/raw/main/analysis/figs/sequential_rationale_small.gif"
+      image: /images/seqrat.png
       conference: EMNLP 2021
     - title: "Low-Rank Constraints for Fast Inference in Structured Models"
       authors: Justin Chiu, Yuntian Deng, and Alexander M. Rush
