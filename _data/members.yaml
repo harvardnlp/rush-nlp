@@ -42,12 +42,7 @@
 
 - group: Grad Alumni
   people:
-    - name : Zachary Ziegler
-      email: zachary.ziegler@featurex.ai
-      title: PhD Student
-      url: https://github.com/zackziegler95
-      githubid: 22876306
-    - name: Sebastian Gehrmann (Google)
+    - name: Sebastian Gehrmann (Google -> Bloomberg)
       githubid: 2212304
       github: sebastianGehrmann
       url: "http://scholar.harvard.edu/gehrmann"
@@ -70,6 +65,11 @@
       email : schmaltz@seas.harvard.edu
       url: "http://github.com/allenschmaltz"
       title: PhD Student
+    - name : Zachary Ziegler (Xyla)
+      email: zachary.ziegler@featurex.ai
+      title: PhD Student
+      url: https://github.com/zackziegler95
+      githubid: 22876306
     - name : Kelly Zhang
       email: kz918@nyu.edu
       title: PhD Student

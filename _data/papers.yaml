@@ -14,11 +14,6 @@ notable:
       pdf: https://arxiv.org/pdf/1910.03771
       image: /images/transformers.png
       conference: EMNLP Demos 2020
-    - title: "Transformers: State-of-the-art Natural Language Processing"
-      authors: Thomas Wolf et al
-      pdf: https://arxiv.org/pdf/1910.03771
-      image: /images/transformers.png
-      conference: EMNLP Demos 2020
     - title: "Compound Probabilistic Context-Free Grammars for Grammar Induction"
       authors: Yoon Kim,  Chris Dyer, Alexander M. Rush
       pdf: https://www.aclweb.org/anthology/P19-1228/
@@ -67,14 +62,13 @@ notable:
       image : /images/summary.png
 papers:
     - title: "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model"
-      authors: Teven le Scao et al.
+      authors: BigScience Workshop
       pdf: https://arxiv.org/abs/2211.05100
-      image :
       conference: Arxiv Preprint
     - title: "Xatu: boosting existing DDoS detection systems using auxiliary signals"
       authors: Zhiying Xu, Sivaramakrishnan Ramanathan, Alexander Rush, Jelena Mirkovic, Minlan Yu
       pdf: https://dl.acm.org/doi/abs/10.1145/3555050.3569121
-      image: 
+      image: /images/xatu.png
       conference: CoNEXT 2022
     - title: "Unsupervised Text Deidentification"
       authors: John X Morris, Justin T Chiu, Ramin Zabih, Alexander M Rush
