@@ -1,8 +1,13 @@
 projects:
+    - link: https://github.com/srush/gpu-puzzles
+      title: GPU-Puzzles 
+      authors: Alexander Rush
+      abstract: A series of puzzles for learning about the core aspects of modern deep learning coding. Includes puzzles for tensors, gpu's, and auto-differentiation.
+      image: https://raw.githubusercontent.com/srush/GPU-Puzzles/main/cuda.png
     - link: https://github.com/srush/annotated-s4
       title: Annotated S4
       authors: Alexander Rush, Sidd Karamcheti 
-      abstract: Annotated S4 isa  pedagogical implementation of the S4 model for very long range sequnece modeling utilizing JAX as a method for explaining mathematically complex code. 
+      abstract: Annotated S4 is a pedagogical implementation of the S4 model for very long range sequnece modeling utilizing JAX as a method for explaining mathematically complex code. 
       image: https://github.com/srush/annotated-s4/raw/main/images/quickdraw/im1.png
     - link: https://github.com/bigscience-workshop/promptsource
       title: PromptSource
@@ -23,7 +28,7 @@ projects:
       title: MiniTorch
       authors: Alexander Rush, Ge Gao
       abstract: MiniTorch is a DIY teaching library to walkthrough the process of building a tensor, autodifferentiation library from scratch. It is used to teach machine learning engineering at Cornell Tech.  
-      image: https://minitorch.github.io/_images/threadid@3x.png
+      image: https://minitorch.github.io/minitorch.svg
     - link: https://github.com/srush/streambook
       title: Streambook
       authors: Alexander Rush
