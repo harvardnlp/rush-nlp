@@ -1,4 +1,9 @@
 code:
+    - link: https://github.com/srush/gpu-puzzles
+      title: GPU-Puzzles 
+      authors: Alexander Rush
+      abstract: puzzles for learning gpu
+      image: https://raw.githubusercontent.com/srush/GPU-Puzzles/main/cuda.png
     - link: https://github.com/srush/annotated-s4
       title: Annotated S4
       authors: Alexander Rush, Sidd Karamcheti 

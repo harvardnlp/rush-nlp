@@ -1,4 +1,19 @@
 notable: 
+    - title: "Multitask prompted training enables zero-shot task generalization"
+      authors: Victor Sanh, et al. 
+      pdf:  https://arxiv.org/pdf/2110.08207
+      image: "https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png" 
+      conference: ICLR 2022
+    - title: "How many data points is a prompt worth?"
+      authors: Teven Le Scao, Alexander M. Rush
+      pdf: https://aclanthology.org/2021.naacl-main.208.pdf
+      image: /images/prompt.png
+      conference: NAACL Short 2021
+    - title: "Transformers: State-of-the-art Natural Language Processing"
+      authors: Thomas Wolf et al
+      pdf: https://arxiv.org/pdf/1910.03771
+      image: /images/transformers.png
+      conference: EMNLP Demos 2020
     - title: "Transformers: State-of-the-art Natural Language Processing"
       authors: Thomas Wolf et al
       pdf: https://arxiv.org/pdf/1910.03771
@@ -51,12 +66,51 @@ notable:
       slides : /slides/emnlp15.pdf
       image : /images/summary.png
 papers:
-
+    - title: "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model"
+      authors: Teven le Scao et al.
+      pdf: https://arxiv.org/abs/2211.05100
+      image :
+      conference: Arxiv Preprint
+    - title: "Xatu: boosting existing DDoS detection systems using auxiliary signals"
+      authors: Zhiying Xu, Sivaramakrishnan Ramanathan, Alexander Rush, Jelena Mirkovic, Minlan Yu
+      pdf: https://dl.acm.org/doi/abs/10.1145/3555050.3569121
+      image: 
+      conference: CoNEXT 2022
+    - title: "Unsupervised Text Deidentification"
+      authors: John X Morris, Justin T Chiu, Ramin Zabih, Alexander M Rush
+      pdf: https://arxiv.org/pdf/2210.11528.pdf
+      image: /images/deid.png
+      conference: EMNLP Findings 2022
+    - title: "Model Criticism for Long-Form Text Generation"
+      authors: Yuntian Deng, Volodymyr Kuleshov, Alexander M Rush
+      pdf: https://arxiv.org/pdf/2210.08444.pdf
+      image: /images/modcrit.png
+      conference: EMNLP 2022
+    - title: "Evaluate & Evaluation on the Hub: Better Best Practices for Data and Model Measurement"
+      authors: Leandro von Werra et al.
+      pdf: https://arxiv.org/abs/2210.01970
+      image: /images/evalhub.png
+      conference: EMNLP Demos 2022 (Best Demo)
+    - title: "Interactive and Visual Prompt Engineering for Ad-hoc Task Adaptation with Large Language Models"
+      authors: Hendik Strobelt et al.
+      pdf: https://ieeexplore.ieee.org/abstract/document/9908590
+      image: 
+      conference: IEEE Trans on Visualization 2022
+    - title: "A 16-nm SoC for Noise-Robust Speech and NLP Edge AI Inference With Bayesian Sound Source Separation and Attention-Based DNNs"
+      authors: Thierry Tambe et al.
+      pdf: https://discovery.ucl.ac.uk/id/eprint/10150658/1/A_16-nm_SoC_for_Noise-Robust_Speech.pdf
+      image: /images/soundsource.png
+      conference: IEEE Solid-State Circuits 2022
+    - title: "Promptsource: An integrated development environment and repository for natural language prompts"
+      authors: Stephen Bach et al. 
+      pdf:  https://arxiv.org/abs/2202.01279
+      image: "https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png" 
+      conference: ACL Demo 2022  
     - title: "End-to-end learning of multiple sequence alignments with differentiable Smith-Waterman"
       authors: Samantha Petti, et al. 
       pdf:  http://repository.cshl.edu/id/eprint/40409/1/2021.Petti.multiple_sequence_alignments.pdf
       image: "https://pbs.twimg.com/media/FCfRXOJXEAITHZ0?format=jpg&name=large" 
-      conference: Preprint
+      conference: Bioinformatics
     - title: "Multitask prompted training enables zero-shot task generalization"
       authors: Victor Sanh, et al. 
       pdf:  https://arxiv.org/pdf/2110.08207
