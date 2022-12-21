@@ -7,10 +7,7 @@ show: 0
 ---
 
 {% for paper in site.data.papers.papers %}
-
-{{paper.name}}
-{{paper.authors}}
-{{paper.conference}}
+* "{{paper.title}}", {{paper.authors}}, {{paper.conference}}.
 
 {% endfor %}
 
