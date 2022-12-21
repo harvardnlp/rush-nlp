@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Raw Papers
+title: 
 permalink: /rawpapers/
 weight: 4
 show: 0
 ---
 
-{% for paper in site.data.papers %}
+{% for paper in site.data.papers.papers %}
 
 {{paper.name}}
 {{paper.authors}}
