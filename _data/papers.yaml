@@ -65,6 +65,11 @@ papers:
       authors: BigScience Workshop
       pdf: https://arxiv.org/abs/2211.05100
       conference: Arxiv Preprint
+    - title: "Named Tensor Notation"
+      authors: David Chiang, Alexander M. Rush, Boaz Barak
+      pdf: https://arxiv.org/pdf/2102.13196.pdf
+      image: /images/ntn.png
+      conference: TMLR 2022
     - title: "Xatu: boosting existing DDoS detection systems using auxiliary signals"
       authors: Zhiying Xu, Sivaramakrishnan Ramanathan, Alexander Rush, Jelena Mirkovic, Minlan Yu
       pdf: https://dl.acm.org/doi/abs/10.1145/3555050.3569121
@@ -175,11 +180,6 @@ papers:
       pdf: https://aclanthology.org/2021.naacl-main.70/
       image:
       conference: NAACL Short 2021
-    - title: "Named Tensor Notation"
-      authors: David Chiang, Alexander M. Rush, Boaz Barak
-      pdf: https://arxiv.org/pdf/2102.13196.pdf
-      image: /images/ntn.png
-      conference: Arxiv
     - title: "9.8 A 25mm2 SoC for IoT Devices with 18ms Noise-Robust Speech-to-Text Latency via Bayesian Speech Denoising and Attention-Based Sequence-to-Sequence DNN Speech Recognition in 16nm FinFET"
       authors: Thierry Tambe, En-Yu Yang, Glenn G Ko, Yuji Chai, Coleman Hooper, Marco Donato, Paul N Whatmough, Alexander M Rush, David Brooks, Gu-Yeon Wei
       pdf: https://ieeexplore.ieee.org/abstract/document/9366062
