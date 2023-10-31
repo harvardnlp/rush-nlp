@@ -24,24 +24,29 @@
       github: justinchiu
       githubid: 2389353
       title : PhD Student
-    - name : Yuntian Deng
-      email: dengyuntian@seas.harvard.edu
+    - name : Jing Nathan Yan
+      email: jy858@cornell.edu
       title: PhD Student
-      url: https://github.com/da03
-      githubid: 5753959
+      url: "https://github.com/NathanYanJing"
+      githubid: 8762524
     - name : Wenting Zhao
       email: wzhao@cs.cornell.edu
       title: PhD Student
       url: "https://github.com/wenting-zhao"
       githubid: 8762524
-    - name : Jiawei Zhou
+
+- group: Grad Alumni
+  people:
+    - name : Yuntian Deng (Waterloo)
+      email: dengyuntian@seas.harvard.edu
+      title: PhD Student
+      url: https://github.com/da03
+      githubid: 5753959
+    - name : Jiawei Zhou (Stonybrook)
       email: jzhou02@g.harvard.edu
       title: PhD Student
       url: https://github.com/jzhou316
       githubid: 31744226
-
-- group: Grad Alumni
-  people:
     - name: Sebastian Gehrmann (Google -> Bloomberg)
       githubid: 2212304
       github: sebastianGehrmann
