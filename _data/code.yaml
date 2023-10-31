@@ -1,4 +1,19 @@
 code:
+    - link: https://github.com/srush/llama2-rs
+      title: Llama2 Rust 
+      authors: Alexander Rush
+      abstract: llama2 in rust
+      image: https://user-images.githubusercontent.com/35882/257109443-dac9a285-b141-409f-bb46-c81a28516cd1.png
+    - link: https://github.com/srush/LLM-Training-Puzzles
+      title: LLM Training Puzzles 
+      authors: Alexander Rush
+      abstract: puzzles for learning about distributed training
+      image: https://user-images.githubusercontent.com/35882/249901903-6d16fc9e-3d14-4bd0-b7c7-d056e49854ac.png
+    - link: https://srush.github.io/raspy/
+      title: Thinking Like Transformers 
+      authors: Alexander Rush, Gail Weiss
+      abstract: learn to think like a transformers
+      image: https://user-images.githubusercontent.com/35882/208687068-66d07246-c9ac-45ea-8638-5357ccba178e.png
     - link: https://github.com/srush/gpu-puzzles
       title: GPU-Puzzles 
       authors: Alexander Rush
