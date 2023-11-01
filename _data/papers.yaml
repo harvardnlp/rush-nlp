@@ -50,7 +50,6 @@ notable:
       image: /images/segknow.png
       slides : /slides/emnlp16_seqkd.pdf
       code: https://github.com/harvardnlp/seq2seq-attn
-
     - title: Character-Aware Neural Language Models
       authors : Yoon Kim, Yacine Jernite, David Sontag, and Alexander M. Rush
       conference :  AAAI 2016
@@ -69,67 +68,67 @@ papers:
     - title: "Guess & Sketch: Language Model Guided Transpilation"
       authors: "Celine Lee, Abdulrahman Mahmoud, Michal Kurek, Simone Campanoni, David Brooks, Stephen Chong, Gu-Yeon Wei, Alexander M. Rush"
       pdf: "https://arxiv.org/pdf/2309.14396.pdf"
-      venue: Preprint
+      conference: Preprint
       image: 
     - title: "Zephyr: Direct Distillation of LM Alignment"
       authors: "Lewis Tunstall, Edward Beeching, Nathan Lambert, Nazneen Rajani, Kashif Rasul, Younes Belkada, Shengyi Huang, Leandro von Werra, Clémentine Fourrier, Nathan Habib, Nathan Sarrazin, Omar Sanseviero, Alexander M. Rush, Thomas Wolf"
       pdf: "https://arxiv.org/pdf/2310.16944.pdf"
-      venue: Preprint
+      conference: Preprint
       image: 
     - title: "Symbolic Planning and Code Generation for Grounded Dialogue"
       authors: "Justin T. Chiu, Wenting Zhao, Derek Chen, Saujas Vaduguru, Alexander M. Rush, Daniel Fried"
       pdf: "https://arxiv.org/pdf/2310.17140.pdf"
-      venue: EMNLP 2023
+      conference: EMNLP 2023
       image: 
     - title: "Teal: Learning-Accelerated Optimization of WAN Traffic Engineering"
       authors: "Zhiying Xu, Francis Y. Yan, Rachee Singh, Justin T. Chiu, Alexander M. Rush, Minlan Yu"
       pdf: "https://arxiv.org/abs/2210.13763" 
-      venue: "SIGCOMM 2023"
+      conference: "SIGCOMM 2023"
       image: 
     - title: "Text Embeddings Reveal (Almost) As Much As Text"
       authors: "John X. Morris, Volodymyr Kuleshov, Vitaly Shmatikov, Alexander M. Rush"
       pdf: "https://arxiv.org/pdf/2310.06816.pdf"
-      venue: EMNLP 2023
+      conference: EMNLP 2023
       image: 
     - title: "Tree Prompting: Efficient Task Adaptation without Fine-Tuning"
       authors: "John X. Morris, Chandan Singh, Alexander M. Rush, Jianfeng Gao, Yuntian Deng"
       pdf: "https://arxiv.org/pdf/2310.14034.pdf"
-      venue: EMNLP 2023
+      conference: EMNLP 2023
       image: 
     - title: "HOP, UNION, GENERATE: Explainable Multi-hop Reasoning without Rationale Supervision"
       authors: "Wenting Zhao, Justin T. Chiu, Claire Cardie, Alexander M. Rush"
       pdf: "https://arxiv.org/pdf/2305.14237.pdf"
-      venue: EMNLP 2023
+      conference: EMNLP 2023
       image: 
     - title: "Pretraining Without Attention"
       authors: "Junxiong Wang, Jing Nathan Yan, Albert Gu, Alexander M. Rush"
       pdf: "https://arxiv.org/pdf/2212.10544.pdf"
-      venue: EMNLP 2023 Findings
+      conference: EMNLP 2023 Findings
       image: /images/bigs.png
     - title: "Scaling Data-Constrained Language Models"
       authors: "Niklas Muennighoff, Alexander M. Rush, Boaz Barak, Teven Le Scao, Aleksandra Piktus, Nouamane Tazi, Sampo Pyysalo, Thomas Wolf, Colin Raffel"
       pdf: "https://arxiv.org/pdf/2305.16264.pdf"
-      venue: NeurIPS 2023 (Oral)
+      conference: NeurIPS 2023 (Oral)
       image: 
     - title: "OBELISC: An Open Web-Scale Filtered Dataset of Interleaved Image-Text Documents"
       authors: "Hugo Laurençon, Lucile Saulnier, Léo Tronchon, Stas Bekman, Amanpreet Singh, Anton Lozhkov, Thomas Wang, Siddharth Karamcheti, Alexander M. Rush, Douwe Kiela, Matthieu Cord, Victor Sanh"
       pdf: "https://arxiv.org/pdf/2306.16527.pdf"
-      venue: NeurIPS 2023 Dataset
+      conference: NeurIPS 2023 Dataset
       image: ""
     - title: "Abductive Commonsense Reasoning Exploiting Mutually Exclusive Explanations"
       authors: "Wenting Zhao, Justin T. Chiu, Claire Cardie, Alexander M. Rush"
       pdf: "https://arxiv.org/pdf/2305.14618.pdf"
-      venue: "ACL 2023"
+      conference: "ACL 2023"
       image: ""
     - title: "Markup-to-Image Diffusion Models with Scheduled Sampling"
       authors: "Yuntian Deng, Noriyuki Kojima, Alexander M. Rush"
       pdf: "https://arxiv.org/abs/2210.05147" 
-      venue: "ICLR 2023"
+      conference: "ICLR 2023"
       image: ""
     - title: "A 12nm 18.1TFLOPs/W Sparse Transformer Processor with Entropy-Based Early Exit, Mixed-Precision Predication and Fine-Grained Power Management"
       authors: "Thierry Tambe, Jeff Zhang, Coleman Hooper, Tianyu Jia, Paul N. Whatmough, Joseph Zuckerman, Maico Cassel dos Santos, Erik Jens Loscalzo, Davide Giri, Kenneth L. Shepard, Luca P. Carloni, Alexander M. Rush, David Brooks, Gu-Yeon Wei"
       pdf: 
-      venue: "ISSCC 2023"
+      conference: "ISSCC 2023"
       image: ""
     - title: "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model"
       authors: BigScience Workshop
