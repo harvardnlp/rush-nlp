@@ -65,7 +65,7 @@ notable:
       slides : /slides/emnlp15.pdf
       image : /images/summary.png
 papers:
-    - title: "Guess & Sketch: Language Model Guided Transpilation"
+    - title: "Guess and Sketch: Language Model Guided Transpilation"
       authors: "Celine Lee, Abdulrahman Mahmoud, Michal Kurek, Simone Campanoni, David Brooks, Stephen Chong, Gu-Yeon Wei, Alexander M. Rush"
       pdf: "https://arxiv.org/pdf/2309.14396.pdf"
       conference: Preprint
@@ -154,7 +154,7 @@ papers:
       pdf: https://arxiv.org/pdf/2210.08444.pdf
       image: /images/modcrit.png
       conference: EMNLP 2022
-    - title: "Evaluate & Evaluation on the Hub: Better Best Practices for Data and Model Measurement"
+    - title: "Evaluate and Evaluation on the Hub: Better Best Practices for Data and Model Measurement"
       authors: Leandro von Werra et al.
       pdf: https://arxiv.org/abs/2210.01970
       image: /images/evalhub.png
