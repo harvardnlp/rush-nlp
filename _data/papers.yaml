@@ -1,4 +1,9 @@
 notable: 
+    - title: "Zephyr: Direct Distillation of LM Alignment"
+      authors: "Lewis Tunstall, Edward Beeching, Nathan Lambert, Nazneen Rajani, Kashif Rasul, Younes Belkada, Shengyi Huang, Leandro von Werra, Clémentine Fourrier, Nathan Habib, Nathan Sarrazin, Omar Sanseviero, Alexander M. Rush, Thomas Wolf"
+      pdf: "https://arxiv.org/pdf/2310.16944.pdf"
+      conference: COLM 2024
+      image: 
     - title: "Pretraining Without Attention"
       authors: "Junxiong Wang, Jing Nathan Yan, Albert Gu, Alexander M. Rush"
       pdf: "https://arxiv.org/pdf/2212.10544.pdf"
@@ -65,15 +70,19 @@ notable:
       slides : /slides/emnlp15.pdf
       image : /images/summary.png
 papers:
-    - title: "Guess and Sketch: Language Model Guided Transpilation"
-      authors: "Celine Lee, Abdulrahman Mahmoud, Michal Kurek, Simone Campanoni, David Brooks, Stephen Chong, Gu-Yeon Wei, Alexander M. Rush"
-      pdf: "https://arxiv.org/pdf/2309.14396.pdf"
-      conference: Preprint
-      image: 
+    - title: "MambaByte: Token-free Selective State Space Model"
+      authors: "Junxiong Wang, Tushaar Gangavarapu, Jing Nathan Yan, Alexander M. Rush"
+      pdf: https://arxiv.org/abs/2401.13660
+      conference: COLM 2024
     - title: "Zephyr: Direct Distillation of LM Alignment"
       authors: "Lewis Tunstall, Edward Beeching, Nathan Lambert, Nazneen Rajani, Kashif Rasul, Younes Belkada, Shengyi Huang, Leandro von Werra, Clémentine Fourrier, Nathan Habib, Nathan Sarrazin, Omar Sanseviero, Alexander M. Rush, Thomas Wolf"
       pdf: "https://arxiv.org/pdf/2310.16944.pdf"
-      conference: Preprint
+      conference: COLM 2024
+      image: 
+    - title: "Guess and Sketch: Language Model Guided Transpilation"
+      authors: "Celine Lee, Abdulrahman Mahmoud, Michal Kurek, Simone Campanoni, David Brooks, Stephen Chong, Gu-Yeon Wei, Alexander M. Rush"
+      pdf: "https://arxiv.org/pdf/2309.14396.pdf"
+      conference: ICLR 2024
       image: 
     - title: "Symbolic Planning and Code Generation for Grounded Dialogue"
       authors: "Justin T. Chiu, Wenting Zhao, Derek Chen, Saujas Vaduguru, Alexander M. Rush, Daniel Fried"

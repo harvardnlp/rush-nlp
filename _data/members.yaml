@@ -18,12 +18,11 @@
       github: celine-lee
       githubid: 22714518
       title : PhD Student
-    - name : Justin Chiu
-      email : yoonkim@seas.harvard.edu
-      url : "http://github.com/justinchiu/"
-      github: justinchiu
-      githubid: 2389353
-      title : PhD Student
+    - name : Junxiong Wang
+      email: junxiong@cs.cornell.edu
+      title: PhD Student
+      url: "https://www.cs.cornell.edu/~junxiong/"
+      githubid: 16102460
     - name : Jing Nathan Yan
       email: jy858@cornell.edu
       title: PhD Student
@@ -34,9 +33,14 @@
       title: PhD Student
       url: "https://github.com/wenting-zhao"
       githubid: 8762524
-
 - group: Grad Alumni
   people:
+    - name : Justin Chiu (Cohere)
+      email : yoonkim@seas.harvard.edu
+      url : "http://github.com/justinchiu/"
+      github: justinchiu
+      githubid: 2389353
+      title : PhD Student
     - name : Yuntian Deng (Waterloo)
       email: dengyuntian@seas.harvard.edu
       title: PhD Student
