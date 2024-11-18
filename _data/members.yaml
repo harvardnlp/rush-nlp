@@ -18,6 +18,16 @@
       github: celine-lee
       githubid: 22714518
       title : PhD Student
+    - name : Shankar Padmanabhan
+      email:
+      title: PhD Student
+      url: "https://shankarp8.github.io/"
+      githubid: 47063867
+    - name : Daniel Ritter
+      email:
+      title: PhD Student
+      url: "https://danieldritter.github.io/"
+      githubid: 35882844
     - name : Junxiong Wang
       email: junxiong@cs.cornell.edu
       title: PhD Student

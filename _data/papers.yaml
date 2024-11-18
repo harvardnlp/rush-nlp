@@ -1,624 +1,669 @@
-notable: 
-    - title: "Zephyr: Direct Distillation of LM Alignment"
-      authors: "Lewis Tunstall, Edward Beeching, Nathan Lambert, Nazneen Rajani, Kashif Rasul, Younes Belkada, Shengyi Huang, Leandro von Werra, Clémentine Fourrier, Nathan Habib, Nathan Sarrazin, Omar Sanseviero, Alexander M. Rush, Thomas Wolf"
-      pdf: "https://arxiv.org/pdf/2310.16944.pdf"
-      conference: COLM 2024
-      image: 
-    - title: "Pretraining Without Attention"
-      authors: "Junxiong Wang, Jing Nathan Yan, Albert Gu, Alexander M. Rush"
-      pdf: "https://arxiv.org/pdf/2212.10544.pdf"
-      conference: EMNLP 2023 Findings
-      image: /images/bigs.png
-    - title: "Multitask prompted training enables zero-shot task generalization"
-      authors: Victor Sanh, et al. 
-      pdf:  https://arxiv.org/pdf/2110.08207
-      image: "https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png" 
-      conference: ICLR 2022
-    - title: "How many data points is a prompt worth?"
-      authors: Teven Le Scao, Alexander M. Rush
-      pdf: https://aclanthology.org/2021.naacl-main.208.pdf
-      image: /images/prompt.png
-      conference: NAACL Short 2021
-    - title: "Transformers: State-of-the-art Natural Language Processing"
-      authors: Thomas Wolf et al
-      pdf: https://arxiv.org/pdf/1910.03771
-      image: /images/transformers.png
-      conference: EMNLP Demos 2020
-    - title: "Compound Probabilistic Context-Free Grammars for Grammar Induction"
-      authors: Yoon Kim,  Chris Dyer, Alexander M. Rush
-      pdf: https://www.aclweb.org/anthology/P19-1228/
-      code: https://github.com/harvardnlp/compound-pcfg
-      image: /images/Tree.png
-      conference: ACL 2019
-    - title: "Learning Neural Templates for Text Generation"
-      authors: Sam Wiseman, Stuart M. Shieber, Alexander Rush
-      conference: EMNLP 2018
-      code: https://github.com/harvardnlp/neural-template-gen
-      pdf : https://arxiv.org/abs/1808.10122
-      image: /images/template.png
-    - title: "LSTMVis: A Tool for Visual Analysis of Hidden State Dynamics in Recurrent Neural Networks"
-      authors: Hendrik Strobelt, Sebastian Gehrmann, Hanspeter Pfister, and Alexander M. Rush
-      conference: InfoVis 2017
-      pdf : http://lstm.seas.harvard.edu/
-      code : http://lstm.seas.harvard.edu/
-      image: /images/small_teaser.png
-    - title: "OpenNMT: Open-Source Toolkit for Neural Machine Translation"
-      authors: Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, Alexander M. Rush
-      conference: ACL Demo 2017 
-      pdf : https://arxiv.org/abs/1701.02810
-      image: /images/overview.png
-      slides:
-    - title: Sequence-Level Knowledge Distillation
-      authors: Yoon Kim and Alexander M. Rush
-      conference: EMNLP 2016
-      pdf : http://arxiv.org/pdf/1606.07947v1.pdf
-      image: /images/segknow.png
-      slides : /slides/emnlp16_seqkd.pdf
-      code: https://github.com/harvardnlp/seq2seq-attn
-    - title: Character-Aware Neural Language Models
-      authors : Yoon Kim, Yacine Jernite, David Sontag, and Alexander M. Rush
-      conference :  AAAI 2016
-      code : https://github.com/yoonkim/lstm-char-cnn
-      pdf : https://arxiv.org/pdf/1508.06615v4
-      slides : /slides/aaai16.pdf
-      image : /images/charrnn.png
-    - title: A Neural Attention Model for Abstractive Sentence Summarization
-      authors : Alexander M. Rush, Sumit Chopra, and Jason Weston
-      conference :  EMNLP 2015.
-      pdf : http://arxiv.org/pdf/1509.00685.pdf
-      code : https://github.com/facebook/NAMAS
-      slides : /slides/emnlp15.pdf
-      image : /images/summary.png
+notable:
+  - title: "Simple and Effective Masked Diffusion Language Models"
+    authors: "Subham Sekhar Sahoo, Marianne Arriola, Yair Schiff, Aaron Gokaslan, Edgar Marroquin, Justin T Chiu, Alexander Rush, Volodymyr Kuleshov"
+    pdf: "https://arxiv.org/abs/2406.07524"
+    image: /images/diffusion.png
+    conference: NeurIPS 2024
+  - title: "Zephyr: Direct Distillation of LM Alignment"
+    authors: "Lewis Tunstall, Edward Beeching, Nathan Lambert, Nazneen Rajani, Kashif Rasul, Younes Belkada, Shengyi Huang, Leandro von Werra, Clémentine Fourrier, Nathan Habib, Nathan Sarrazin, Omar Sanseviero, Alexander M. Rush, Thomas Wolf"
+    pdf: "https://arxiv.org/pdf/2310.16944.pdf"
+    conference: COLM 2024
+    image:
+  - title: "Pretraining Without Attention"
+    authors: "Junxiong Wang, Jing Nathan Yan, Albert Gu, Alexander M. Rush"
+    pdf: "https://arxiv.org/pdf/2212.10544.pdf"
+    conference: EMNLP 2023 Findings
+    image: /images/bigs.png
+  - title: "Multitask prompted training enables zero-shot task generalization"
+    authors: Victor Sanh, et al.
+    pdf: https://arxiv.org/pdf/2110.08207
+    image: "https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png"
+    conference: ICLR 2022
+  - title: "How many data points is a prompt worth?"
+    authors: Teven Le Scao, Alexander M. Rush
+    pdf: https://aclanthology.org/2021.naacl-main.208.pdf
+    image: /images/prompt.png
+    conference: NAACL Short 2021
+  - title: "Transformers: State-of-the-art Natural Language Processing"
+    authors: Thomas Wolf et al
+    pdf: https://arxiv.org/pdf/1910.03771
+    image: /images/transformers.png
+    conference: EMNLP Demos 2020
+  - title: "Compound Probabilistic Context-Free Grammars for Grammar Induction"
+    authors: Yoon Kim,  Chris Dyer, Alexander M. Rush
+    pdf: https://www.aclweb.org/anthology/P19-1228/
+    code: https://github.com/harvardnlp/compound-pcfg
+    image: /images/Tree.png
+    conference: ACL 2019
+  - title: "Learning Neural Templates for Text Generation"
+    authors: Sam Wiseman, Stuart M. Shieber, Alexander Rush
+    conference: EMNLP 2018
+    code: https://github.com/harvardnlp/neural-template-gen
+    pdf: https://arxiv.org/abs/1808.10122
+    image: /images/template.png
+  - title: "LSTMVis: A Tool for Visual Analysis of Hidden State Dynamics in Recurrent Neural Networks"
+    authors: Hendrik Strobelt, Sebastian Gehrmann, Hanspeter Pfister, and Alexander M. Rush
+    conference: InfoVis 2017
+    pdf: http://lstm.seas.harvard.edu/
+    code: http://lstm.seas.harvard.edu/
+    image: /images/small_teaser.png
+  - title: "OpenNMT: Open-Source Toolkit for Neural Machine Translation"
+    authors: Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, Alexander M. Rush
+    conference: ACL Demo 2017
+    pdf: https://arxiv.org/abs/1701.02810
+    image: /images/overview.png
+    slides:
+  - title: Sequence-Level Knowledge Distillation
+    authors: Yoon Kim and Alexander M. Rush
+    conference: EMNLP 2016
+    pdf: http://arxiv.org/pdf/1606.07947v1.pdf
+    image: /images/segknow.png
+    slides: /slides/emnlp16_seqkd.pdf
+    code: https://github.com/harvardnlp/seq2seq-attn
+  - title: Character-Aware Neural Language Models
+    authors: Yoon Kim, Yacine Jernite, David Sontag, and Alexander M. Rush
+    conference: AAAI 2016
+    code: https://github.com/yoonkim/lstm-char-cnn
+    pdf: https://arxiv.org/pdf/1508.06615v4
+    slides: /slides/aaai16.pdf
+    image: /images/charrnn.png
+  - title: A Neural Attention Model for Abstractive Sentence Summarization
+    authors: Alexander M. Rush, Sumit Chopra, and Jason Weston
+    conference: EMNLP 2015.
+    pdf: http://arxiv.org/pdf/1509.00685.pdf
+    code: https://github.com/facebook/NAMAS
+    slides: /slides/emnlp15.pdf
+    image: /images/summary.png
 papers:
-    - title: "MambaByte: Token-free Selective State Space Model"
-      authors: "Junxiong Wang, Tushaar Gangavarapu, Jing Nathan Yan, Alexander M. Rush"
-      pdf: https://arxiv.org/abs/2401.13660
-      conference: COLM 2024
-    - title: "Zephyr: Direct Distillation of LM Alignment"
-      authors: "Lewis Tunstall, Edward Beeching, Nathan Lambert, Nazneen Rajani, Kashif Rasul, Younes Belkada, Shengyi Huang, Leandro von Werra, Clémentine Fourrier, Nathan Habib, Nathan Sarrazin, Omar Sanseviero, Alexander M. Rush, Thomas Wolf"
-      pdf: "https://arxiv.org/pdf/2310.16944.pdf"
-      conference: COLM 2024
-      image: 
-    - title: "Guess and Sketch: Language Model Guided Transpilation"
-      authors: "Celine Lee, Abdulrahman Mahmoud, Michal Kurek, Simone Campanoni, David Brooks, Stephen Chong, Gu-Yeon Wei, Alexander M. Rush"
-      pdf: "https://arxiv.org/pdf/2309.14396.pdf"
-      conference: ICLR 2024
-      image: 
-    - title: "Symbolic Planning and Code Generation for Grounded Dialogue"
-      authors: "Justin T. Chiu, Wenting Zhao, Derek Chen, Saujas Vaduguru, Alexander M. Rush, Daniel Fried"
-      pdf: "https://arxiv.org/pdf/2310.17140.pdf"
-      conference: EMNLP 2023
-      image: 
-    - title: "Teal: Learning-Accelerated Optimization of WAN Traffic Engineering"
-      authors: "Zhiying Xu, Francis Y. Yan, Rachee Singh, Justin T. Chiu, Alexander M. Rush, Minlan Yu"
-      pdf: "https://arxiv.org/abs/2210.13763" 
-      conference: "SIGCOMM 2023"
-      image: 
-    - title: "Text Embeddings Reveal (Almost) As Much As Text"
-      authors: "John X. Morris, Volodymyr Kuleshov, Vitaly Shmatikov, Alexander M. Rush"
-      pdf: "https://arxiv.org/pdf/2310.06816.pdf"
-      conference: EMNLP 2023
-      image: 
-    - title: "Tree Prompting: Efficient Task Adaptation without Fine-Tuning"
-      authors: "John X. Morris, Chandan Singh, Alexander M. Rush, Jianfeng Gao, Yuntian Deng"
-      pdf: "https://arxiv.org/pdf/2310.14034.pdf"
-      conference: EMNLP 2023
-      image: 
-    - title: "HOP, UNION, GENERATE: Explainable Multi-hop Reasoning without Rationale Supervision"
-      authors: "Wenting Zhao, Justin T. Chiu, Claire Cardie, Alexander M. Rush"
-      pdf: "https://arxiv.org/pdf/2305.14237.pdf"
-      conference: EMNLP 2023
-      image: 
-    - title: "Pretraining Without Attention"
-      authors: "Junxiong Wang, Jing Nathan Yan, Albert Gu, Alexander M. Rush"
-      pdf: "https://arxiv.org/pdf/2212.10544.pdf"
-      conference: EMNLP 2023 Findings
-      image: /images/bigs.png
-    - title: "Scaling Data-Constrained Language Models"
-      authors: "Niklas Muennighoff, Alexander M. Rush, Boaz Barak, Teven Le Scao, Aleksandra Piktus, Nouamane Tazi, Sampo Pyysalo, Thomas Wolf, Colin Raffel"
-      pdf: "https://arxiv.org/pdf/2305.16264.pdf"
-      conference: NeurIPS 2023 (Oral)
-      image: 
-    - title: "OBELISC: An Open Web-Scale Filtered Dataset of Interleaved Image-Text Documents"
-      authors: "Hugo Laurençon, Lucile Saulnier, Léo Tronchon, Stas Bekman, Amanpreet Singh, Anton Lozhkov, Thomas Wang, Siddharth Karamcheti, Alexander M. Rush, Douwe Kiela, Matthieu Cord, Victor Sanh"
-      pdf: "https://arxiv.org/pdf/2306.16527.pdf"
-      conference: NeurIPS 2023 Dataset
-      image: ""
-    - title: "Abductive Commonsense Reasoning Exploiting Mutually Exclusive Explanations"
-      authors: "Wenting Zhao, Justin T. Chiu, Claire Cardie, Alexander M. Rush"
-      pdf: "https://arxiv.org/pdf/2305.14618.pdf"
-      conference: "ACL 2023"
-      image: ""
-    - title: "Markup-to-Image Diffusion Models with Scheduled Sampling"
-      authors: "Yuntian Deng, Noriyuki Kojima, Alexander M. Rush"
-      pdf: "https://arxiv.org/abs/2210.05147" 
-      conference: "ICLR 2023"
-      image: ""
-    - title: "A 12nm 18.1TFLOPs/W Sparse Transformer Processor with Entropy-Based Early Exit, Mixed-Precision Predication and Fine-Grained Power Management"
-      authors: "Thierry Tambe, Jeff Zhang, Coleman Hooper, Tianyu Jia, Paul N. Whatmough, Joseph Zuckerman, Maico Cassel dos Santos, Erik Jens Loscalzo, Davide Giri, Kenneth L. Shepard, Luca P. Carloni, Alexander M. Rush, David Brooks, Gu-Yeon Wei"
-      pdf: 
-      conference: "ISSCC 2023"
-      image: ""
-    - title: "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model"
-      authors: BigScience Workshop
-      pdf: https://arxiv.org/abs/2211.05100
-      conference: Arxiv Preprint
-    - title: "Named Tensor Notation"
-      authors: David Chiang, Alexander M. Rush, Boaz Barak
-      pdf: https://arxiv.org/pdf/2102.13196.pdf
-      image: /images/ntn.png
-      conference: TMLR 2022
-    - title: "Xatu: boosting existing DDoS detection systems using auxiliary signals"
-      authors: Zhiying Xu, Sivaramakrishnan Ramanathan, Alexander Rush, Jelena Mirkovic, Minlan Yu
-      pdf: https://dl.acm.org/doi/abs/10.1145/3555050.3569121
-      image: /images/xatu.png
-      conference: CoNEXT 2022
-    - title: "Unsupervised Text Deidentification"
-      authors: John X Morris, Justin T Chiu, Ramin Zabih, Alexander M Rush
-      pdf: https://arxiv.org/pdf/2210.11528.pdf
-      image: /images/deid.png
-      conference: EMNLP Findings 2022
-    - title: "Model Criticism for Long-Form Text Generation"
-      authors: Yuntian Deng, Volodymyr Kuleshov, Alexander M Rush
-      pdf: https://arxiv.org/pdf/2210.08444.pdf
-      image: /images/modcrit.png
-      conference: EMNLP 2022
-    - title: "Evaluate and Evaluation on the Hub: Better Best Practices for Data and Model Measurement"
-      authors: Leandro von Werra et al.
-      pdf: https://arxiv.org/abs/2210.01970
-      image: /images/evalhub.png
-      conference: EMNLP Demos 2022 (Best Demo)
-    - title: "Interactive and Visual Prompt Engineering for Ad-hoc Task Adaptation with Large Language Models"
-      authors: Hendik Strobelt et al.
-      pdf: https://ieeexplore.ieee.org/abstract/document/9908590
-      image: 
-      conference: IEEE Trans on Visualization 2022
-    - title: "A 16-nm SoC for Noise-Robust Speech and NLP Edge AI Inference With Bayesian Sound Source Separation and Attention-Based DNNs"
-      authors: Thierry Tambe et al.
-      pdf: https://discovery.ucl.ac.uk/id/eprint/10150658/1/A_16-nm_SoC_for_Noise-Robust_Speech.pdf
-      image: /images/soundsource.png
-      conference: IEEE Solid-State Circuits 2022
-    - title: "Promptsource: An integrated development environment and repository for natural language prompts"
-      authors: Stephen Bach et al. 
-      pdf:  https://arxiv.org/abs/2202.01279
-      image: "https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png" 
-      conference: ACL Demo 2022  
-    - title: "End-to-end learning of multiple sequence alignments with differentiable Smith-Waterman"
-      authors: Samantha Petti, et al. 
-      pdf:  http://repository.cshl.edu/id/eprint/40409/1/2021.Petti.multiple_sequence_alignments.pdf
-      image: "https://pbs.twimg.com/media/FCfRXOJXEAITHZ0?format=jpg&name=large" 
-      conference: Bioinformatics
-    - title: "Multitask prompted training enables zero-shot task generalization"
-      authors: Victor Sanh, et al. 
-      pdf:  https://arxiv.org/pdf/2110.08207
-      image: "https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png" 
-      conference: ICLR 2022
-    - title: "Developmental Stage Classification of Embryos Using Two-Stream Neural Network with Linear-Chain Conditional Random Field"
-      authors: Stanislav Lukyanenko et al. 
-      pdf:  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8526069/
-      image: 
-      conference: MICCAI 2021
-    - title: "Rationales for sequential predictions"
-      authors: Keyon Vafa, Yuntian Deng, David Blei, Alexander Rush 
-      pdf:  https://arxiv.org/pdf/2109.06387
-      image: /images/seqrat.png
-      conference: EMNLP 2021
-    - title: "Low-Rank Constraints for Fast Inference in Structured Models"
-      authors: Justin Chiu, Yuntian Deng, and Alexander M. Rush
-      pdf:  "https://proceedings.neurips.cc/paper/2021/file/16c0d78ef6a76b5c247113a4c9514059-Paper.pdf"
-      image:
-      conference: NeurIPS 2021
-    - title: "Conference demographics and footprint changed by virtual platforms"
-      authors: Matthe Skiles et al. 
-      pdf:  https://www.nature.com/articles/s41893-021-00823-2
-      image: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41893-021-00823-2/MediaObjects/41893_2021_823_Fig1_HTML.png?as=webp
-      conference: Nature Sustainability      
-    - title: "Sequence-to-Lattice Models for Fast Translation"
-      authors: Yuntian Deng and Alexander M. Rush
-      pdf:  https://aclanthology.org/2021.findings-emnlp.318.pdf
-      image: "https://github.com/harvardnlp/cascaded-generation/raw/master/cascaded-generation-fastest.gif"
-      conference: EMNLP Findings Short 2021
-    - title: "Datasets: A Community Library for Natural Language Processing"
-      authors: Quentin Lhoest et al
-      pdf: https://arxiv.org/pdf/2109.02846.pdf
-      image: "https://huggingface.co/docs/datasets/_images/datasets_logo.png"
-      conference: EMNLP Demos 2021 (Best Demo)
-    - title: "EdgeBERT: Sentence-Level Energy Optimizations for Latency-Aware Multi-Task NLP Inference"
-      authors: Thierry Tambe and Others
-      pdf: https://arxiv.org/pdf/2011.14203.pdf
-      image: /images/edgebert.png
-      conference: IEEE MICRO 2021
-    - title: "GenNI: Human-AI Collaboration for Data-Backed Text Generation"
-      authors: Hendrik Strobelt, Jambay Kinley, Robert Krueger, Johanna Beyer, Alexander M. Rush, Hanspeter Pfister
-      pdf: 
-      image: /images/genni.png
-      conference: IEEE VIS 2021
-    - title: "Parameter-efficient transfer learning with diff pruning"
-      authors: Demi Guo, Alexander M. Rush, Yoon Kim
-      pdf: https://arxiv.org/pdf/2012.07463.pdf
-      image: /images/diffprune.png
-      conference: ACL 2021
-    - title: "How many data points is a prompt worth?"
-      authors: Teven Le Scao, Alexander M. Rush
-      pdf: https://aclanthology.org/2021.naacl-main.208.pdf
-      image: /images/prompt.png
-      conference: NAACL Short 2021 (Best Paper - Runner-Up)
-    - title: "Block pruning for faster transformers"
-      authors: François Lagunas, Ella Charlaix, Victor Sanh, Alexander M Rush
-      pdf: https://arxiv.org/pdf/2109.04838
-      image: 
-      conference: ACL 2021
-    - title: "Low-Complexity Probing via Finding Subnetworks"
-      authors: Steven Cao, Victor Sanh, Alexander M. Rush
-      pdf: https://aclanthology.org/2021.naacl-main.74/
-      image: /images/probing.png
-      conference: NAACL Short 2021
-    - title: "Template Filling with Generative Transformers"
-      authors: Xinya Du, Alexander M. Rush, Claire Cardie
-      pdf: https://aclanthology.org/2021.naacl-main.70/
-      image:
-      conference: NAACL Short 2021
-    - title: "9.8 A 25mm2 SoC for IoT Devices with 18ms Noise-Robust Speech-to-Text Latency via Bayesian Speech Denoising and Attention-Based Sequence-to-Sequence DNN Speech Recognition in 16nm FinFET"
-      authors: Thierry Tambe, En-Yu Yang, Glenn G Ko, Yuji Chai, Coleman Hooper, Marco Donato, Paul N Whatmough, Alexander M Rush, David Brooks, Gu-Yeon Wei
-      pdf: https://ieeexplore.ieee.org/abstract/document/9366062
-      image:
-      conference:  IEEE International Solid-State Circuits Conference 2021
-    - title: "Cascaded Text Generation with Markov Transformers"
-      authors: Yuntian Deng, Alexander M. Rush
-      pdf: https://arxiv.org/pdf/2006.01112
-      image: /images/cascade.png
-      conference: NeurIPS 2020
-    - title: "Latent Template Induction with Gumbel-CRFs"
-      authors: Yao Fu, Chuanqi Tan, Bin Bi, Mosha Chen, Yansong Feng, Alexander Rush
-      pdf: https://github.com/FranxYao/Gumbel-CRF
-      image: https://raw.githubusercontent.com/FranxYao/Gumbel-CRF/main/img/model_github.png
-      conference: NeurIPS 2020
-    - title: "Movement Pruning: Adaptive Sparsity by Fine-Tuning"
-      authors: Victor Sanh, Thomas Wolf, Alexander M. Rush
-      pdf: https://arxiv.org/pdf/2005.07683
-      image: /images/movement.png
-      conference: NeurIPS 2020
-    - title: "Scaling Hidden Markov Language Models"
-      authors: Justin T. Chiu, Alexander M. Rush
-      pdf: https://arxiv.org/abs/2011.04640
-      image: /images/hmm.png
-      conference: EMNLP 2020
-    - title: "Adversarial Semantic Collisions"
-      authors: Congzheng Song, Alexander M. Rush, Vitaly Shmatikov
-      pdf: https://www.cs.cornell.edu/~shmat/shmat_emnlp20.pdf
-      image: /images/shmat_emnlp20.png
-      conference: EMNLP 2020
-    - title: "Sequence-Level Mixed Sample Data Augmentation"
-      authors: Demi Guo, Yoon Kim, Alexander M. Rush
-      pdf: https://www.aclweb.org/anthology/2020.emnlp-main.447/
-      image: 
-      conference: EMNLP 2020
-    - title: "AdaptivFloat: A Floating-point based Data Type for Resilient Deep Learning Inference"
-      authors: Thierry Tambe, En-Yu Yang, Zishen Wan, Yuntian Deng, Vijay Janapa Reddi, Alexander Rush, David Brooks, Gu-Yeon Wei
-      pdf: https://arxiv.org/pdf/1909.13271
-      image: /images/adapt.png
-      conference: DAC 2020 (Best Paper)
-    - title: "Transformers: State-of-the-art Natural Language Processing"
-      authors: Thomas Wolf et al
-      pdf: https://arxiv.org/pdf/1910.03771
-      image: /images/transformers.png
-      conference: EMNLP Demos 2020 (Best Demo)
-    - title: "Torch-Struct: Deep Structured Prediction Library"
-      authors: Alexander Rush
-      pdf: https://arxiv.org/pdf/2002.00876
-      image: https://github.com/harvardnlp/pytorch-struct/raw/master/download.png
-      conference: ACL Demos 2020 (Best Demo Honorable Mention)
-    - title: "What is Learned in Visually Grounded Neural Syntax Acquisition"
-      authors: Noriyuki Kojima, Hadar Averbuch-Elor, Alexander M. Rush, Yoav Artzi
-      pdf: https://arxiv.org/pdf/2005.01678
-      image: /images/learned.png
-      conference: ACL 2020  (Short)
-    - title: "Posterior Control of Blackbox Generation"
-      authors: Xiang Lisa Li, Alexander M. Rush
-      pdf: https://arxiv.org/pdf/2005.04560
-      image: /images/posterior.png
-      conference: ACL 2020
-    - title: "Automating Botnet Detection with Graph Neural Networks"
-      authors:  Jiawei Zhou, Zhiying Xu, Alexander M. Rush, Minlan Yu
-      pdf: https://arxiv.org/pdf/2003.06344
-      image: /images/botnet.png
-      conference: AutoML for Networking and Systems Workshop
-    - title: "LAN -- A materials notation for 2D layered assemblies"
-      authors: Georgios A. Tritsaris, Yiqi Xie, Alexander M. Rush, Stephen Carr, Marios Mattheakis, Efthimios Kaxiras
-      pdf: https://arxiv.org/pdf/1910.03413
-      image: /images/lan.png
-      conference:
-    - title: "MASR: A Modular Accelerator for Sparse RNNs"
-      authors: Udit Gupta, Brandon Reagen, Lillian Pentecost, Marco Donato, Thierry Tambe, Alexander M. Rush, Gu-Yeon Wei, David Brooks
-      pdf:
-      image: /images/MASR.png
-      conference: PACT 2019
-    - title: "Commonsense Knowledge Mining from Pretrained Models"
-      authors: "Joe Davison, Joshua Feldman and Alexander Rush"
-      pdf:
-      conference: EMNLP 2019
-    - title: "Neural Linguistic Steganography"
-      authors: Zachary Ziegler, Yuntian Deng and Alexander Rush
-      pdf: https://arxiv.org/abs/1909.01496
-      conference: EMNLP 2019
-    - title: "Compound Probabilistic Context-Free Grammars for Grammar Induction"
-      authors: Yoon Kim,  Chris Dyer, Alexander M. Rush
-      pdf: https://www.aclweb.org/anthology/P19-1228/
-      code: https://github.com/harvardnlp/compound-pcfg
-      image: /images/Tree.png
-      conference: ACL 2019
+  - title: "Compute-Constrained Data Selection"
+    authors: "J. O. Yin, Alexander Rush"
+    pdf: "https://arxiv.org/abs/2410.16208"
+    conference: Preprint 2024
+  - title: "Contextual Document Embeddings"
+    authors: "J. X. Morris, Alexander Rush"
+    pdf: "https://arxiv.org/abs/2410.02525"
+    conference: Preprint 2024
+  - title: "A controlled study on long context extension and generalization in llms"
+    authors: "Y. Lu, J. N. Yan, S. Yang, J. T. Chiu, S. Ren, F. Yuan, W. Zhao, Z. Wu, Alexander Rush"
+    pdf: "https://arxiv.org/abs/2409.12181"
+    conference: Preprint 2024
+  - title: "The mamba in the llama: Distilling and accelerating hybrid models"
+    authors: "J. Wang, D. Paliotta, A. May, Alexander Rush, T. Dao"
+    pdf: "https://arxiv.org/abs/2408.15237"
+    conference: NeurIPS 2024
+  - title: "Great Memory, Shallow Reasoning: Limits of NN-LMs"
+    authors: "S. Geng, W. Zhao, Alexander Rush"
+    pdf: "https://arxiv.org/abs/2408.11815"
+    conference: Preprint 2024
+  - title: "Predicting text preference via structured comparative reasoning"
+    authors: "J. N. Yan, T. Liu, J. Chiu, J. Shen, Z. Qin, Y. Yu, C. Lakshmanan, Y. Kurzion, Alexander Rush"
+    pdf: "https://aclanthology.org/2024.acl-long.839/"
+    conference: ACL 2024
+  - title: "I Could've Asked That: Reformulating Unanswerable Questions"
+    authors: "W. Zhao, G. Gao, C. Cardie, Alexander Rush"
+    pdf: "https://arxiv.org/abs/2407.17469"
+    conference: EMNLP 2024
+  - title: "ShadowLLM: Predictor-based Contextual Sparsity for Large Language Models"
+    authors: "Yash Akhauri, Ahmed F AbouElhamayed, Jordan Dotzel, Zhiru Zhang, Alexander M Rush, Safeen Huda, Mohamed S Abdelfattah"
+    pdf: "https://arxiv.org/abs/2406.16635"
+    conference: EMNLP 2024
+  - title: "Simple and Effective Masked Diffusion Language Models"
+    authors: "Subham Sekhar Sahoo, Marianne Arriola, Yair Schiff, Aaron Gokaslan, Edgar Marroquin, Justin T Chiu, Alexander Rush, Volodymyr Kuleshov"
+    pdf: "https://arxiv.org/abs/2406.07524"
+    conference: NeurIPS 2024
+  - title: "Entity disambiguation via fusion entity decoding"
+    authors: "Junxiong Wang, Ali Mousavi, Omar Attia, Ronak Pradeep, Saloni Potdar, Alexander M Rush, Umar Farooq Minhas, Yunyao Li"
+    pdf: "https://arxiv.org/abs/2404.01626"
+    conference: NAACL 2024
+  - title: "MambaByte: Token-free Selective State Space Model"
+    authors: "Junxiong Wang, Tushaar Gangavarapu, Jing Nathan Yan, Alexander M. Rush"
+    pdf: https://arxiv.org/abs/2401.13660
+    conference: COLM 2024
+  - title: "Zephyr: Direct Distillation of LM Alignment"
+    authors: "Lewis Tunstall, Edward Beeching, Nathan Lambert, Nazneen Rajani, Kashif Rasul, Younes Belkada, Shengyi Huang, Leandro von Werra, Clémentine Fourrier, Nathan Habib, Nathan Sarrazin, Omar Sanseviero, Alexander M. Rush, Thomas Wolf"
+    pdf: "https://arxiv.org/pdf/2310.16944.pdf"
+    conference: COLM 2024
+    image:
+  - title: "Guess and Sketch: Language Model Guided Transpilation"
+    authors: "Celine Lee, Abdulrahman Mahmoud, Michal Kurek, Simone Campanoni, David Brooks, Stephen Chong, Gu-Yeon Wei, Alexander M. Rush"
+    pdf: "https://arxiv.org/pdf/2309.14396.pdf"
+    conference: ICLR 2024
+    image:
+  - title: "Symbolic Planning and Code Generation for Grounded Dialogue"
+    authors: "Justin T. Chiu, Wenting Zhao, Derek Chen, Saujas Vaduguru, Alexander M. Rush, Daniel Fried"
+    pdf: "https://arxiv.org/pdf/2310.17140.pdf"
+    conference: EMNLP 2023
+    image:
+  - title: "Teal: Learning-Accelerated Optimization of WAN Traffic Engineering"
+    authors: "Zhiying Xu, Francis Y. Yan, Rachee Singh, Justin T. Chiu, Alexander M. Rush, Minlan Yu"
+    pdf: "https://arxiv.org/abs/2210.13763"
+    conference: "SIGCOMM 2023"
+    image:
+  - title: "Text Embeddings Reveal (Almost) As Much As Text"
+    authors: "John X. Morris, Volodymyr Kuleshov, Vitaly Shmatikov, Alexander M. Rush"
+    pdf: "https://arxiv.org/pdf/2310.06816.pdf"
+    conference: EMNLP 2023
+    image:
+  - title: "Tree Prompting: Efficient Task Adaptation without Fine-Tuning"
+    authors: "John X. Morris, Chandan Singh, Alexander M. Rush, Jianfeng Gao, Yuntian Deng"
+    pdf: "https://arxiv.org/pdf/2310.14034.pdf"
+    conference: EMNLP 2023
+    image:
+  - title: "HOP, UNION, GENERATE: Explainable Multi-hop Reasoning without Rationale Supervision"
+    authors: "Wenting Zhao, Justin T. Chiu, Claire Cardie, Alexander M. Rush"
+    pdf: "https://arxiv.org/pdf/2305.14237.pdf"
+    conference: EMNLP 2023
+    image:
+  - title: "Pretraining Without Attention"
+    authors: "Junxiong Wang, Jing Nathan Yan, Albert Gu, Alexander M. Rush"
+    pdf: "https://arxiv.org/pdf/2212.10544.pdf"
+    conference: EMNLP 2023 Findings
+    image: /images/bigs.png
+  - title: "Scaling Data-Constrained Language Models"
+    authors: "Niklas Muennighoff, Alexander M. Rush, Boaz Barak, Teven Le Scao, Aleksandra Piktus, Nouamane Tazi, Sampo Pyysalo, Thomas Wolf, Colin Raffel"
+    pdf: "https://arxiv.org/pdf/2305.16264.pdf"
+    conference: NeurIPS 2023 (Oral)
+    image:
+  - title: "OBELISC: An Open Web-Scale Filtered Dataset of Interleaved Image-Text Documents"
+    authors: "Hugo Laurençon, Lucile Saulnier, Léo Tronchon, Stas Bekman, Amanpreet Singh, Anton Lozhkov, Thomas Wang, Siddharth Karamcheti, Alexander M. Rush, Douwe Kiela, Matthieu Cord, Victor Sanh"
+    pdf: "https://arxiv.org/pdf/2306.16527.pdf"
+    conference: NeurIPS 2023 Dataset
+    image: ""
+  - title: "Abductive Commonsense Reasoning Exploiting Mutually Exclusive Explanations"
+    authors: "Wenting Zhao, Justin T. Chiu, Claire Cardie, Alexander M. Rush"
+    pdf: "https://arxiv.org/pdf/2305.14618.pdf"
+    conference: "ACL 2023"
+    image: ""
+  - title: "Markup-to-Image Diffusion Models with Scheduled Sampling"
+    authors: "Yuntian Deng, Noriyuki Kojima, Alexander M. Rush"
+    pdf: "https://arxiv.org/abs/2210.05147"
+    conference: "ICLR 2023"
+    image: ""
+  - title: "A 12nm 18.1TFLOPs/W Sparse Transformer Processor with Entropy-Based Early Exit, Mixed-Precision Predication and Fine-Grained Power Management"
+    authors: "Thierry Tambe, Jeff Zhang, Coleman Hooper, Tianyu Jia, Paul N. Whatmough, Joseph Zuckerman, Maico Cassel dos Santos, Erik Jens Loscalzo, Davide Giri, Kenneth L. Shepard, Luca P. Carloni, Alexander M. Rush, David Brooks, Gu-Yeon Wei"
+    pdf:
+    conference: "ISSCC 2023"
+    image: ""
+  - title: "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model"
+    authors: BigScience Workshop
+    pdf: https://arxiv.org/abs/2211.05100
+    conference: Arxiv Preprint
+  - title: "Named Tensor Notation"
+    authors: David Chiang, Alexander M. Rush, Boaz Barak
+    pdf: https://arxiv.org/pdf/2102.13196.pdf
+    image: /images/ntn.png
+    conference: TMLR 2022
+  - title: "Xatu: boosting existing DDoS detection systems using auxiliary signals"
+    authors: Zhiying Xu, Sivaramakrishnan Ramanathan, Alexander Rush, Jelena Mirkovic, Minlan Yu
+    pdf: https://dl.acm.org/doi/abs/10.1145/3555050.3569121
+    image: /images/xatu.png
+    conference: CoNEXT 2022
+  - title: "Unsupervised Text Deidentification"
+    authors: John X Morris, Justin T Chiu, Ramin Zabih, Alexander M Rush
+    pdf: https://arxiv.org/pdf/2210.11528.pdf
+    image: /images/deid.png
+    conference: EMNLP Findings 2022
+  - title: "Model Criticism for Long-Form Text Generation"
+    authors: Yuntian Deng, Volodymyr Kuleshov, Alexander M Rush
+    pdf: https://arxiv.org/pdf/2210.08444.pdf
+    image: /images/modcrit.png
+    conference: EMNLP 2022
+  - title: "Evaluate and Evaluation on the Hub: Better Best Practices for Data and Model Measurement"
+    authors: Leandro von Werra et al.
+    pdf: https://arxiv.org/abs/2210.01970
+    image: /images/evalhub.png
+    conference: EMNLP Demos 2022 (Best Demo)
+  - title: "Interactive and Visual Prompt Engineering for Ad-hoc Task Adaptation with Large Language Models"
+    authors: Hendik Strobelt et al.
+    pdf: https://ieeexplore.ieee.org/abstract/document/9908590
+    image:
+    conference: IEEE Trans on Visualization 2022
+  - title: "A 16-nm SoC for Noise-Robust Speech and NLP Edge AI Inference With Bayesian Sound Source Separation and Attention-Based DNNs"
+    authors: Thierry Tambe et al.
+    pdf: https://discovery.ucl.ac.uk/id/eprint/10150658/1/A_16-nm_SoC_for_Noise-Robust_Speech.pdf
+    image: /images/soundsource.png
+    conference: IEEE Solid-State Circuits 2022
+  - title: "Promptsource: An integrated development environment and repository for natural language prompts"
+    authors: Stephen Bach et al.
+    pdf: https://arxiv.org/abs/2202.01279
+    image: "https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png"
+    conference: ACL Demo 2022
+  - title: "End-to-end learning of multiple sequence alignments with differentiable Smith-Waterman"
+    authors: Samantha Petti, et al.
+    pdf: http://repository.cshl.edu/id/eprint/40409/1/2021.Petti.multiple_sequence_alignments.pdf
+    image: "https://pbs.twimg.com/media/FCfRXOJXEAITHZ0?format=jpg&name=large"
+    conference: Bioinformatics
+  - title: "Multitask prompted training enables zero-shot task generalization"
+    authors: Victor Sanh, et al.
+    pdf: https://arxiv.org/pdf/2110.08207
+    image: "https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png"
+    conference: ICLR 2022
+  - title: "Developmental Stage Classification of Embryos Using Two-Stream Neural Network with Linear-Chain Conditional Random Field"
+    authors: Stanislav Lukyanenko et al.
+    pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8526069/
+    image:
+    conference: MICCAI 2021
+  - title: "Rationales for sequential predictions"
+    authors: Keyon Vafa, Yuntian Deng, David Blei, Alexander Rush
+    pdf: https://arxiv.org/pdf/2109.06387
+    image: /images/seqrat.png
+    conference: EMNLP 2021
+  - title: "Low-Rank Constraints for Fast Inference in Structured Models"
+    authors: Justin Chiu, Yuntian Deng, and Alexander M. Rush
+    pdf: "https://proceedings.neurips.cc/paper/2021/file/16c0d78ef6a76b5c247113a4c9514059-Paper.pdf"
+    image:
+    conference: NeurIPS 2021
+  - title: "Conference demographics and footprint changed by virtual platforms"
+    authors: Matthe Skiles et al.
+    pdf: https://www.nature.com/articles/s41893-021-00823-2
+    image: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41893-021-00823-2/MediaObjects/41893_2021_823_Fig1_HTML.png?as=webp
+    conference: Nature Sustainability
+  - title: "Sequence-to-Lattice Models for Fast Translation"
+    authors: Yuntian Deng and Alexander M. Rush
+    pdf: https://aclanthology.org/2021.findings-emnlp.318.pdf
+    image: "https://github.com/harvardnlp/cascaded-generation/raw/master/cascaded-generation-fastest.gif"
+    conference: EMNLP Findings Short 2021
+  - title: "Datasets: A Community Library for Natural Language Processing"
+    authors: Quentin Lhoest et al
+    pdf: https://arxiv.org/pdf/2109.02846.pdf
+    image: "https://huggingface.co/docs/datasets/_images/datasets_logo.png"
+    conference: EMNLP Demos 2021 (Best Demo)
+  - title: "EdgeBERT: Sentence-Level Energy Optimizations for Latency-Aware Multi-Task NLP Inference"
+    authors: Thierry Tambe and Others
+    pdf: https://arxiv.org/pdf/2011.14203.pdf
+    image: /images/edgebert.png
+    conference: IEEE MICRO 2021
+  - title: "GenNI: Human-AI Collaboration for Data-Backed Text Generation"
+    authors: Hendrik Strobelt, Jambay Kinley, Robert Krueger, Johanna Beyer, Alexander M. Rush, Hanspeter Pfister
+    pdf:
+    image: /images/genni.png
+    conference: IEEE VIS 2021
+  - title: "Parameter-efficient transfer learning with diff pruning"
+    authors: Demi Guo, Alexander M. Rush, Yoon Kim
+    pdf: https://arxiv.org/pdf/2012.07463.pdf
+    image: /images/diffprune.png
+    conference: ACL 2021
+  - title: "How many data points is a prompt worth?"
+    authors: Teven Le Scao, Alexander M. Rush
+    pdf: https://aclanthology.org/2021.naacl-main.208.pdf
+    image: /images/prompt.png
+    conference: NAACL Short 2021 (Best Paper - Runner-Up)
+  - title: "Block pruning for faster transformers"
+    authors: François Lagunas, Ella Charlaix, Victor Sanh, Alexander M Rush
+    pdf: https://arxiv.org/pdf/2109.04838
+    image:
+    conference: ACL 2021
+  - title: "Low-Complexity Probing via Finding Subnetworks"
+    authors: Steven Cao, Victor Sanh, Alexander M. Rush
+    pdf: https://aclanthology.org/2021.naacl-main.74/
+    image: /images/probing.png
+    conference: NAACL Short 2021
+  - title: "Template Filling with Generative Transformers"
+    authors: Xinya Du, Alexander M. Rush, Claire Cardie
+    pdf: https://aclanthology.org/2021.naacl-main.70/
+    image:
+    conference: NAACL Short 2021
+  - title: "9.8 A 25mm2 SoC for IoT Devices with 18ms Noise-Robust Speech-to-Text Latency via Bayesian Speech Denoising and Attention-Based Sequence-to-Sequence DNN Speech Recognition in 16nm FinFET"
+    authors: Thierry Tambe, En-Yu Yang, Glenn G Ko, Yuji Chai, Coleman Hooper, Marco Donato, Paul N Whatmough, Alexander M Rush, David Brooks, Gu-Yeon Wei
+    pdf: https://ieeexplore.ieee.org/abstract/document/9366062
+    image:
+    conference: IEEE International Solid-State Circuits Conference 2021
+  - title: "Cascaded Text Generation with Markov Transformers"
+    authors: Yuntian Deng, Alexander M. Rush
+    pdf: https://arxiv.org/pdf/2006.01112
+    image: /images/cascade.png
+    conference: NeurIPS 2020
+  - title: "Latent Template Induction with Gumbel-CRFs"
+    authors: Yao Fu, Chuanqi Tan, Bin Bi, Mosha Chen, Yansong Feng, Alexander Rush
+    pdf: https://github.com/FranxYao/Gumbel-CRF
+    image: https://raw.githubusercontent.com/FranxYao/Gumbel-CRF/main/img/model_github.png
+    conference: NeurIPS 2020
+  - title: "Movement Pruning: Adaptive Sparsity by Fine-Tuning"
+    authors: Victor Sanh, Thomas Wolf, Alexander M. Rush
+    pdf: https://arxiv.org/pdf/2005.07683
+    image: /images/movement.png
+    conference: NeurIPS 2020
+  - title: "Scaling Hidden Markov Language Models"
+    authors: Justin T. Chiu, Alexander M. Rush
+    pdf: https://arxiv.org/abs/2011.04640
+    image: /images/hmm.png
+    conference: EMNLP 2020
+  - title: "Adversarial Semantic Collisions"
+    authors: Congzheng Song, Alexander M. Rush, Vitaly Shmatikov
+    pdf: https://www.cs.cornell.edu/~shmat/shmat_emnlp20.pdf
+    image: /images/shmat_emnlp20.png
+    conference: EMNLP 2020
+  - title: "Sequence-Level Mixed Sample Data Augmentation"
+    authors: Demi Guo, Yoon Kim, Alexander M. Rush
+    pdf: https://www.aclweb.org/anthology/2020.emnlp-main.447/
+    image:
+    conference: EMNLP 2020
+  - title: "AdaptivFloat: A Floating-point based Data Type for Resilient Deep Learning Inference"
+    authors: Thierry Tambe, En-Yu Yang, Zishen Wan, Yuntian Deng, Vijay Janapa Reddi, Alexander Rush, David Brooks, Gu-Yeon Wei
+    pdf: https://arxiv.org/pdf/1909.13271
+    image: /images/adapt.png
+    conference: DAC 2020 (Best Paper)
+  - title: "Transformers: State-of-the-art Natural Language Processing"
+    authors: Thomas Wolf et al
+    pdf: https://arxiv.org/pdf/1910.03771
+    image: /images/transformers.png
+    conference: EMNLP Demos 2020 (Best Demo)
+  - title: "Torch-Struct: Deep Structured Prediction Library"
+    authors: Alexander Rush
+    pdf: https://arxiv.org/pdf/2002.00876
+    image: https://github.com/harvardnlp/pytorch-struct/raw/master/download.png
+    conference: ACL Demos 2020 (Best Demo Honorable Mention)
+  - title: "What is Learned in Visually Grounded Neural Syntax Acquisition"
+    authors: Noriyuki Kojima, Hadar Averbuch-Elor, Alexander M. Rush, Yoav Artzi
+    pdf: https://arxiv.org/pdf/2005.01678
+    image: /images/learned.png
+    conference: ACL 2020  (Short)
+  - title: "Posterior Control of Blackbox Generation"
+    authors: Xiang Lisa Li, Alexander M. Rush
+    pdf: https://arxiv.org/pdf/2005.04560
+    image: /images/posterior.png
+    conference: ACL 2020
+  - title: "Automating Botnet Detection with Graph Neural Networks"
+    authors: Jiawei Zhou, Zhiying Xu, Alexander M. Rush, Minlan Yu
+    pdf: https://arxiv.org/pdf/2003.06344
+    image: /images/botnet.png
+    conference: AutoML for Networking and Systems Workshop
+  - title: "LAN -- A materials notation for 2D layered assemblies"
+    authors: Georgios A. Tritsaris, Yiqi Xie, Alexander M. Rush, Stephen Carr, Marios Mattheakis, Efthimios Kaxiras
+    pdf: https://arxiv.org/pdf/1910.03413
+    image: /images/lan.png
+    conference:
+  - title: "MASR: A Modular Accelerator for Sparse RNNs"
+    authors: Udit Gupta, Brandon Reagen, Lillian Pentecost, Marco Donato, Thierry Tambe, Alexander M. Rush, Gu-Yeon Wei, David Brooks
+    pdf:
+    image: /images/MASR.png
+    conference: PACT 2019
+  - title: "Commonsense Knowledge Mining from Pretrained Models"
+    authors: "Joe Davison, Joshua Feldman and Alexander Rush"
+    pdf:
+    conference: EMNLP 2019
+  - title: "Neural Linguistic Steganography"
+    authors: Zachary Ziegler, Yuntian Deng and Alexander Rush
+    pdf: https://arxiv.org/abs/1909.01496
+    conference: EMNLP 2019
+  - title: "Compound Probabilistic Context-Free Grammars for Grammar Induction"
+    authors: Yoon Kim,  Chris Dyer, Alexander M. Rush
+    pdf: https://www.aclweb.org/anthology/P19-1228/
+    code: https://github.com/harvardnlp/compound-pcfg
+    image: /images/Tree.png
+    conference: ACL 2019
 
-    - title: "Visual Interaction with Deep Learning Models through Collaborative Semantic Inference"
-      authors: Gehrmann S, Strobelt H, Krueger R, Pfister H, and Alexander M. Rush
-      pdf: https://arxiv.org/abs/1907.10739
-      code: https://vcg.seas.harvard.edu/publications/visual-interaction-with-deep-learning-models-through-collaborative-semantic-inference
-      image: https://vcg.seas.harvard.edu/content/3-publications/20191020-visual-interaction-with-deep-learning-models-through-collaborative-semantic-inference/csiteaser.png
-      conference: InfoVis 2019
+  - title: "Visual Interaction with Deep Learning Models through Collaborative Semantic Inference"
+    authors: Gehrmann S, Strobelt H, Krueger R, Pfister H, and Alexander M. Rush
+    pdf: https://arxiv.org/abs/1907.10739
+    code: https://vcg.seas.harvard.edu/publications/visual-interaction-with-deep-learning-models-through-collaborative-semantic-inference
+    image: https://vcg.seas.harvard.edu/content/3-publications/20191020-visual-interaction-with-deep-learning-models-through-collaborative-semantic-inference/csiteaser.png
+    conference: InfoVis 2019
 
-    - title: "Simple Unsupervised Summarization by Contextual Matching"
-      authors: Jiawei Zhou, Alexander M. Rush
-      pdf: https://www.aclweb.org/anthology/P19-1503
-      image: /images/Tree.png
-      conference: ACL 2019
-    - title: "GLTR: Statistical Detection and Visualization of Generated Text"
-      authors: Sebastian Gehrmann, Hendrik Strobelt, Alexander M Rush
-      pdf: https://arxiv.org/abs/1906.04043
-      code: http://gltr.io/dist/index.html
-      image: http://rush-nlp.com/images/gltr.png
-      conference: ACL Demo 2019 (Best Demo Honorable Mention)
+  - title: "Simple Unsupervised Summarization by Contextual Matching"
+    authors: Jiawei Zhou, Alexander M. Rush
+    pdf: https://www.aclweb.org/anthology/P19-1503
+    image: /images/Tree.png
+    conference: ACL 2019
+  - title: "GLTR: Statistical Detection and Visualization of Generated Text"
+    authors: Sebastian Gehrmann, Hendrik Strobelt, Alexander M Rush
+    pdf: https://arxiv.org/abs/1906.04043
+    code: http://gltr.io/dist/index.html
+    image: http://rush-nlp.com/images/gltr.png
+    conference: ACL Demo 2019 (Best Demo Honorable Mention)
 
-    - title: "Unsupervised Recurrent Neural Network Grammars"
-      authors: Yoon Kim, Alexander M. Rush, Lei Yu, Adhiguna Kuncoro, Chris Dyer, Gabor Melis
-      pdf: https://arxiv.org/pdf/1904.03746.pdf
-      code: https://github.com/harvardnlp/urnng
-      image: /images/urnng.png
-      conference: NAACL 2019
+  - title: "Unsupervised Recurrent Neural Network Grammars"
+    authors: Yoon Kim, Alexander M. Rush, Lei Yu, Adhiguna Kuncoro, Chris Dyer, Gabor Melis
+    pdf: https://arxiv.org/pdf/1904.03746.pdf
+    code: https://github.com/harvardnlp/urnng
+    image: /images/urnng.png
+    conference: NAACL 2019
 
-    - title: "Avoiding Latent Variable Collapse With Generative Skip Models"
-      authors: Adji B. Dieng, Yoon Kim, Alexander M. Rush, David M. Blei
-      conference: AISTATS 2019
-      pdf: https://arxiv.org/pdf/1807.04863.pdf
-      image: /images/skipvae.png
+  - title: "Avoiding Latent Variable Collapse With Generative Skip Models"
+    authors: Adji B. Dieng, Yoon Kim, Alexander M. Rush, David M. Blei
+    conference: AISTATS 2019
+    pdf: https://arxiv.org/pdf/1807.04863.pdf
+    image: /images/skipvae.png
 
-    - title: "Tensor Variable Elimination for Plated Factor Graphs"
-      authors: Fritz Obermeyer, Eli Bingham, Martin Jankowiak, Justin Chiu, Neeraj Pradhan, Alexander Rush, Noah Goodman
-      conference: ICML 2019
-      pdf: https://arxiv.org/pdf/1902.03210.pdf
-      code: https://github.com/justinchiu/sentclass
-      image: /images/tensorelimination.png
-    - title: "Latent Normalizing Flows for Discrete Sequences"
-      authors:  Zachary M. Ziegler, Alexander M. Rush
-      conference: ICML 2019
-      pdf: https://arxiv.org/pdf/1901.10548
-      code: https://github.com/harvardnlp/TextFlow
-      image: /images/textflow.png
-    - title: "Deep Latent-Variable Models for Natural Language"
-      authors: Yoon Kim, Sam Wiseman, Alexander M. Rush
-      conference: EMNLP 2018 (Tutorial)
-      pdf: https://github.com/harvardnlp/DeepLatentNLP/raw/master/tutorial_deep_latent.pdf
-      code: http://nlp.seas.harvard.edu/latent-nlp-tutorial.html
-      image: http://nlp.seas.harvard.edu/images/vae.png
+  - title: "Tensor Variable Elimination for Plated Factor Graphs"
+    authors: Fritz Obermeyer, Eli Bingham, Martin Jankowiak, Justin Chiu, Neeraj Pradhan, Alexander Rush, Noah Goodman
+    conference: ICML 2019
+    pdf: https://arxiv.org/pdf/1902.03210.pdf
+    code: https://github.com/justinchiu/sentclass
+    image: /images/tensorelimination.png
+  - title: "Latent Normalizing Flows for Discrete Sequences"
+    authors: Zachary M. Ziegler, Alexander M. Rush
+    conference: ICML 2019
+    pdf: https://arxiv.org/pdf/1901.10548
+    code: https://github.com/harvardnlp/TextFlow
+    image: /images/textflow.png
+  - title: "Deep Latent-Variable Models for Natural Language"
+    authors: Yoon Kim, Sam Wiseman, Alexander M. Rush
+    conference: EMNLP 2018 (Tutorial)
+    pdf: https://github.com/harvardnlp/DeepLatentNLP/raw/master/tutorial_deep_latent.pdf
+    code: http://nlp.seas.harvard.edu/latent-nlp-tutorial.html
+    image: http://nlp.seas.harvard.edu/images/vae.png
 
-    - title: "End-to-End Content and Plan Selection for Data-to-Text Generation"
-      authors: Sebastian Gehrmann, Falcon Z. Dai, Henry Elder, Alexander M. Rush
-      conference: INLG 2018
-      pdf: https://arxiv.org/pdf/1810.04700
-      code: https://github.com/sebastianGehrmann/diverse_ensembling
-      image: /images/diverse_ensembling.png
+  - title: "End-to-End Content and Plan Selection for Data-to-Text Generation"
+    authors: Sebastian Gehrmann, Falcon Z. Dai, Henry Elder, Alexander M. Rush
+    conference: INLG 2018
+    pdf: https://arxiv.org/pdf/1810.04700
+    code: https://github.com/sebastianGehrmann/diverse_ensembling
+    image: /images/diverse_ensembling.png
 
-    - title: "Latent Alignment and Variational Attention"
-      authors: Yuntian Deng*, Yoon Kim*, Justin Chiu, Demi Guo, Alexander M. Rush
-      conference: NIPS 2018
-      pdf : https://arxiv.org/pdf/1807.03756.pdf
-      code: https://github.com/harvardnlp/var-attn
-      image: /images/VariationalAttention.png
-    - title: "Learning Neural Templates for Text Generation"
-      authors: Sam Wiseman, Stuart M. Shieber, Alexander Rush
-      conference: EMNLP 2018
-      code: https://github.com/harvardnlp/neural-template-gen
-      pdf : https://arxiv.org/abs/1808.10122
-      image: /images/template.png
+  - title: "Latent Alignment and Variational Attention"
+    authors: Yuntian Deng*, Yoon Kim*, Justin Chiu, Demi Guo, Alexander M. Rush
+    conference: NIPS 2018
+    pdf: https://arxiv.org/pdf/1807.03756.pdf
+    code: https://github.com/harvardnlp/var-attn
+    image: /images/VariationalAttention.png
+  - title: "Learning Neural Templates for Text Generation"
+    authors: Sam Wiseman, Stuart M. Shieber, Alexander Rush
+    conference: EMNLP 2018
+    code: https://github.com/harvardnlp/neural-template-gen
+    pdf: https://arxiv.org/abs/1808.10122
+    image: /images/template.png
 
-    - title: "Bottom-Up Abstractive Summarization"
-      authors: Sebastian Gehrmann, Yuntian Deng, Alexander Rush
-      conference: EMNLP 2018
-      pdf : https://arxiv.org/abs/1808.10792
-      image: /images/bottomup.png
+  - title: "Bottom-Up Abstractive Summarization"
+    authors: Sebastian Gehrmann, Yuntian Deng, Alexander Rush
+    conference: EMNLP 2018
+    pdf: https://arxiv.org/abs/1808.10792
+    image: /images/bottomup.png
 
-    - title: "Training for Diversity in Image Paragraph Captioning"
-      authors: Luke Melas-Kyriazi, George Han, Alexander Rush
-      conference: EMNLP 2018 (Short)
-      pdf: https://www.aclweb.org/anthology/D18-1084
-      image: /images/paracap.png
-    - title: "Entity Tracking Improves Cloze-style Reading Comprehension"
-      authors: Luong Hoang, Sam Wiseman, Alexander Rush
-      conference: EMNLP 2018 (Short)
-      pdf: https://www.aclweb.org/anthology/D18-1130
-      image: /images/lambada.png
+  - title: "Training for Diversity in Image Paragraph Captioning"
+    authors: Luke Melas-Kyriazi, George Han, Alexander Rush
+    conference: EMNLP 2018 (Short)
+    pdf: https://www.aclweb.org/anthology/D18-1084
+    image: /images/paracap.png
+  - title: "Entity Tracking Improves Cloze-style Reading Comprehension"
+    authors: Luong Hoang, Sam Wiseman, Alexander Rush
+    conference: EMNLP 2018 (Short)
+    pdf: https://www.aclweb.org/anthology/D18-1130
+    image: /images/lambada.png
 
-    - title: "Seq2Seq-Vis: A Visual Debugging Tool for Sequence-to-Sequence Models "
-      authors: Hendrik Strobelt, Sebastian Gehrmann, Michael Behrisch, Adam Perer, Hanspeter Pfister, Alexander M. Rush
-      conference: VAST 2018, EMNLP-BlackBox 2018 (Best Paper - Honorable Mention)
-      pdf : https://arxiv.org/abs/1804.09299
-      code : https://github.com/HendrikStrobelt/Seq2Seq-Vis
-      image: /images/s2s_dates_01.png
-    - title: "The Annotated Transformer"
-      authors: Alexander M. Rush
-      conference: ACL NLP-OSS 2018
-      pdf : http://aclweb.org/anthology/W18-2509
-      code: https://github.com/harvardnlp/annotated-transformer/blob/master/The%20Annotated%20Transformer.ipynb
-      image: /images/the-annotated-transformer_14_0.png
-    - title: "OpenNMT System Description for WNMT 2018: 800 words/sec on a single-core CPU"
-      authors: Jean Senellart, Dakun Zhang, Bo Wang, Guillaume Klein, J.P. Ramatchandirin, Josep Crego, Alexander M. Rush
-      conference: WNMT 2018  (First-Place CPU Speed/Memory)
-      pdf : http://aclweb.org/anthology/W18-2715
-      image: /images/WNMT18_OpenNMT.png
-    - title: "Semi-Amortized Variational Autoencoders"
-      authors:  Yoon Kim, Sam Wiseman, Andrew C. Miller, David Sontag, Alexander M. Rush
-      conference: ICML 2018
-      pdf : https://arxiv.org/abs/1802.02550
-      code : https://github.com/harvardnlp/sa-vae
-      image: /images/savae.png
-    - title: "Compressing Deep Neural Networks with Probabilistic Data Structures"
-      authors: Brandon Reagen, Udit Gupta, Robert Adolf, Michael M. Mitzenmacher, Alexander M. Rush, Gu-Yeon Wei, David Brooks
-      conference: ICML 2018, SysML 2018
-      pdf : https://www.sysml.cc/doc/68.pdf
-      image: /images/bloomier.png
-    - title: "Adapting Sequence Models for Sentence Correction"
-      authors: Allen Schmaltz, Yoon Kim, Alexander M. Rush, Stuart M. Shieber
-      conference: EMNLP 2017
-      pdf : https://arxiv.org/abs/1707.09067
-      image: /images/aesw2016.png
-      slides:
-    - title: "Challenges in Data-to-Document Generation"
-      authors: Sam Wiseman, Stuart M Shieber Alexander M. Rush
-      conference: EMNLP 2017
-      pdf : https://arxiv.org/abs/1707.08052
-      code : http://lstm.seas.harvard.edu/docgen
-      image: /images/docgen.png
-      slides: /slides/nmt17.pdf
-    - title: "Adversarially Regularized Autoencoders"
-      authors: Junbo Zhao, Yoon Kim, Kelly Zhang, Alexander M. Rush, Yann LeCun
-      conference: ICML 2018, NIPS 2017 Workshop
-      pdf : https://arxiv.org/abs/1706.04223
-      code : https://github.com/jakezhaojb/ARAE
-      image: /images/arae.png
-    - title: "OpenNMT: Open-Source Toolkit for Neural Machine Translation"
-      authors: Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, Alexander M. Rush
-      conference: ACL Demo 2017 (Best Demo Runner-up)
-      pdf : https://arxiv.org/abs/1701.02810
-      image: /images/overview.png
-      slides:
-    - title: "Dilated Convolutions for Modeling Long-Distance Genomic Dependencies"
-      authors: Ankit Gupta, Alexander M. Rush
-      conference: ICML CompBio 2017 (Best Poster)
-      pdf : https://arxiv.org/abs/1710.01278
-      image: /images/ankit.png
+  - title: "Seq2Seq-Vis: A Visual Debugging Tool for Sequence-to-Sequence Models "
+    authors: Hendrik Strobelt, Sebastian Gehrmann, Michael Behrisch, Adam Perer, Hanspeter Pfister, Alexander M. Rush
+    conference: VAST 2018, EMNLP-BlackBox 2018 (Best Paper - Honorable Mention)
+    pdf: https://arxiv.org/abs/1804.09299
+    code: https://github.com/HendrikStrobelt/Seq2Seq-Vis
+    image: /images/s2s_dates_01.png
+  - title: "The Annotated Transformer"
+    authors: Alexander M. Rush
+    conference: ACL NLP-OSS 2018
+    pdf: http://aclweb.org/anthology/W18-2509
+    code: https://github.com/harvardnlp/annotated-transformer/blob/master/The%20Annotated%20Transformer.ipynb
+    image: /images/the-annotated-transformer_14_0.png
+  - title: "OpenNMT System Description for WNMT 2018: 800 words/sec on a single-core CPU"
+    authors: Jean Senellart, Dakun Zhang, Bo Wang, Guillaume Klein, J.P. Ramatchandirin, Josep Crego, Alexander M. Rush
+    conference: WNMT 2018  (First-Place CPU Speed/Memory)
+    pdf: http://aclweb.org/anthology/W18-2715
+    image: /images/WNMT18_OpenNMT.png
+  - title: "Semi-Amortized Variational Autoencoders"
+    authors: Yoon Kim, Sam Wiseman, Andrew C. Miller, David Sontag, Alexander M. Rush
+    conference: ICML 2018
+    pdf: https://arxiv.org/abs/1802.02550
+    code: https://github.com/harvardnlp/sa-vae
+    image: /images/savae.png
+  - title: "Compressing Deep Neural Networks with Probabilistic Data Structures"
+    authors: Brandon Reagen, Udit Gupta, Robert Adolf, Michael M. Mitzenmacher, Alexander M. Rush, Gu-Yeon Wei, David Brooks
+    conference: ICML 2018, SysML 2018
+    pdf: https://www.sysml.cc/doc/68.pdf
+    image: /images/bloomier.png
+  - title: "Adapting Sequence Models for Sentence Correction"
+    authors: Allen Schmaltz, Yoon Kim, Alexander M. Rush, Stuart M. Shieber
+    conference: EMNLP 2017
+    pdf: https://arxiv.org/abs/1707.09067
+    image: /images/aesw2016.png
+    slides:
+  - title: "Challenges in Data-to-Document Generation"
+    authors: Sam Wiseman, Stuart M Shieber Alexander M. Rush
+    conference: EMNLP 2017
+    pdf: https://arxiv.org/abs/1707.08052
+    code: http://lstm.seas.harvard.edu/docgen
+    image: /images/docgen.png
+    slides: /slides/nmt17.pdf
+  - title: "Adversarially Regularized Autoencoders"
+    authors: Junbo Zhao, Yoon Kim, Kelly Zhang, Alexander M. Rush, Yann LeCun
+    conference: ICML 2018, NIPS 2017 Workshop
+    pdf: https://arxiv.org/abs/1706.04223
+    code: https://github.com/jakezhaojb/ARAE
+    image: /images/arae.png
+  - title: "OpenNMT: Open-Source Toolkit for Neural Machine Translation"
+    authors: Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, Alexander M. Rush
+    conference: ACL Demo 2017 (Best Demo Runner-up)
+    pdf: https://arxiv.org/abs/1701.02810
+    image: /images/overview.png
+    slides:
+  - title: "Dilated Convolutions for Modeling Long-Distance Genomic Dependencies"
+    authors: Ankit Gupta, Alexander M. Rush
+    conference: ICML CompBio 2017 (Best Poster)
+    pdf: https://arxiv.org/abs/1710.01278
+    image: /images/ankit.png
 
-    - title: "Image-to-Markup Generation with Coarse-to-Fine Attention"
-      authors: Yuntian Deng, Anssi Kanervisto, Jeffrey Ling, and Alexander M. Rush
-      conference: ICML 2017
-      pdf : http://lstm.seas.harvard.edu/latex/
-      code : http://lstm.seas.harvard.edu/latex/
-      image: https://camo.githubusercontent.com/5a6350632dd43b69fff7f41928f27b8c8eb9a7d9/687474703a2f2f6c73746d2e736561732e686172766172642e6564752f6c617465782f6d61746865782e706e67
-      slides: /slides/icml17.pdf
+  - title: "Image-to-Markup Generation with Coarse-to-Fine Attention"
+    authors: Yuntian Deng, Anssi Kanervisto, Jeffrey Ling, and Alexander M. Rush
+    conference: ICML 2017
+    pdf: http://lstm.seas.harvard.edu/latex/
+    code: http://lstm.seas.harvard.edu/latex/
+    image: https://camo.githubusercontent.com/5a6350632dd43b69fff7f41928f27b8c8eb9a7d9/687474703a2f2f6c73746d2e736561732e686172766172642e6564752f6c617465782f6d61746865782e706e67
+    slides: /slides/icml17.pdf
 
-    - title: "LSTMVis: A Tool for Visual Analysis of Hidden State Dynamics in Recurrent Neural Networks"
-      authors: Hendrik Strobelt, Sebastian Gehrmann, Hanspeter Pfister, and Alexander M. Rush
-      conference: InfoVis 2017
-      pdf : http://lstm.seas.harvard.edu/
-      code : http://lstm.seas.harvard.edu/
-      image: /images/small_teaser.png
+  - title: "LSTMVis: A Tool for Visual Analysis of Hidden State Dynamics in Recurrent Neural Networks"
+    authors: Hendrik Strobelt, Sebastian Gehrmann, Hanspeter Pfister, and Alexander M. Rush
+    conference: InfoVis 2017
+    pdf: http://lstm.seas.harvard.edu/
+    code: http://lstm.seas.harvard.edu/
+    image: /images/small_teaser.png
 
-    - title: "Structured Attention Networks"
-      authors: Yoon Kim, Carl Denton, Luong Hoang, and Alexander M. Rush
-      conference: ICLR 2017
-      pdf : https://arxiv.org/abs/1702.00887
-      code : http://github.com/harvardnlp/struct-attn
-      image: /images/struct.jpg
-      slides: /slides/iclr17.pdf
+  - title: "Structured Attention Networks"
+    authors: Yoon Kim, Carl Denton, Luong Hoang, and Alexander M. Rush
+    conference: ICLR 2017
+    pdf: https://arxiv.org/abs/1702.00887
+    code: http://github.com/harvardnlp/struct-attn
+    image: /images/struct.jpg
+    slides: /slides/iclr17.pdf
 
-    - title: "Lie-Access Neural Turing Machines"
-      authors: Greg Yang and Alexander M. Rush
-      conference: ICLR 2017
-      pdf : http://lstm.seas.harvard.edu/lantm/
-      code : http://lstm.seas.harvard.edu/lantm/
-      image: /images/lantm.png
-      slides:
+  - title: "Lie-Access Neural Turing Machines"
+    authors: Greg Yang and Alexander M. Rush
+    conference: ICLR 2017
+    pdf: http://lstm.seas.harvard.edu/lantm/
+    code: http://lstm.seas.harvard.edu/lantm/
+    image: /images/lantm.png
+    slides:
 
-    - title: Sequence-Level Knowledge Distillation
-      authors: Yoon Kim and Alexander M. Rush
-      conference: EMNLP 2016
-      pdf : http://arxiv.org/pdf/1606.07947v1.pdf
-      image: /images/segknow.png
-      slides : /slides/emnlp16_seqkd.pdf
-      code: https://github.com/harvardnlp/seq2seq-attn
+  - title: Sequence-Level Knowledge Distillation
+    authors: Yoon Kim and Alexander M. Rush
+    conference: EMNLP 2016
+    pdf: http://arxiv.org/pdf/1606.07947v1.pdf
+    image: /images/segknow.png
+    slides: /slides/emnlp16_seqkd.pdf
+    code: https://github.com/harvardnlp/seq2seq-attn
 
-    - title: Sequence-to-Sequence Learning as Beam-Search Optimization
-      authors: Sam Wiseman and Alexander M. Rush
-      conference: EMNLP 2016 (Best Paper Runner-Up)
-      pdf : http://arxiv.org/pdf/1606.02960.pdf
-      image: /images/seqseq.png
-      slides : /slides/emnlp16_bso.pdf
+  - title: Sequence-to-Sequence Learning as Beam-Search Optimization
+    authors: Sam Wiseman and Alexander M. Rush
+    conference: EMNLP 2016 (Best Paper Runner-Up)
+    pdf: http://arxiv.org/pdf/1606.02960.pdf
+    image: /images/seqseq.png
+    slides: /slides/emnlp16_bso.pdf
 
-    - title:  An Embedding Model for Predicting Roll-Call Votes
-      authors: Peter Kraft, Hirsh Jain, and Alexander M. Rush
-      conference: Proceedings of EMNLP 2016
-      image: /images/poliemb.png
-      pdf: https://www.aclweb.org/anthology/D/D16/D16-1221.pdf
-      slides : /slides/emnlp16_poli.pdf
+  - title: An Embedding Model for Predicting Roll-Call Votes
+    authors: Peter Kraft, Hirsh Jain, and Alexander M. Rush
+    conference: Proceedings of EMNLP 2016
+    image: /images/poliemb.png
+    pdf: https://www.aclweb.org/anthology/D/D16/D16-1221.pdf
+    slides: /slides/emnlp16_poli.pdf
 
-    - title: Word Ordering Without Syntax
-      authors: Allen Schmaltz, Alexander M. Rush, and Stuart M. Shieber
-      conference: EMNLP 2016
-      pdf : https://arxiv.org/abs/1604.08633
-      image: /images/wordorder.png
-      slides : /slides/emnlp16_order.pdf
-      code: https://github.com/allenschmaltz/word_ordering/
+  - title: Word Ordering Without Syntax
+    authors: Allen Schmaltz, Alexander M. Rush, and Stuart M. Shieber
+    conference: EMNLP 2016
+    pdf: https://arxiv.org/abs/1604.08633
+    image: /images/wordorder.png
+    slides: /slides/emnlp16_order.pdf
+    code: https://github.com/allenschmaltz/word_ordering/
 
-    - title: Sentence-Level Grammatical Error Identification as Sequence-to-Sequence Correction
-      authors: Allen Schmaltz, Yoon Kim, Alexander M. Rush, and Stuart M. Shieber
-      conference: Workshop Submission for AESW 2016 (Top Performing System)
-      pdf : /papers/aesw2016.pdf
-      image: /images/aesw2016.png
-      slides: /slides/naacl16_grammar.pdf
+  - title: Sentence-Level Grammatical Error Identification as Sequence-to-Sequence Correction
+    authors: Allen Schmaltz, Yoon Kim, Alexander M. Rush, and Stuart M. Shieber
+    conference: Workshop Submission for AESW 2016 (Top Performing System)
+    pdf: /papers/aesw2016.pdf
+    image: /images/aesw2016.png
+    slides: /slides/naacl16_grammar.pdf
 
-    - title: Learning Global Features for Coreference Resolution
-      authors : Sam Wiseman, Alexander M. Rush, and Stuart M. Shieber
-      conference :  NAACL 2016
-      code : https://github.com/swiseman/nn_coref
-      pdf : /papers/corefmain.pdf
-      image : /images/cluster_viz.png
+  - title: Learning Global Features for Coreference Resolution
+    authors: Sam Wiseman, Alexander M. Rush, and Stuart M. Shieber
+    conference: NAACL 2016
+    code: https://github.com/swiseman/nn_coref
+    pdf: /papers/corefmain.pdf
+    image: /images/cluster_viz.png
 
-    - title: Abstractive Sentence Summarization with Attentive Recurrent Neural Networks
-      authors : Sumit Chopra, Michael Auli, and Alexander M. Rush
-      conference :  NAACL 2016
-      code : https://github.com/facebook/NAMAS
-      pdf : /papers/naacl16_summary.pdf
-      image : /images/summary2.png
+  - title: Abstractive Sentence Summarization with Attentive Recurrent Neural Networks
+    authors: Sumit Chopra, Michael Auli, and Alexander M. Rush
+    conference: NAACL 2016
+    code: https://github.com/facebook/NAMAS
+    pdf: /papers/naacl16_summary.pdf
+    image: /images/summary2.png
 
-    - title: Character-Aware Neural Language Models
-      authors : Yoon Kim, Yacine Jernite, David Sontag, and Alexander M. Rush
-      conference :  AAAI 2016
-      code : https://github.com/yoonkim/lstm-char-cnn
-      pdf : https://arxiv.org/pdf/1508.06615v4
-      slides : /slides/aaai16.pdf
-      image : /images/charrnn.png
+  - title: Character-Aware Neural Language Models
+    authors: Yoon Kim, Yacine Jernite, David Sontag, and Alexander M. Rush
+    conference: AAAI 2016
+    code: https://github.com/yoonkim/lstm-char-cnn
+    pdf: https://arxiv.org/pdf/1508.06615v4
+    slides: /slides/aaai16.pdf
+    image: /images/charrnn.png
 
-    - title: A Neural Attention Model for Abstractive Sentence Summarization
-      authors : Alexander M. Rush, Sumit Chopra, and Jason Weston
-      conference :  EMNLP 2015.
-      pdf : http://arxiv.org/pdf/1509.00685.pdf
-      code : https://github.com/facebook/NAMAS
-      slides : /slides/emnlp15.pdf
-      image : /images/summary.png
+  - title: A Neural Attention Model for Abstractive Sentence Summarization
+    authors: Alexander M. Rush, Sumit Chopra, and Jason Weston
+    conference: EMNLP 2015.
+    pdf: http://arxiv.org/pdf/1509.00685.pdf
+    code: https://github.com/facebook/NAMAS
+    slides: /slides/emnlp15.pdf
+    image: /images/summary.png
 
-    - title: Towards AI-Complete Question Answering A Set of Prerequisite Toy Tasks
-      authors: Jason Weston, Antoine Bordes, Sumit Chopra, Tomas Mikolov, and Alexander M. Rush
-      pdf : http://arxiv.org/pdf/1502.05698.pdf
-      conference: ArXiv Preprint
-      image : /images/babi.png
+  - title: Towards AI-Complete Question Answering A Set of Prerequisite Toy Tasks
+    authors: Jason Weston, Antoine Bordes, Sumit Chopra, Tomas Mikolov, and Alexander M. Rush
+    pdf: http://arxiv.org/pdf/1502.05698.pdf
+    conference: ArXiv Preprint
+    image: /images/babi.png
 
-    - title: Learning Anaphoricity and Antecedent Ranking Features for Coreference Resolution
-      authors : Sam Wiseman, Alexander M. Rush, Jason Weston, and Stuart M. Shieber
-      conference : ACL 2015.
-      pdf : http://people.seas.harvard.edu/~srush/acl15.pdf
-      code : https://github.com/swiseman/nn_coref
-      slides : /slides/acl15_pres.pdf
-      image : /images/acl15.png
+  - title: Learning Anaphoricity and Antecedent Ranking Features for Coreference Resolution
+    authors: Sam Wiseman, Alexander M. Rush, Jason Weston, and Stuart M. Shieber
+    conference: ACL 2015.
+    pdf: http://people.seas.harvard.edu/~srush/acl15.pdf
+    code: https://github.com/swiseman/nn_coref
+    slides: /slides/acl15_pres.pdf
+    image: /images/acl15.png
 
-    - title: A Fast Variational Approach for Learning Markov Random Field Language Models
-      authors: Yacine Jernite, Alexander M. Rush, and David Sontag
-      conference :  ICML 2015.
-      code : https://github.com/srush/MRF-LM/
-      slides : http://people.seas.harvard.edu/~srush/ICMLpresentationFinalNoAnimation.pdf
-      pdf : http://people.seas.harvard.edu/~srush/icml15.pdf
-      image : /images/icml15.png
+  - title: A Fast Variational Approach for Learning Markov Random Field Language Models
+    authors: Yacine Jernite, Alexander M. Rush, and David Sontag
+    conference: ICML 2015.
+    code: https://github.com/srush/MRF-LM/
+    slides: http://people.seas.harvard.edu/~srush/ICMLpresentationFinalNoAnimation.pdf
+    pdf: http://people.seas.harvard.edu/~srush/icml15.pdf
+    image: /images/icml15.png
 
-    - title: Transforming Dependencies into Phrase Structures
-      authors: Lingpeng Kong, Alexander M. Rush, and Noah A. Smith
-      conference:  NAACL 2015.
-      slides: http://people.seas.harvard.edu/~srush/naacl_poster.pdf
-      pdf: http://people.seas.harvard.edu/~srush/naacl15.pdf
-      code :  https://github.com/ikekonglp/PAD
-      image : /images/naacl14.png
+  - title: Transforming Dependencies into Phrase Structures
+    authors: Lingpeng Kong, Alexander M. Rush, and Noah A. Smith
+    conference: NAACL 2015.
+    slides: http://people.seas.harvard.edu/~srush/naacl_poster.pdf
+    pdf: http://people.seas.harvard.edu/~srush/naacl15.pdf
+    code: https://github.com/ikekonglp/PAD
+    image: /images/naacl14.png
