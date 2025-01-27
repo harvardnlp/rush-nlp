@@ -1,191 +1,193 @@
 code:
-    - link: https://github.com/srush/llama2-rs
-      title: Llama2 Rust 
-      authors: Alexander Rush
-      abstract: llama2 in rust
-      image: https://user-images.githubusercontent.com/35882/257109443-dac9a285-b141-409f-bb46-c81a28516cd1.png
-    - link: https://github.com/srush/LLM-Training-Puzzles
-      title: LLM Training Puzzles 
-      authors: Alexander Rush
-      abstract: puzzles for learning about distributed training
-      image: https://user-images.githubusercontent.com/35882/249901903-6d16fc9e-3d14-4bd0-b7c7-d056e49854ac.png
-    - link: https://srush.github.io/raspy/
-      title: Thinking Like Transformers 
-      authors: Alexander Rush, Gail Weiss
-      abstract: learn to think like a transformers
-      image: https://user-images.githubusercontent.com/35882/208687068-66d07246-c9ac-45ea-8638-5357ccba178e.png
-    - link: https://github.com/srush/gpu-puzzles
-      title: GPU-Puzzles 
-      authors: Alexander Rush
-      abstract: puzzles for learning gpu
-      image: https://raw.githubusercontent.com/srush/GPU-Puzzles/main/cuda.png
-    - link: https://github.com/srush/annotated-s4
-      title: Annotated S4
-      authors: Alexander Rush, Sidd Karamcheti 
-      abstract: s4 implementation
-      image: https://github.com/srush/annotated-s4/raw/main/images/quickdraw/im1.png
-    - link: https://github.com/bigscience-workshop/promptsource
-      title: PromptSource
-      authors: Stephen Bach, Victor Sanh, et al. 
-      abstract: prompting ide
-      image: https://github.com/srush/annotated-s4/raw/main/images/quickdraw/im1.png
-    - link: https://github.com/huggingface/datasets
-      title: Datasets
-      authors: Quentin Lhoest et al. 
-      abstract: datasets 
-      image: https://huggingface.co/docs/datasets/_images/datasets_logo.png
-    - link: https://github.com/huggingface/transformers
-      title: Transformers
-      authors: Thomas Wolf et al. 
-      abstract: transformers 
-      image: /images/transformers.png
-    - link: https://github.com/harvardnlp/pytorch-struct
-      title: Torch Struct
-      authors: Alexander M. Rush
-      abstract: structured prediction in pytorch
-      image: https://github.com/harvardnlp/pytorch-struct/raw/master/download.png
-    - link: http://steganography.live
-      title: SteganographyLive
-      authors: Zachary Ziegler, Yuntian Deng and Alexander Rush
-      abstract: neural stegonagraphy
-      image: https://steganography.live/static/61369-200_orange.png
- 
-    - link: https://github.com/harvardnlp/urnng
-      title: Unsupervised Recurrent Neural Network Grammars
-      authors: Yoon Kim, Alexander M. Rush, Lei Yu, Adhiguna Kuncoro, Chris Dyer, Gábor Melis
-      abstract: unsupervised learning of recurrent neural network grammars
-      image: /images/urnng.png
-    - link: https://github.com/harvardnlp/neural-template-gen
-      title: Learning Neural Templates for Text Generation
-      authors: Sam Wiseman, Stuart M. Shieber, Alexander M. Rush
-      abstract: neural templates for text generation
-      image: /images/template.png
-    - link: http://nlp.seas.harvard.edu/NamedTensor
-      title: Tensor Considered Harmful
-      abstract: extend PyTorch tensor with named dimensions
-      image: /images/namedtensor.png
-      authors:  Alexander M. Rush
+  - link: https://github.com/srush/Triton-Puzzles
+    title: Triton Training Puzzles
+    authors: Alexander Rush
+    abstract: puzzles for learning about efficient coding
+    image: https://user-images.githubusercontent.com/35882/249901903-6d16fc9e-3d14-4bd0-b7c7-d056e49854ac.png
+  - link: https://github.com/srush/llama2.rs
+    title: Llama2 Rust
+    authors: Alexander Rush
+    abstract: llama2 in rust
+    image: https://user-images.githubusercontent.com/35882/257109443-dac9a285-b141-409f-bb46-c81a28516cd1.png
+  - link: https://github.com/srush/LLM-Training-Puzzles
+    title: LLM Training Puzzles
+    authors: Alexander Rush
+    abstract: puzzles for learning about distributed training
+    image: https://user-images.githubusercontent.com/35882/249901903-6d16fc9e-3d14-4bd0-b7c7-d056e49854ac.png
+  - link: https://srush.github.io/raspy/
+    title: Thinking Like Transformers
+    authors: Alexander Rush, Gail Weiss
+    abstract: learn to think like a transformers
+    image: https://user-images.githubusercontent.com/35882/208687068-66d07246-c9ac-45ea-8638-5357ccba178e.png
+  - link: https://github.com/srush/gpu-puzzles
+    title: GPU-Puzzles
+    authors: Alexander Rush
+    abstract: puzzles for learning gpu
+    image: https://raw.githubusercontent.com/srush/GPU-Puzzles/main/cuda.png
+  - link: https://github.com/srush/annotated-s4
+    title: Annotated S4
+    authors: Alexander Rush, Sidd Karamcheti
+    abstract: s4 implementation
+    image: https://github.com/srush/annotated-s4/raw/main/images/quickdraw/im1.png
+  - link: https://github.com/bigscience-workshop/promptsource
+    title: PromptSource
+    authors: Stephen Bach, Victor Sanh, et al.
+    abstract: prompting ide
+    image: https://github.com/srush/annotated-s4/raw/main/images/quickdraw/im1.png
+  - link: https://github.com/huggingface/datasets
+    title: Datasets
+    authors: Quentin Lhoest et al.
+    abstract: datasets
+    image: https://huggingface.co/docs/datasets/_images/datasets_logo.png
+  - link: https://github.com/huggingface/transformers
+    title: Transformers
+    authors: Thomas Wolf et al.
+    abstract: transformers
+    image: /images/transformers.png
+  - link: https://github.com/harvardnlp/pytorch-struct
+    title: Torch Struct
+    authors: Alexander M. Rush
+    abstract: structured prediction in pytorch
+    image: https://github.com/harvardnlp/pytorch-struct/raw/master/download.png
+  - link: http://steganography.live
+    title: SteganographyLive
+    authors: Zachary Ziegler, Yuntian Deng and Alexander Rush
+    abstract: neural stegonagraphy
+    image: https://steganography.live/static/61369-200_orange.png
 
-    - link: http://gltr.io/dist/index.html
-      title: Giant Language model Test Room
-      abstract: detect whether a text could be real or fake
-      image: /images/gltr.png
-      authors:  Hendrik Strobelt, Sebastian Gehrmann, Alexander M. Rush
-    - link: https://github.com/justinchiu/sentclass
-      title: Tensor Variable Elimination for Plated Factor Graphs
-      abstract: efficient tensor algebrain graphs with plates of variables
-      image: /images/tensorelimination.png
-      authors: Fritz Obermeyer, Eli Bingham, Martin Jankowiak, Justin Chiu, Neeraj Pradhan, Alexander M. Rush, Noah Goodman
-      
-    - link: https://github.com/harvardnlp/TextFlow
-      title: Latent Normalizing Flows for Discrete Sequences
-      abstract: normalizing flow for text generation with latent variables
-      image: /images/textflow.png
-      authors: Zachary M. Ziegler, Alexander M. Rush
-     
-    - link: https://github.com/harvardnlp/DeepLatentNLP/
-      title: Deep Latent-Variable Models for Natural Language
-      abstract: Inference in deep latent variable models.
-      image: http://nlp.seas.harvard.edu/images/vae.png
-      authors: Yoon Kim, Sam Wiseman, Alexander M. Rush
-    - link: https://github.com/sebastianGehrmann/diverse_ensembling
-      title: End-to-End Content and Plan Selection for Data-to-Text Generation
-      authors: Sebastian Gehrmann, Falcon Z. Dai, Henry Elder, Alexander M. Rush
-      abstract: a training method based on diverse ensembling
-      image: /images/diverse_ensembling.png
-    - link: https://github.com/harvardnlp/var-attn
-      title: Variational Attention
-      abstract: fast training for latent var. attention (e.g. hard attention) with accuracy like soft attention
-      image: /images/VariationalAttention.png
-      authors: Yuntian Deng*, Yoon Kim*, Justin Chiu, Demi Guo, Alexander M. Rush
+  - link: https://github.com/harvardnlp/urnng
+    title: Unsupervised Recurrent Neural Network Grammars
+    authors: Yoon Kim, Alexander M. Rush, Lei Yu, Adhiguna Kuncoro, Chris Dyer, Gábor Melis
+    abstract: unsupervised learning of recurrent neural network grammars
+    image: /images/urnng.png
+  - link: https://github.com/harvardnlp/neural-template-gen
+    title: Learning Neural Templates for Text Generation
+    authors: Sam Wiseman, Stuart M. Shieber, Alexander M. Rush
+    abstract: neural templates for text generation
+    image: /images/template.png
+  - link: http://nlp.seas.harvard.edu/NamedTensor
+    title: Tensor Considered Harmful
+    abstract: extend PyTorch tensor with named dimensions
+    image: /images/namedtensor.png
+    authors: Alexander M. Rush
 
-    - link: http://seq2seq-vis.io/
-      title: Seq2Seq Vis
-      abstract: Interaction with seq2seq translation dynamics.
-      image: /images/s2s_dates_01.png
-      authors: Hendrik Strobelt and Sebastian Gehrmann
+  - link: http://gltr.io/dist/index.html
+    title: Giant Language model Test Room
+    abstract: detect whether a text could be real or fake
+    image: /images/gltr.png
+    authors: Hendrik Strobelt, Sebastian Gehrmann, Alexander M. Rush
+  - link: https://github.com/justinchiu/sentclass
+    title: Tensor Variable Elimination for Plated Factor Graphs
+    abstract: efficient tensor algebrain graphs with plates of variables
+    image: /images/tensorelimination.png
+    authors: Fritz Obermeyer, Eli Bingham, Martin Jankowiak, Justin Chiu, Neeraj Pradhan, Alexander M. Rush, Noah Goodman
 
-    - link: http://opennmt.net
-      title: OpenNMT
-      abstract: Open-source neural machine translation system.
-      image: /images/aesw2016.png
-      data: http://www.statmt.org/wmt15/translation-task.html
-      authors: HarvardNLP + Systran
+  - link: https://github.com/harvardnlp/TextFlow
+    title: Latent Normalizing Flows for Discrete Sequences
+    abstract: normalizing flow for text generation with latent variables
+    image: /images/textflow.png
+    authors: Zachary M. Ziegler, Alexander M. Rush
 
-    - link: http://nlp.seas.harvard.edu/2018/04/03/attention.html
-      title: The Annotated Transformer
-      abstract: Line-by-Line PyTorch implementation of the Transformer
-      image: /images/trans.png
-      authors: Alexander Rush
+  - link: https://github.com/harvardnlp/DeepLatentNLP/
+    title: Deep Latent-Variable Models for Natural Language
+    abstract: Inference in deep latent variable models.
+    image: http://nlp.seas.harvard.edu/images/vae.png
+    authors: Yoon Kim, Sam Wiseman, Alexander M. Rush
+  - link: https://github.com/sebastianGehrmann/diverse_ensembling
+    title: End-to-End Content and Plan Selection for Data-to-Text Generation
+    authors: Sebastian Gehrmann, Falcon Z. Dai, Henry Elder, Alexander M. Rush
+    abstract: a training method based on diverse ensembling
+    image: /images/diverse_ensembling.png
+  - link: https://github.com/harvardnlp/var-attn
+    title: Variational Attention
+    abstract: fast training for latent var. attention (e.g. hard attention) with accuracy like soft attention
+    image: /images/VariationalAttention.png
+    authors: Yuntian Deng*, Yoon Kim*, Justin Chiu, Demi Guo, Alexander M. Rush
 
-    - link: https://github.com/HendrikStrobelt/lstmvis
-      title: LSTMVis
-      abstract: |
-        Visual analysis of recurrent neural network dynamics.
-      image: /images/small_teaser.png
-      models: https://goo.gl/oHF9q5
-      authors: Hendrik Strobelt and Sebastian Gehrmann
+  - link: http://seq2seq-vis.io/
+    title: Seq2Seq Vis
+    abstract: Interaction with seq2seq translation dynamics.
+    image: /images/s2s_dates_01.png
+    authors: Hendrik Strobelt and Sebastian Gehrmann
 
+  - link: http://opennmt.net
+    title: OpenNMT
+    abstract: Open-source neural machine translation system.
+    image: /images/aesw2016.png
+    data: http://www.statmt.org/wmt15/translation-task.html
+    authors: HarvardNLP + Systran
 
-    - link: https://github.com/harvardnlp/seq2seq-attn
-      title: Sequence-to-Sequence with Attention
-      abstract: |
-        General-purpose sequence-to-sequence model .
-      image: /images/aesw2016.png
-      models: https://drive.google.com/file/d/0BzhmYioWLRn_aEVnd0ZNcWd0Y2c/view
-      data: http://www.statmt.org/wmt15/translation-task.html
-      authors: Yoon Kim
+  - link: http://nlp.seas.harvard.edu/2018/04/03/attention.html
+    title: The Annotated Transformer
+    abstract: Line-by-Line PyTorch implementation of the Transformer
+    image: /images/trans.png
+    authors: Alexander Rush
 
+  - link: https://github.com/HendrikStrobelt/lstmvis
+    title: LSTMVis
+    abstract: |
+      Visual analysis of recurrent neural network dynamics.
+    image: /images/small_teaser.png
+    models: https://goo.gl/oHF9q5
+    authors: Hendrik Strobelt and Sebastian Gehrmann
 
-    - link: https://github.com/harvardnlp/sent-conv-torch
-      title: CNN for Text Clasification
-      image: /images/cnn.png
-      abstract: |
-         Convolutional sentence classification.
-      authors: Jeffrey Ling (based on code by Yoon Kim)
+  - link: https://github.com/harvardnlp/seq2seq-attn
+    title: Sequence-to-Sequence with Attention
+    abstract: |
+      General-purpose sequence-to-sequence model .
+    image: /images/aesw2016.png
+    models: https://drive.google.com/file/d/0BzhmYioWLRn_aEVnd0ZNcWd0Y2c/view
+    data: http://www.statmt.org/wmt15/translation-task.html
+    authors: Yoon Kim
 
-    - link: https://github.com/harvardnlp/im2markup
-      title: Im2Markup
-      image: https://camo.githubusercontent.com/5a6350632dd43b69fff7f41928f27b8c8eb9a7d9/687474703a2f2f6c73746d2e736561732e686172766172642e6564752f6c617465782f6d61746865782e706e67
-      abstract: |
-        A neural image-to-markup system.
-      authors: Yuntian Deng
-      data: http://lstm.seas.harvard.edu/latex/data/
+  - link: https://github.com/harvardnlp/sent-conv-torch
+    title: CNN for Text Clasification
+    image: /images/cnn.png
+    abstract: |
+      Convolutional sentence classification.
+    authors: Jeffrey Ling (based on code by Yoon Kim)
 
+  - link: https://github.com/harvardnlp/im2markup
+    title: Im2Markup
+    image: https://camo.githubusercontent.com/5a6350632dd43b69fff7f41928f27b8c8eb9a7d9/687474703a2f2f6c73746d2e736561732e686172766172642e6564752f6c617465782f6d61746865782e706e67
+    abstract: |
+      A neural image-to-markup system.
+    authors: Yuntian Deng
+    data: http://lstm.seas.harvard.edu/latex/data/
 
-    - link: https://github.com/harvardnlp/NAMAS
-      title: "ABS: Abstractive Summarization"
-      data: https://github.com/harvardnlp/sent-summary
-      image : /images/summary2.png
-      abstract: |
-        Abstractive Summarization
-      authors: Alexander Rush
+  - link: https://github.com/harvardnlp/NAMAS
+    title: "ABS: Abstractive Summarization"
+    data: https://github.com/harvardnlp/sent-summary
+    image: /images/summary2.png
+    abstract: |
+      Abstractive Summarization
+    authors: Alexander Rush
 
-    - link: https://github.com/yoonkim/lstm-char-cnn
-      title: LSTM Character-Aware Language Model
-      abstract: |
-        Character-Aware Language Modeling
-      image : /images/charrnn.png
-      authors: Yoon Kim
-      data: https://bothameister.github.io/
+  - link: https://github.com/yoonkim/lstm-char-cnn
+    title: LSTM Character-Aware Language Model
+    abstract: |
+      Character-Aware Language Modeling
+    image: /images/charrnn.png
+    authors: Yoon Kim
+    data: https://bothameister.github.io/
 
-    - link: https://github.com/swiseman/nn_coref
-      title: Neural Coreference Resolution
-      image : /images/cluster_viz.png
-      abstract : |
-        Coreference System
-      authors: Sam Wiseman
+  - link: https://github.com/swiseman/nn_coref
+    title: Neural Coreference Resolution
+    image: /images/cluster_viz.png
+    abstract: |
+      Coreference System
+    authors: Sam Wiseman
 
-    - link: https://github.com/ikekonglp/PAD
-      title : "PAD: Phrase-structure After Dependencies"
-      abstract : C++ parser implementation
-      image : /images/naacl14.png
-      authors: Alexander Rush and Lingpeng Kong
+  - link: https://github.com/ikekonglp/PAD
+    title: "PAD: Phrase-structure After Dependencies"
+    abstract: C++ parser implementation
+    image: /images/naacl14.png
+    authors: Alexander Rush and Lingpeng Kong
 
-    - link: https://github.com/harvardnlp/nmt-android
-      title: Android Translation
-      abstract: |
-        Neural machine translation on Android
-      image: /images/transfast.gif
-      models: https://drive.google.com/drive/u/0/folders/0B6N7tANPyVeBWHZXVmY2LUdOMWc
-      authors: Alexander Rush and Yoon Kim
+  - link: https://github.com/harvardnlp/nmt-android
+    title: Android Translation
+    abstract: |
+      Neural machine translation on Android
+    image: /images/transfast.gif
+    models: https://drive.google.com/drive/u/0/folders/0B6N7tANPyVeBWHZXVmY2LUdOMWc
+    authors: Alexander Rush and Yoon Kim

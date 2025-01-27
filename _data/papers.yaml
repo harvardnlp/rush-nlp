@@ -1,4 +1,8 @@
 notable:
+  - title: "Contextual Document Embeddings"
+    authors: "J. X. Morris, Alexander Rush"
+    pdf: "https://arxiv.org/abs/2410.02525"
+    conference: "ICLR 2025"
   - title: "Simple and Effective Masked Diffusion Language Models"
     authors: "Subham Sekhar Sahoo, Marianne Arriola, Yair Schiff, Aaron Gokaslan, Edgar Marroquin, Justin T Chiu, Alexander Rush, Volodymyr Kuleshov"
     pdf: "https://arxiv.org/abs/2406.07524"
@@ -75,14 +79,26 @@ notable:
     slides: /slides/emnlp15.pdf
     image: /images/summary.png
 papers:
+  - title: "NetFlowGen: Leveraging Generative Pre-training for Network Traffic Dynamics"
+    authors: "Jiawei Zhou, Woojeong Kim, Zhiying Xu, Alexander M. Rush, Minlan Yu"
+    pdf: "https://arxiv.org/abs/2412.20635"
+    conference: "Preprint"
+  - title: "Challenges in Trustworthy Human Evaluation of Chatbots"
+    authors: "Wenting Zhao, Alexander M. Rush, Tanya Goyal"
+    pdf: "https://arxiv.org/abs/2412.04363"
+    conference: "NAACL 2025"
+  - title: "Commit0: Library Generation from Scratch"
+    authors: "Wenting Zhao, Nan Jiang, Celine Lee, Justin T Chiu, Claire Cardie, Matthias Gallé, Alexander M Rush"
+    pdf: "https://arxiv.org/abs/2412.01769"
+    conference: "ICLR 2025"
   - title: "Compute-Constrained Data Selection"
     authors: "J. O. Yin, Alexander Rush"
     pdf: "https://arxiv.org/abs/2410.16208"
-    conference: Preprint 2024
+    conference: "ICLR 2025"
   - title: "Contextual Document Embeddings"
     authors: "J. X. Morris, Alexander Rush"
     pdf: "https://arxiv.org/abs/2410.02525"
-    conference: Preprint 2024
+    conference: "ICLR 2025"
   - title: "A controlled study on long context extension and generalization in llms"
     authors: "Y. Lu, J. N. Yan, S. Yang, J. T. Chiu, S. Ren, F. Yuan, W. Zhao, Z. Wu, Alexander Rush"
     pdf: "https://arxiv.org/abs/2409.12181"
@@ -94,7 +110,7 @@ papers:
   - title: "Great Memory, Shallow Reasoning: Limits of NN-LMs"
     authors: "S. Geng, W. Zhao, Alexander Rush"
     pdf: "https://arxiv.org/abs/2408.11815"
-    conference: Preprint 2024
+    conference: NAACL 2025
   - title: "Predicting text preference via structured comparative reasoning"
     authors: "J. N. Yan, T. Liu, J. Chiu, J. Shen, Z. Qin, Y. Yu, C. Lakshmanan, Y. Kurzion, Alexander Rush"
     pdf: "https://aclanthology.org/2024.acl-long.839/"
@@ -124,6 +140,18 @@ papers:
     pdf: "https://arxiv.org/pdf/2310.16944.pdf"
     conference: COLM 2024
     image:
+  - title: "Diffusion Models Without Attention"
+    authors: "Jing Nathan Yan, Jiatao Gu, Alexander M. Rush"
+    pdf: "https://arxiv.org/abs/2311.18257"
+    conference: "CVPR 2024"
+  - title: "Language Model Inversion"
+    authors: "John X. Morris, Wenting Zhao, Justin T. Chiu, Vitaly Shmatikov, Alexander M. Rush"
+    pdf: "https://arxiv.org/abs/2311.13647"
+    conference: "ICLR 2024"
+  - title: "Distil-Whisper: Robust Knowledge Distillation via Large-Scale Pseudo Labelling"
+    authors: "Sanchit Gandhi, Patrick von Platen, Alexander M. Rush"
+    pdf: "https://arxiv.org/abs/2311.00430"
+    conference: "Preprint"
   - title: "Guess and Sketch: Language Model Guided Transpilation"
     authors: "Celine Lee, Abdulrahman Mahmoud, Michal Kurek, Simone Campanoni, David Brooks, Stephen Chong, Gu-Yeon Wei, Alexander M. Rush"
     pdf: "https://arxiv.org/pdf/2309.14396.pdf"

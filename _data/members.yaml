@@ -28,16 +28,6 @@
       title: PhD Student
       url: "https://danieldritter.github.io/"
       githubid: 35882844
-    - name : Junxiong Wang
-      email: junxiong@cs.cornell.edu
-      title: PhD Student
-      url: "https://www.cs.cornell.edu/~junxiong/"
-      githubid: 16102460
-    - name : Jing Nathan Yan
-      email: jy858@cornell.edu
-      title: PhD Student
-      url: "https://github.com/NathanYanJing"
-      githubid: 13411557
     - name : Wenting Zhao
       email: wzhao@cs.cornell.edu
       title: PhD Student
@@ -45,6 +35,16 @@
       githubid: 8762524
 - group: Grad Alumni
   people:
+    - name : Junxiong Wang (Together)
+      email: junxiong@cs.cornell.edu
+      title: PhD Student
+      url: "https://www.cs.cornell.edu/~junxiong/"
+      githubid: 16102460
+    - name : Jing Nathan Yan (Google DeepMind)
+      email: jy858@cornell.edu
+      title: PhD Student
+      url: "https://github.com/NathanYanJing"
+      githubid: 13411557
     - name : Justin Chiu (Cohere)
       email : yoonkim@seas.harvard.edu
       url : "http://github.com/justinchiu/"
