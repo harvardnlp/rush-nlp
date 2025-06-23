@@ -1,4 +1,10 @@
 notable:
+  - title: "Harmonization of Structural Brain Connectivity Through Distribution Matching"
+    authors: "Zhen Zhou et al."
+    code: https://github.com/zzstefan/Distribution_matching
+    pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/hbm.70257
+    journal: Human Brain Mapping
+    image: /images/Distribution_matching.png
   - title: "Multiscale functional connectivity patterns of the aging brain learned from harmonized rsfMRI data of the multi-cohort iSTAGING study"
     authors: "Zhen Zhou et al."
     code: https://github.com/zzstefan/Multiscale-brain-aging
