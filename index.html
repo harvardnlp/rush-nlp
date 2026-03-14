@@ -13,11 +13,12 @@ show: 1
   </td><td style="padding:10px">
     <center>
     <h1> Zhen Zhou </h1>
-    <b>AI/ML Researcher &amp; Data Scientist</b>
-    <br>Computational Neuroscience &bull; Brain Imaging &bull; Machine Learning<br>
+    <b>AI/ML Engineer &amp; Researcher</b>
+    <br>LLM Systems &bull; Medical Imaging AI &bull; Graph ML<br>
     <span style="font-size:15px">
       <a href="mailto:zhenzhou.1993@gmail.com">[Email]</a>
       <a href="https://github.com/zzstefan" target="_blank">[GitHub]</a>
+      <a href="https://scholar.google.com/citations?user=zzstefan" target="_blank">[Google Scholar]</a>
       <a href="cv/My_CV.pdf">[CV]</a>
     </span>
 </center>
@@ -30,76 +31,104 @@ show: 1
 </div>
 
 <p style="font-size: 18px; text-align: justify;">
-  I am an AI/ML researcher with 10+ years of experience applying machine learning and deep learning to
-  large-scale biomedical data. My work spans the full pipeline — from data harmonization and feature engineering
-  to model development and open-source tooling — across multi-site neuroimaging datasets.
-  I have developed and released several open-source tools used by the neuroscience community,
-  led research on brain aging and disease classification, and contributed to publications in high-impact journals
-  including <em>Nature Communications</em>, <em>PNAS</em>, and <em>eBioMedicine</em>.
+  AI/ML engineer with 7+ years owning the full model development lifecycle — from dataset curation and
+  architecture design through validation and HPC deployment — delivering production-ready PyTorch pipelines
+  across large-scale biomedical datasets. Practiced in version control, CI-compatible pipeline design,
+  containerization, and SLURM-based distributed computing.
 </p>
 
 <p style="font-size: 18px; text-align: justify;">
-  I am seeking to bring my expertise in machine learning, statistical modeling, and biomedical data science
-  to industry roles in AI, healthcare technology, or data-driven research.
+  Hands-on builder of agentic LLM systems: developed a multi-agent orchestration pipeline for automated QC,
+  harmonization, and report generation; built a graph-encoder-to-Llama-3-8B bridge for structured clinical
+  report synthesis; and LoRA fine-tuned foundation models on domain-specific biomedical time series.
+  Open-sourced <a href="https://github.com/zzstefan/BrainNetClass">BrainNetClass</a> (80+ GitHub stars),
+  a production-ready graph ML toolkit adopted by 15+ institutions globally.
+  32 publications (797 citations) in <em>Nature Communications</em>, <em>PNAS</em>, and <em>NeuroImage</em>.
 </p>
 
 
 <h3>Technical Skills</h3>
-<table style="font-size: 17px; width: 100%;">
+<table style="font-size: 16px; width: 100%; border-collapse: collapse;">
   <tr>
-    <td style="padding: 5px 20px 5px 0px; vertical-align: top; width: 40%;">
-      <b>Machine Learning &amp; AI</b><br>
-      Deep learning, Graph neural networks,<br>
-      Generative models, Survival analysis,<br>
-      Dimensionality reduction, Clustering
+    <td style="padding: 6px 20px 6px 0px; vertical-align: top; width: 33%;">
+      <b>Deep Learning &amp; LLMs</b><br>
+      PyTorch, TensorFlow/Keras<br>
+      HuggingFace Transformers, PEFT/LoRA<br>
+      Llama 2/3, BERT, AutoGen, LangChain<br>
+      Agentic LLM systems, RAG
     </td>
-    <td style="padding: 5px 20px 5px 0px; vertical-align: top; width: 30%;">
-      <b>Programming &amp; Tools</b><br>
-      Python, MATLAB, R<br>
-      PyTorch, scikit-learn, NumPy<br>
-      FreeSurfer, FSL, ANTs
+    <td style="padding: 6px 20px 6px 0px; vertical-align: top; width: 33%;">
+      <b>Programming &amp; Infrastructure</b><br>
+      Python, Java, C/C++, MATLAB, Shell<br>
+      SLURM/HPC, Docker, AWS, Git<br>
+      MLflow, Linux/Bash, Scikit-learn
     </td>
-    <td style="padding: 5px 0px 5px 0px; vertical-align: top;">
-      <b>Domain Expertise</b><br>
-      Neuroimaging (fMRI, dMRI, sMRI)<br>
-      Multi-site data harmonization<br>
-      Brain connectivity analysis
+    <td style="padding: 6px 0px 6px 0px; vertical-align: top;">
+      <b>Domain &amp; Specializations</b><br>
+      Graph ML &amp; Brain Connectivity<br>
+      Medical Image Analysis (MRI/fMRI/dMRI)<br>
+      Applied AI for Drug Discovery &amp; Genomics<br>
+      Knowledge Graph Construction, MLOps
     </td>
   </tr>
 </table>
 
 
+<h3>Experience</h3>
+
+<table style="font-size: 17px; width: 100%;">
+  <tr><td style="padding: 8px 0px;">
+    <b>AI &amp; Medical Imaging Researcher</b> &mdash; MGH &amp; Harvard Medical School, Boston, MA
+    <span style="float:right; color:#666;">Aug 2023 &ndash; Present</span><br>
+    <ul style="margin-top:6px;">
+      <li>Developed a generative U-Net pipeline integrating structural MRI and diffusion tractography to synthesize deformation fields for cortical surface alignment across 150K+ vertex manifolds; 5.5% improvement over baselines.</li>
+      <li>Built end-to-end LLM pipeline connecting DTI-derived brain connectivity with Llama-3-8B to synthesize structured clinical radiology reports via graph encoder and domain-specific prompting.</li>
+      <li>Built ReAct-style LLM agent orchestrating an 8-tool neuroimaging pipeline for automated QC, harmonization, and report generation.</li>
+      <li>LoRA fine-tuned Llama-3-8B on fMRI time series with multiscale decomposition and cross-attention reprogramming for brain connectivity extraction.</li>
+    </ul>
+  </td></tr>
+
+  <tr><td style="padding: 8px 0px;">
+    <b>Postdoctoral Researcher</b> &mdash; University of Pennsylvania, Philadelphia, PA
+    <span style="float:right; color:#666;">Jan 2022 &ndash; Jul 2023</span><br>
+    <ul style="margin-top:6px;">
+      <li>Developed a multi-site neuroimaging framework across 4,259 subjects; replaced statistical harmonization with a 3D CNN + attention model, reducing prediction error by 15.5%.</li>
+      <li>Contributed biomarker extraction pipelines to 4 high-impact publications linking MRI features to genetic architecture and genomic loci in Alzheimer's disease cohorts (<em>Nature Communications</em>, <em>PNAS</em>, <em>EBioMedicine</em>, <em>Translational Psychiatry</em>).</li>
+    </ul>
+  </td></tr>
+
+  <tr><td style="padding: 8px 0px;">
+    <b>Research Assistant</b> &mdash; University of North Carolina at Chapel Hill, NC
+    <span style="float:right; color:#666;">Nov 2018 &ndash; Dec 2020</span><br>
+    <ul style="margin-top:6px;">
+      <li>Designed and open-sourced <a href="https://github.com/zzstefan/BrainNetClass">BrainNetClass</a>, a production-ready graph-based ML package for imaging biomarker extraction; independently deployed at 15+ institutions globally.</li>
+      <li>Built the first infant neuroimaging pipeline with automated QC and multi-layer temporal network analysis for the Baby Connectome Project.</li>
+    </ul>
+  </td></tr>
+</table>
+
+
+<h3>Education</h3>
+<table style="font-size: 17px; width: 100%;">
+  <tr>
+    <td style="padding: 4px 0px;"><b>Ph.D., Computer Science</b> &mdash; Zhejiang University, China</td>
+    <td style="text-align:right; color:#666;">Sep 2014 &ndash; Dec 2021</td>
+  </tr>
+  <tr>
+    <td style="padding: 4px 0px;"><b>B.Eng., Software Engineering</b> &mdash; Northeastern University, China</td>
+    <td style="text-align:right; color:#666;">Sep 2010 &ndash; Jun 2014</td>
+  </tr>
+</table>
+
+
 <h3>Recent Highlights</h3>
-<div style="max-height: 280px; overflow-y: auto; font-size: 17px; line-height: 1.6; text-align: justify;">
+<div style="max-height: 240px; overflow-y: auto; font-size: 17px; line-height: 1.6; text-align: justify;">
   <ul>
-    <li>
-      <b>2026.01:</b> Paper on cortical registration using structural and diffusion MRI accepted at
-      <a href="https://www.biorxiv.org/content/biorxiv/early/2025/11/07/2025.10.31.685908.full.pdf">ISBI 2026</a>.
-    </li>
-    <li>
-      <b>2025.05:</b> Paper on harmonization of brain structural connectivity through distribution matching accepted at
-      <a href="https://onlinelibrary.wiley.com/doi/10.1002/hbm.70257">Human Brain Mapping</a>.
-    </li>
-    <li>
-      <b>2024:</b> Multiple contributions accepted at
-      <a href="https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(24)00435-3/fulltext">eBioMedicine</a>,
-      <a href="https://www.nature.com/articles/s41398-024-03121-5">Translational Psychiatry</a>,
-      <a href="https://www.nature.com/articles/s41467-024-46796-6">Nature Communications</a>, and
-      <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2300842120">PNAS</a>.
-    </li>
-    <li>
-      <b>2023:</b> Two contributions accepted at
-      <a href="https://elifesciences.org/articles/75401">eLife</a> and
-      <a href="https://www.sciencedirect.com/science/article/pii/S1878929323000890">Developmental Cognitive Neuroscience</a>.
-    </li>
-    <li>
-      <b>2023.01:</b> Paper on deep clustering survival machines accepted at
-      <a href="https://ieeexplore.ieee.org/document/10230844">ISBI 2023</a>.
-    </li>
-    <li>
-      <b>2023.02:</b> Paper on multiscale functional brain aging connectivity patterns accepted at
-      <a href="https://www.sciencedirect.com/science/article/pii/S1053811923000599">Neuroimage</a>.
-    </li>
+    <li><b>2026.01:</b> Paper on deep-learning cortical registration guided by structural and diffusion MRI accepted at <a href="https://www.biorxiv.org/content/biorxiv/early/2025/11/07/2025.10.31.685908.full.pdf">ISBI 2026</a>.</li>
+    <li><b>2025.05:</b> Paper on harmonization of brain structural connectivity through distribution matching accepted at <a href="https://onlinelibrary.wiley.com/doi/10.1002/hbm.70257">Human Brain Mapping</a>.</li>
+    <li><b>2024:</b> Contributions to genetic architecture of multimodal brain age and genomic loci studies accepted at <a href="https://www.nature.com/articles/s41467-024-46796-6">Nature Communications</a> and <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2300842120">PNAS</a>.</li>
+    <li><b>2024:</b> MRI brain-age and Alzheimer's neuropathology study accepted at <a href="https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(24)00435-3/fulltext">eBioMedicine</a>.</li>
+    <li><b>2023.02:</b> Multiscale functional brain aging connectivity patterns accepted at <a href="https://www.sciencedirect.com/science/article/pii/S1053811923000599">NeuroImage</a>.</li>
   </ul>
 </div>
 
