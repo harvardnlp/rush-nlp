@@ -1,82 +1,18 @@
 projects:
-    - link: https://github.com/srush/llama2-rs
-      title: Llama2 Rust 
-      authors: Alexander Rush
-      abstract: llama2 in rust
-      image: https://user-images.githubusercontent.com/35882/257109443-dac9a285-b141-409f-bb46-c81a28516cd1.png
-    - link: https://github.com/srush/LLM-Training-Puzzles
-      title: LLM Training Puzzles 
-      authors: Alexander Rush
-      abstract: puzzles for learning about distributed training
-      image: https://user-images.githubusercontent.com/35882/249901903-6d16fc9e-3d14-4bd0-b7c7-d056e49854ac.png
-    - link: https://srush.github.io/raspy/
-      title: Thinking Like Transformers 
-      authors: Alexander Rush, Gail Weiss
-      abstract: learn to think like a transformers
-      image: https://user-images.githubusercontent.com/35882/208687068-66d07246-c9ac-45ea-8638-5357ccba178e.png
-    - link: https://github.com/srush/gpu-puzzles
-      title: GPU-Puzzles 
-      authors: Alexander Rush
-      abstract: A series of puzzles for learning about the core aspects of modern deep learning coding. Includes puzzles for tensors, gpu's, and auto-differentiation.
-      image: https://raw.githubusercontent.com/srush/GPU-Puzzles/main/cuda.png
-    - link: https://github.com/srush/annotated-s4
-      title: Annotated S4
-      authors: Alexander Rush, Sidd Karamcheti 
-      abstract: Annotated S4 is a pedagogical implementation of the S4 model for very long range sequnece modeling utilizing JAX as a method for explaining mathematically complex code. 
-      image: https://github.com/srush/annotated-s4/raw/main/images/quickdraw/im1.png
-    - link: https://github.com/bigscience-workshop/promptsource
-      title: PromptSource
-      authors: Stephen Bach, Victor Sanh, et al. 
-      abstract: PromptSource is an IDE for producing natural language prompts on real datasets. It was the basis of the T0 model for large-scale multitask training.
-      image: https://github.com/bigscience-workshop/promptsource/raw/main/assets/promptsource_app.png
-    - link: https://tech.cornell.edu/impact/break-through-tech/break-through-ai/
-      title: Break Through AI
-      authors: BTT Team, Alexander Rush
-      abstract: Break Through AI is a free summer program for supporting female undergraduates to learn AI and ML skills in an applied environment. I teach an 8 week summer program on the core elements on ML in a coding first environment.
-      image: https://tech.cornell.edu/wp-content/uploads/2021/03/primary-logo_high-res-225x125.png
-    - link: http://www.mini-conf.org/index.html
-      title: MiniConf
-      authors: Alexander Rush, Hendrik Strobelt
-      abstract: MiniConf is a project developed for ICLR as an easy-to-use tool for hosting fully remote asynchronous virtual conferences. It was heavily used in 2020 to host ACL, ICML, AKBC, AIStats, EMNLP, NeurIPS, and many other virtual conferences.
-      image: https://raw.githubusercontent.com/Mini-Conf/Mini-Conf/master/miniconf.gif
-    - link: https://minitorch.github.io/
-      title: MiniTorch
-      authors: Alexander Rush, Ge Gao
-      abstract: MiniTorch is a DIY teaching library to walkthrough the process of building a tensor, autodifferentiation library from scratch. It is used to teach machine learning engineering at Cornell Tech.  
-      image: https://minitorch.github.io/minitorch.svg
-    - link: https://github.com/srush/streambook
-      title: Streambook
-      authors: Alexander Rush
-      abstract: Streambook is a literate programming environment designed to make it easy to write publishable Jupyter notebooks without ever having to open a browser or break your github flow. 
-      image: https://github.com/srush/streambook/raw/main/output.gif
-    - link: https://namedtensor.github.io/
-      title: Named Tensor Notation
-      authors: David Chiang, Alexander Rush, Boaz Barak
-      abstract: Named Tensor Notation was a follow-up to the named tensor proposal to develop a mathematical notation for more explicit multi-dimensional dot products when describing neural network interactions. 
-      image: /images/ntn.png
-    - link: https://huggingface.co/nlp/viewer
-      title: NLP Browser
-      authors: Alexander Rush
-      abstract: NLP Browser is a web app that lets any easily browse through more than 150 datasets used in NLP and hosted by Hugging Face. The app is a pretty addictive way to casually learn about new datasets and challenges.  
-      image: /images/nlp.png
-    - link: http://nlp.seas.harvard.edu/NamedTensor
-      title: NamedTensor (Tensor Considered Harmful)
-      abstract: Named Tensor is a proposal for adding a new datastructure to mathematical libraries to tread tensors more like dicts and less like tuples. This blog post had the impact of getting PyTorch to add a NamedTensor annotation in v1.3 of the libary.
-      image: /images/namedtensor.png
-      authors:  Alexander Rush
-    - link: https://github.com/harvardnlp/pytorch-struct
-      title: Torch Struct
-      authors: Alexander M. Rush
-      abstract: Torch-Struct is a passion project of mine to test out whether deep learning libraries can be used to implement classical structured prediction. It includes heavily-tested reference reimplementations of many core NLP algorithms. 
-      image: https://github.com/harvardnlp/pytorch-struct/raw/master/download.png
-    - link: http://opennmt.net
-      title: OpenNMT
-      abstract: A full service open-source neural machine translation system. Originally developed in Lua with Systran, since ported to PyTorch and TensorFlow and maintained externally.
-      image: /images/aesw2016.png
-      authors: HarvardNLP + Systran
-    - link: http://nlp.seas.harvard.edu/2018/04/03/attention.html
-      title: The Annotated Transformer
-      abstract: The annotated transformer was an experiment in blogging based on literate papers. The idea was to teach researchers how an important model in NLP works by aligning the paper line-by-line with an implementation. The blog post was widely distributed, and there have been many follow-ups for new model.
-      image: /images/trans.png
-      authors: Alexander Rush
+    - link: https://github.com/zzstefan/BrainNetClass
+      title: BrainNetClass
+      abstract: A MATLAB toolbox for brain network construction and classification. Supports multiple connectivity estimation methods (Pearson correlation, sparse representation, high-order FC) and standard ML classifiers. Used for brain disorder diagnosis from resting-state fMRI data.
+      image: /images/toolbox_paper.png
+      pdf: https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.24979
 
+    - link: https://github.com/zzstefan/Distribution_matching
+      title: Distribution Matching for Structural Connectivity Harmonization
+      abstract: A Python implementation of distribution-matching harmonization for multi-site brain structural connectivity data. Addresses batch effects from scanner and protocol differences in diffusion MRI tractography, enabling pooling of large multi-site datasets.
+      image: /images/distribution_matching.png
+      pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/hbm.70257
+
+    - link: https://github.com/zzstefan/Multiscale-brain-aging
+      title: Multiscale Brain Aging Analysis
+      abstract: Code for discovering multiscale functional connectivity patterns associated with brain aging using harmonized rsfMRI data from the iSTAGING multi-cohort study (thousands of subjects). Combines data harmonization, graph-based connectivity, and machine learning for brain age prediction.
+      image: /images/multiscale_aging.png
+      pdf: https://www.sciencedirect.com/science/article/pii/S1053811923000599

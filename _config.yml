@@ -7,12 +7,12 @@
 
 # Site settings
 title:
-email: arush@cornell.edu
-description:  # this means to ignore newlines until "baseurl:"
+email: zzhou22@mgh.harvard.edu
+description: #
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://rush-nlp.com/" # the base hostname & protocol for your site
-twitter_username: srush_nlp
-github_username:  harvardnlp
+url: "https://zzstefan.github.io/" # the base hostname & protocol for your site
+twitter_username: ZhenZhou_1993
+github_username:  zzstefan
 
 # Build settings
 markdown: kramdown

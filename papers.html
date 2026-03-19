@@ -10,11 +10,11 @@ show: 1
 
 <p>
     My full list of papers is
-    <a href="https://scholar.google.com/citations?user=LIjnUGgAAAAJ&hl=en"
+    <a href="https://scholar.google.com/citations?user=th8t5l4AAAAJ&hl=en"
         >here</a
-    >.
+    > (* represents co-first authors).
 </p>
-<table>
+<!-- <table>
     {% for paper in site.data.papers.papers %}
 
     <tr>
@@ -22,16 +22,32 @@ show: 1
         <td style="padding: 10px">
             <a class="paper" href="{{paper.pdf}}"> {{paper.title}} </a><br />
             {{paper.authors}}.<br />
-            {{paper.conference}} <br />
+            {{paper.journal}} <br />
 
             <br />
         </td>
     </tr>
 
     {% endfor %}
+</table> -->
+
+<table>
+    {% assign sorted_papers = site.data.papers.papers | sort: "year" | reverse %}
+    {% for paper in sorted_papers %}
+    <tr>
+        <td style="padding: 10px"></td>
+        <td style="padding: 10px">
+            <a class="paper" href="{{paper.pdf}}"> {{paper.title}} </a><br />
+            {{ paper.authors | replace: "Zhou, Zhen", "<strong>Zhou, Zhen</strong>" }}.<br />
+            <i>{{paper.journal}}</i> ({{paper.year}})<br />
+            <br />
+        </td>
+    </tr>
+    {% endfor %}
 </table>
 
-<h3>PhD Publications</h3>
+
+<!-- <h3>PhD Publications</h3>
 
 <div class="paper-section">
     <a class="paper" href="alignment.pdf">
@@ -296,4 +312,4 @@ show: 1
         href="slide_job_talk3.pdf"
         >job talk</a
     >
-</div>
+</div> -->

@@ -9,6 +9,6 @@ permalink: /papers/
 
 {{paper.name}}
 {{paper.authors}}
-{{paper.conference}}
+{{paper.journal}}
 
 {% endfor %}
