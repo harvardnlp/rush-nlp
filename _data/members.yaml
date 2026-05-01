@@ -60,7 +60,12 @@
       github: yoonkim
       githubid: 5378003
       title : PhD Student
-    - name : Sam Wiseman (TTIC -> Duke)
+    - name : Teven Le Scao (Mistral)
+      url: "https://github.com/TevenLeScao"
+      github: TevenLeScao
+      githubid: 26709476
+      title: PhD Student
+    - name : Sam Wiseman (Reflection)
       email : swiseman@seas.harvard.edu
       title :
       githubid: 4635868
