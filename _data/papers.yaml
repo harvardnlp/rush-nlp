@@ -1,8 +1,14 @@
 notable:
+  - title: "Composer 2"
+    authors: "Cursor Team"
+    pdf: "https://arxiv.org/abs/2603.24477"
+    conference: "Arxiv 2026"
+    image: /images/composer2-scatter.webp
   - title: "Contextual Document Embeddings"
     authors: "J. X. Morris, Alexander Rush"
     pdf: "https://arxiv.org/abs/2410.02525"
     conference: "ICLR 2025"
+    image: /images/contextual.png
   - title: "Simple and Effective Masked Diffusion Language Models"
     authors: "Subham Sekhar Sahoo, Marianne Arriola, Yair Schiff, Aaron Gokaslan, Edgar Marroquin, Justin T Chiu, Alexander Rush, Volodymyr Kuleshov"
     pdf: "https://arxiv.org/abs/2406.07524"
@@ -12,7 +18,7 @@ notable:
     authors: "Lewis Tunstall, Edward Beeching, Nathan Lambert, Nazneen Rajani, Kashif Rasul, Younes Belkada, Shengyi Huang, Leandro von Werra, Clémentine Fourrier, Nathan Habib, Nathan Sarrazin, Omar Sanseviero, Alexander M. Rush, Thomas Wolf"
     pdf: "https://arxiv.org/pdf/2310.16944.pdf"
     conference: COLM 2024
-    image:
+    image: /images/zephyr.png
   - title: "Pretraining Without Attention"
     authors: "Junxiong Wang, Jing Nathan Yan, Albert Gu, Alexander M. Rush"
     pdf: "https://arxiv.org/pdf/2212.10544.pdf"
@@ -28,6 +34,11 @@ notable:
     pdf: https://aclanthology.org/2021.naacl-main.208.pdf
     image: /images/prompt.png
     conference: NAACL Short 2021
+  - title: "GPU-Puzzles"
+    authors: Alexander M. Rush
+    pdf: https://github.com/srush/gpu-puzzles
+    conference: "2021"
+    image: https://raw.githubusercontent.com/srush/GPU-Puzzles/main/cuda.png
   - title: "Transformers: State-of-the-art Natural Language Processing"
     authors: Thomas Wolf et al
     pdf: https://arxiv.org/pdf/1910.03771
@@ -45,6 +56,12 @@ notable:
     code: https://github.com/harvardnlp/neural-template-gen
     pdf: https://arxiv.org/abs/1808.10122
     image: /images/template.png
+  - title: "The Annotated Transformer"
+    authors: Alexander M. Rush
+    conference: ACL NLP-OSS 2018
+    pdf: http://aclweb.org/anthology/W18-2509
+    code: https://github.com/harvardnlp/annotated-transformer/blob/master/The%20Annotated%20Transformer.ipynb
+    image: /images/the-annotated-transformer_14_0.png
   - title: "LSTMVis: A Tool for Visual Analysis of Hidden State Dynamics in Recurrent Neural Networks"
     authors: Hendrik Strobelt, Sebastian Gehrmann, Hanspeter Pfister, and Alexander M. Rush
     conference: InfoVis 2017

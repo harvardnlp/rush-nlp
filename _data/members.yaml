@@ -1,5 +1,5 @@
-- group : Graduate Students
-  people :
+- group: Grad Alumni
+  people:
     - name : Jack Morris
       email : jxm3@cornell.edu
       url : "https://jxmo.io/"
@@ -18,23 +18,11 @@
       github: celine-lee
       githubid: 22714518
       title : PhD Student
-    - name : Shankar Padmanabhan
-      email:
-      title: PhD Student
-      url: "https://shankarp8.github.io/"
-      githubid: 47063867
-    - name : Daniel Ritter
-      email:
-      title: PhD Student
-      url: "https://danieldritter.github.io/"
-      githubid: 35882844
     - name : Wenting Zhao
       email: wzhao@cs.cornell.edu
       title: PhD Student
       url: "https://github.com/wenting-zhao"
       githubid: 8762524
-- group: Grad Alumni
-  people:
     - name : Junxiong Wang (Together)
       email: junxiong@cs.cornell.edu
       title: PhD Student
@@ -84,7 +72,7 @@
       email : schmaltz@seas.harvard.edu
       url: "http://github.com/allenschmaltz"
       title: PhD Student
-    - name : Zachary Ziegler (Xyla)
+    - name : Zachary Ziegler (OpenEvidence)
       email: zachary.ziegler@featurex.ai
       title: PhD Student
       url: https://github.com/zackziegler95
@@ -97,7 +85,7 @@
 
 - group: Undergrad Alumni
   people:
-    - name : Demi Guo (Stanford)
+    - name : Demi Guo (Pika)
       email: blank
       title: Undergraduate
       url: https://github.com/demiguo
@@ -126,17 +114,17 @@
       title: Vistor
       url: https://github.com/mzhai2
       githubid: 5619828
-    - name : Jeffrey Ling (Vicarious)
+    - name : Jeffrey Ling (Cognition)
       email: blank
       url: https://github.com/jeffreyling
       githubid: 5473863
       title: Undergrad Researcher
-    - name : Alex Wang (NYU)
+    - name : Alex Wang (Cohere)
       email: blank
       url: https://github.com/W4ngatang
       githubid: 5520155
       title: Undergrad Researcher
-    - name : Ankit Gupta (Reverie)
+    - name : Ankit Gupta (Y Combinator)
       email: blank
       url: http://ankitg.me/
       githubid: 5473865
