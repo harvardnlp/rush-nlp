@@ -1,12 +1,12 @@
 - group: Grad Alumni
   people:
-    - name : Jack Morris
+    - name : Jack Morris (Engram)
       email : jxm3@cornell.edu
       url : "https://jxmo.io/"
       github: jxmorris12
       githubid: 13238952
       title : PhD Student
-    - name : Woojeong Kim
+    - name : Woojeong Kim (Databrick)
       email : wk247@cornell.edu
       url : "https://www.wkim.info/"
       github: friendshipkim
@@ -18,12 +18,12 @@
       github: celine-lee
       githubid: 22714518
       title : PhD Student
-    - name : Wenting Zhao
+    - name : Wenting Zhao (Recursive)
       email: wzhao@cs.cornell.edu
       title: PhD Student
       url: "https://github.com/wenting-zhao"
       githubid: 8762524
-    - name : Junxiong Wang (Together)
+    - name : Junxiong Wang (MAI)
       email: junxiong@cs.cornell.edu
       title: PhD Student
       url: "https://www.cs.cornell.edu/~junxiong/"
@@ -33,7 +33,7 @@
       title: PhD Student
       url: "https://github.com/NathanYanJing"
       githubid: 13411557
-    - name : Justin Chiu (Cohere)
+    - name : Justin Chiu (Recursive)
       email : yoonkim@seas.harvard.edu
       url : "http://github.com/justinchiu/"
       github: justinchiu

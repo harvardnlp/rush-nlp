@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rush NLP research, people, projects, and publications.">
+  <title>Tensor Considered Harmful Pt. 2 · Rush NLP</title>
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner">
+    <nav aria-label="Primary navigation"><a href="/" class="">Main</a><a href="/blog/" class="">Blog</a><a href="/members/" class="">Group</a><a href="/projects/" class="">Projects</a><a href="/papers/" class="">Publications</a></nav>
+  </div></header>
+  <main class="page-shell"><article class="prose longform"><p><em>Alexander Rush @harvardnlp</em></p>
+<p><a href="https://colab.research.google.com/github/harvardnlp/namedtensor/blob/master/notebooks/NamedTensor2.ipynb" target="_parent"><img
+src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In
+Colab"/></a></p>
+<p><em>TL;DR: The previous post <a href="http://nlp.seas.harvard.edu/NamedTensor">Tensor Considered
+Harmful</a> called for using </em><em>named
+tensors</em><em> to remedy some of the issues with the ubiquitous Tensor object. The
+post sparked significant conversation about whether this was a useful technique
+or would simply litter code unnecessary annotations. This follow-up considers
+the use of named tensors in real-world deep learning code. This post takes a
+more pragmatic tack, and examines two methods for integrating named tensors into
+the current deep learning ecosystem. As before all the code is available in the
+</em><em>PyTorch library</em><em> accompanying this blog post is available as
+<a href="https://github.com/harvardnlp/NamedTensor">namedtensor</a> which has been
+significantly changed based on ideas from
+<a href="https://twitter.com/harvardnlp/status/1080911225427496966">twitter</a> / <a href="https://www.reddit.com/r/MachineLearning/comments/accmek/d_tensor_considered_har
+mful_a_polemic_against/">reddit</a> comments.</em></p>
+<ul>
+<li>Table of Contents</li>
+</ul>
+<p><em>Changelog</em></p>
+<ul>
+<li>Thanks to Stephen Hoyer for suggesting several useful changes to this and the last post
+to simplify the syntax.</li>
+</ul>
+<h1 id="named-tensors-for-deep-learning">Named Tensors for Deep Learning</h1>
+<p>The previous post  <a href="http://nlp.seas.harvard.edu/NamedTensor">Tensor Considered
+Harmful</a> proposes that many of the core
+usability issues in deep learning frameworks come from manipulating and aligning
+tensor objects. It shows this by playing aroung with some toy tensor examples.</p>
+<p>However, in hindsight, this was cheating. To actually use <em>named tensors</em> we
+need to interact with the ecosystem at large. The entire of richness of PyTorch
+is its libraries, which like it or not, are written with a tuple-based calling
+convention. If we want to write real software in real environments, it is not
+sufficient to simply show that naming is useful, it has be usable with the
+current functionality.</p>
+<p><strong>The Challenge</strong>: How can we <em>lift</em> deep learning systems in a pragmatic manner
+so that they preserve the the semantics of <em>named tensors</em>?</p>
+<p>I do not have the correct answer to this question. But in this post, I will
+consider two methods: explicit annotations and lifting the library.</p>
+<pre><code class="language-python">#@title Setup
+#!rm -fr NamedTensor/; git clone -q https://github.com/harvardnlp/NamedTensor.git
+#!cd NamedTensor; pip install -q .; pip install -q torch numpy opt_einsum
+#!cp NamedTensor/notebooks/test* .
+
+</code></pre>
+<pre><code class="language-python">import numpy
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from namedtensor import NamedTensor, ntorch
+from namedtensor import _im_init
+_im_init()
+</code></pre>
+<h2 id="method-1-name-annotations">Method 1: Name Annotations</h2>
+<p>In PyTorch, the standard deep learning library lives in the <code>nn</code> module. This
+library contains bindings to all the useful functions that make up neural
+networks. To use them we pass around and manipulate tensor objects. Here are two
+mini modules:</p>
+<pre><code class="language-python">relu = nn.ReLU()
+linear = nn.Linear(3, 1)
+linear
+</code></pre>
+<p>{:.output_data_text}</p>
+<pre><code>Linear(in_features=3, out_features=1, bias=True)
+</code></pre>
+<p>The API for these modules is specified through the shape of the tensors passed.
+For instance for "relu" we see that this keeps the size the same as the
+original.</p>
+<pre><code class="language-python">print(&quot;\n&quot;.join(relu.__doc__.split(&quot;\n&quot;)[:13]))
+</code></pre>
+<pre><code>Applies the rectified linear unit function element-wise
+    :math:`\text{ReLU}(x)= \max(0, x)`
+
+    .. image:: scripts/activation_images/ReLU.png
+
+    Args:
+        inplace: can optionally do the operation in-place. Default: ``False``
+
+    Shape:
+        - Input: :math:`(N, *)` where `*` means, any number of additional
+          dimensions
+        - Output: :math:`(N, *)`, same shape as the input
+</code></pre>
+<p>On the other hand if we look at the linear object we can see that it takes as
+input something of the form "(N, *, in_features)" and outputs something of the
+form  "(N, *, out_features)"</p>
+<pre><code class="language-python">print(&quot;\n&quot;.join(linear.__doc__.split(&quot;\n&quot;)[:14]))
+</code></pre>
+<pre><code>Applies a linear transformation to the incoming data: :math:`y = xA^T + b`
+
+    Args:
+        in_features: size of each input sample
+        out_features: size of each output sample
+        bias: If set to False, the layer will not learn an additive bias.
+            Default: ``True``
+
+    Shape:
+        - Input: :math:`(N, *, \text{in\_features})` where :math:`*` means any number of
+          additional dimensions
+        - Output: :math:`(N, *, \text{out\_features})` where all but the last dimension
+          are the same shape as the input.
+</code></pre>
+<p>This gives a rough sense of the API. Now let's try this out with our images.</p>
+<pre><code class="language-python">ims = torch.tensor(numpy.load('test_images.npy'), requires_grad=False).float()
+ims = NamedTensor(ims, (&quot;b&quot;, &quot;h&quot;, &quot;w&quot;, &quot;c&quot;))
+first = ims.get(&quot;b&quot;, 0)
+first
+</code></pre>
+<p><img alt="png" src="/images/namedtensor2_17_0.png" /></p>
+<p>The standard non-named way is to call these directly.</p>
+<pre><code class="language-python">relu(first.values.sub(0.5)).add(0.5)
+</code></pre>
+<p><img alt="png" src="/images/namedtensor2_19_0.png" /></p>
+<p>Our approach is going to instead explicitly chain the operation through the <code>op</code>
+method. This method takes in an function that acts on the raw tensor.</p>
+<p>In this case of relu, it is pretty boring it just applies the function directly.</p>
+<pre><code class="language-python">first.sub(0.5).op(lambda x: relu(x)).add(0.5)
+
+# or
+
+first.sub(0.5).op(relu).add(0.5)
+</code></pre>
+<p><img alt="png" src="/images/namedtensor2_21_0.png" /></p>
+<p>Things get more interesting when we apply <code>linear</code>. This operation changes the
+size of the last dimension. When we do this we can either leave it alone or supply a new name.</p>
+<pre><code class="language-python">first.op(linear)
+</code></pre>
+<pre><code class="language-python">first.op(linear, c2=&quot;c&quot;).get(&quot;c2&quot;, 0)
+</code></pre>
+<p><img alt="png" src="/images/namedtensor2_24_0.png" /></p>
+<p>I say this approach is pragmatic, because it still requires us to give the
+correct ordering to all the pytorch modules, and to give new names. This can be
+a bit annoying, but I would argue it makes for more readable and safer code.</p>
+<p>For instance if we look at the shape of the Conv2d module we see that it expects
+channel first and changes three dimensions.</p>
+<pre><code class="language-python">conv = nn.Conv2d(3, 3, 2)
+print(&quot;\n&quot;.join(conv.__doc__.split(&quot;\n&quot;)[75:85]))
+</code></pre>
+<pre><code>    Shape:
+        - Input: :math:`(N, C_{in}, H_{in}, W_{in})`
+        - Output: :math:`(N, C_{out}, H_{out}, W_{out})` where
+
+          .. math::
+              H_{out} = \left\lfloor\frac{H_{in}  + 2 \times \text{padding}[0] - \text{dilation}[0]
+                        \times (\text{kernel\_size}[0] - 1) - 1}{\text{stride}[0]} + 1\right\rfloor
+
+          .. math::
+              W_{out} = \left\lfloor\frac{W_{in}  + 2 \times \text{padding}[1] - \text{dilation}[1]
+</code></pre>
+<pre><code class="language-python">ims.transpose(&quot;c&quot;, &quot;h&quot;, &quot;w&quot;).op(conv, c2=&quot;c&quot;, h2=&quot;h&quot;, w2=&quot;w&quot;) \
+   .get(&quot;b&quot;, 0).transpose(&quot;h2&quot;, &quot;w2&quot;, &quot;c2&quot;)
+</code></pre>
+<p><img alt="png" src="/images/namedtensor2_27_0.png" /></p>
+<p>The <code>op</code> method is the core extension for interacting with "unsafe", unnamed
+PyTorch. We also consider two related methods. The method <code>reduce</code> wraps
+operations that drop a dimension, and the method <code>augment</code> wraps operations that
+add a new dimension.</p>
+<pre><code class="language-python">loss = nn.NLLLoss(reduce=False)
+output = ntorch.randn(dict(batch=10, classes=20)).softmax(&quot;classes&quot;)
+targets = ntorch.ones(dict(batch= 10)).long()
+l = lambda x: loss(x, targets.values)
+output.reduce(l, (&quot;classes&quot;)).shape
+</code></pre>
+<pre><code>/usr/local/lib/python3.6/dist-packages/torch/nn/_reduction.py:49: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+</code></pre>
+<p>{:.output_data_text}</p>
+<pre><code>OrderedDict([('batch', 10)])
+</code></pre>
+<pre><code class="language-python">embedding = nn.Embedding(10, 20)
+x = ntorch.ones(dict(batch= 10, slen=20)).long()
+x.augment(embedding, &quot;embeddingsize&quot;).shape
+</code></pre>
+<p>{:.output_data_text}</p>
+<pre><code>OrderedDict([('batch', 10), ('slen', 20), ('embeddingsize', 20)])
+</code></pre>
+<p>These methods are really just syntactic sugar on top of the <code>op</code> method above,
+but they make it a bit easier to tell what is happening when you read the code.</p>
+<h2 id="method-2-named-everything">Method 2: Named Everything</h2>
+<p>The above approach is relatively general. We want to use the pytorch library so
+we need to type it on input and output so that we can maintain our labels.
+Ideally though we can know exactly the names of the dimensions that are being
+used so that we can propagate them through.</p>
+<p>Interestingly the PyTorch distributions library is written in such a way to make
+this possible, so it is fun to see what it looks like as a named library.</p>
+<pre><code class="language-python">import torch.distributions as distributions
+import seaborn
+import matplotlib.pyplot as plt
+from namedtensor import ndistributions
+</code></pre>
+<p>First let's make some parameters for a multivariate normal. and make a
+distribution.</p>
+<pre><code class="language-python">mu = torch.randn(10, 2)
+Sigma = torch.zeros(10, 2, 2)
+Sigma[:] = torch.tensor([[1., 0], [0, 1.]])
+</code></pre>
+<pre><code class="language-python">dist = distributions.MultivariateNormal(mu, Sigma)
+</code></pre>
+<p>Okay, so what happened here? We made a distribution object that has a bunch of
+different distributions all combined together. This object has two important
+properties, its batch shape and its event shape. In particular this is a batch
+of 10 distributions each over with 2D outputs.</p>
+<pre><code class="language-python">dist.batch_shape, dist.event_shape
+</code></pre>
+<p>{:.output_data_text}</p>
+<pre><code>(torch.Size([10]), torch.Size([2]))
+</code></pre>
+<p>Now let's say we want to sample from all of these distributions simultaneously.
+We can do that with this call.</p>
+<pre><code class="language-python">samples = dist.sample(torch.Size([20, 30]))
+samples.shape
+</code></pre>
+<p>{:.output_data_text}</p>
+<pre><code>torch.Size([20, 30, 10, 2])
+</code></pre>
+<p>So now we have an object that is 20x30 samples of a 10 batches each of dim 2.
+This is nice to have, but we have to keep track of events, batches, samples...
+It gets hard fast.</p>
+<p>Let's rewind and try it in named world now.</p>
+<pre><code class="language-python">mu = ntorch.randn(dict(dist=10, out=2)).mul(5)
+Sigma = ntorch.zeros(dict(batch=10, a=2, b=2))
+Sigma.values[:] = torch.tensor([[1., 0], [0, 1.]])
+</code></pre>
+<pre><code class="language-python">dist = ndistributions.MultivariateNormal(mu, Sigma)
+</code></pre>
+<p>We've overridden the shape calls to give us named output now and sample takes in
+a dict. Should be a bit more clear.</p>
+<pre><code class="language-python">dist.batch_shape, dist.event_shape
+</code></pre>
+<p>{:.output_data_text}</p>
+<pre><code>(OrderedDict([('dist', 10)]), OrderedDict([('out', 2)]))
+</code></pre>
+<pre><code class="language-python">samples = dist.sample(sample1=20, sample2=30)
+samples.shape
+</code></pre>
+<p>{:.output_data_text}</p>
+<pre><code>OrderedDict([('sample1', 20), ('sample2', 30), ('dist', 10), ('out', 2)])
+</code></pre>
+<p>Everything is the same as before, except that the distribution propagates our
+dimension labels through to the end. This really comes in handy when you want to
+do some plots. Here was enumerate over the samples from each distribution and
+plot the samples.</p>
+<pre><code class="language-python">for i in range(10):
+    b = samples.get(&quot;dist&quot;, i)
+    plt.scatter(x=b.get(&quot;out&quot;, 0).values.numpy(),
+                y=b.get(&quot;out&quot;, 1).values.numpy())
+</code></pre>
+<p><img alt="png" src="/images/namedtensor2_50_0.png" /></p>
+<h1 id="experiments-on-canonical-models">Experiments on Canonical Models</h1>
+<p>Now the question is whether this approach can actually be applied to real deep
+learning problems. To test this, I went through several of the key deep learning
+mini-models to see what the code looks like. Honestly, I am not sure I am
+completely convinced... it looks like a start, but maybe not completely there.</p>
+<h2 id="mnist">MNist</h2>
+<p>The first example comes from a simple MNist network that is shipped with
+PyTorch. The full original example is available at <a href="https://github.com/pytorch/examples/blob/master/mnist/main.py">MNist
+example</a> and our
+named example is available <a href="https://github.com/harvardnlp/n
+amedtensor/blob/master/examples/mnist.py">named MNist example</a>. Here we compare two variants, one
+with standard tensor and the other with named tensor.</p>
+<p><img src="http://deeplearning.net/tutorial/_images/mylenet.png"></p>
+<pre><code class="language-python">class BaseNet(nn.Module):
+    def __init__(self):
+        super(BaseNet, self).__init__()
+        self.conv1 = nn.Conv2d(1, 20, 5, 1)
+        self.conv2 = nn.Conv2d(20, 50, 5, 1)
+        self.fc1 = nn.Linear(4*4*50, 500)
+        self.fc2 = nn.Linear(500, 10)
+</code></pre>
+<p>The standard implementation is here. The code is pretty clean, it is a straight
+line of applying modules one after the other. The dimensions mostly line up
+along the way, but perhaps that was decided because this is the most standard
+example.</p>
+<pre><code class="language-python">class StandardCNN(BaseNet):
+    def forward(self, x):
+        # batch x c x h x w
+        x = F.relu(self.conv1(x))
+        # batch x c1 x h1 x w1
+        x = F.max_pool2d(x, 2, 2)
+        # batch x c1 x h1a x w1a
+        x = F.relu(self.conv2(x))
+        # batch x c2 x h2 x w2
+        x = F.max_pool2d(x, 2, 2)
+        # batch x c2a x h2a x w2a
+        x = x.view(-1, 4*4*50)
+        # batch x fc1
+        x = F.relu(self.fc1(x))
+        # batch x fc2
+        x = self.fc2(x)
+        # batch x classes
+        return F.log_softmax(x, dim=1)
+</code></pre>
+<p>Next consider the named version. The code is not necessarily more concise.
+However it does have some useful differences. Notably</p>
+<ul>
+<li>
+<p>The <code>op</code> will check that changed dimensions get updated along the way, so it
+is harder to screw up transposes.</p>
+</li>
+<li>
+<p>Names are in the code, so debugging gives better errors. Furthermore we can
+add checks like the <code>assert_size</code>.</p>
+</li>
+<li>
+<p>The transpose, view and softmax become nicer in the process.</p>
+</li>
+</ul>
+<pre><code class="language-python">class NamedNet(nn.Module):
+    def forward(self, x):
+        pool = lambda x: F.max_pool2d(x, 2, 2)
+
+        return (
+            x.transpose(&quot;c&quot;, &quot;h&quot;, &quot;w&quot;)
+            .op(self.conv1, F.relu)
+            .assert_size(c2=20) # Just for fun.
+            .op(pool)
+            .op(self.conv2, F.relu)
+            .assert_size(c=50)
+            .op(pool)
+            .stack(fc=(&quot;c&quot;, &quot;h&quot;, &quot;w&quot;))
+            .op(self.fc1, F.relu)
+            .op(self.fc2, classes=&quot;fc&quot;)
+            .log_softmax(&quot;classes&quot;)
+        )
+</code></pre>
+<p>The full implementation uses other aspects of the reduction for the loss and
+backpropagation.</p>
+<h2 id="text-classification">Text Classification</h2>
+<p>The next example is a standard text classification CNN problem . This example is
+based on the model from Yoon Kim (2014) in <a href="https://arxiv.org/abs/1408.5882">Convolutional Neural Networks for
+Sentence Classification</a>.</p>
+<p><img src="http://www.wildml.com/wp-content/uploads/2015/11/Screen-Shot-2015-11-06-at-8.03.47-AM.png"></p>
+<p>This is a fun model because it is quite simple and relatively effective (with
+word embeddings). Notably it was surprisingly annoying to implement in 2015, but
+nowadays it is just a couple of lines of code. I borrowed the implementation of
+<a href="https://github.com/junwang4/CNN-sentence-classification-pytorch-2018">Jun Wang</a>
+and updated it for a <a href="https://github.com/harvardnlp/namedt
+ensor/blob/master/examples/cnn_kim.py">named tensor version</a>. Both use the same set of parameters.</p>
+<pre><code class="language-python">class BaseCNN(nn.Module):
+    def __init__(
+        self,
+        kernel_sizes=[3, 4, 5],
+        num_filters=100,
+        embedding_dim=300,
+        pretrained_embeddings=None,
+    ):
+        super(BaseCNN, self).__init__()
+        self.kernel_sizes = kernel_sizes
+        self.embedding = nn.Embedding(vocab_size, embedding_dim)
+        self.embedding.weight.data.copy_(
+            torch.from_numpy(pretrained_embeddings)
+        )
+
+        conv_blocks = []
+        for kernel_size in kernel_sizes:
+            conv1d = nn.Conv1d(
+                in_channels=embedding_dim,
+                out_channels=num_filters,
+                kernel_size=kernel_size,
+                stride=1,
+            )
+
+            conv_blocks.append(conv1d)
+        self.conv_blocks = nn.ModuleList(conv_blocks)
+        self.fc = nn.Linear(num_filters * len(kernel_sizes), num_classes)
+</code></pre>
+<p>Here is the standard implementation. Even though this code looks simple, it has
+all the notable traps including a transpose, cat, view and softmax.</p>
+<pre><code class="language-python">class StandardCNN(BaseCNN):
+    def forward(self, x):       # x: (batch, sentence_len)
+        x = self.embedding(x)   # embedded x: (batch, sentence_len, embedding_dim)
+
+
+        #    input:  (batch, in_channel=1, in_length=sentence_len*embedding_dim),
+        #    output: (batch, out_channel=num_filters, out_length=sentence_len-...)
+        x = x.transpose(1,2)  # needs to convert x to (batch, embedding_dim, sentence_len)
+
+        x_list= [F.relu(conv_block(x)).max(-1)[0]
+                 for conv_block in self.conv_blocks]
+        out = torch.cat(x_list, 2)
+        out = out.view(out.size(0), -1)
+        feature_extracted = out
+        out = F.dropout(out, p=0.5, training=self.training)
+        return F.softmax(self.fc(out), dim=1), feature_extracted
+</code></pre>
+<p>Contrast this with the named version. We need to use <code>augment</code> to handle the
+extra embedding dimension and
+add several ops. However as a benefit we get to use names for the transpose,
+cat, view and softmax.</p>
+<pre><code class="language-python">class NamedCNN(BaseCNN):
+    def forward(self, x):  # x: (batch, slen)
+        x = x.augment(self.embedding, &quot;h&quot;) \
+             .transpose(&quot;h&quot;, &quot;slen&quot;)
+
+        x_list = [x.op(conv_block, F.relu).max(&quot;slen&quot;)[0]
+                 for conv_block in self.conv_blocks]
+        out = ntorch.cat(x_list, &quot;h&quot;)
+
+        feature_extracted = out
+        drop = lambda x: F.dropout(x, p=0.5, training=self.training)
+        out = out.op(drop, self.fc, classes=&quot;h&quot;) \
+                 .softmax(&quot;classes&quot;)
+
+        return out, feature_extracted
+</code></pre>
+<h2 id="vae">VAE</h2>
+<p>Finally let's consider a variational autoencoder (VAE). The version we look at
+is in its simplest form with a feed-forward encoder and decoder. This example is
+taken from the  <a href="https://github.com/pytorch/examples/blob/master/vae/main.py">torch
+examples</a> VAE and
+updated to a <a href="https://github.com/harvardnlp/namedtensor/blob/master/examples/vae.py">named
+vae</a>.</p>
+<p>This example is to mainly show off the use of named distributions as a way
+propagating forward dimensions.</p>
+<p><img src="http://ijdykeman.github.io/assets/cvae_figures/vae_diagram.svg"></p>
+<p>(diagram from <a href="http://ijdykeman.github.io/ml/2016/12/21/cvae.html">Isaac
+Dykeman's VAE explainer</a>)</p>
+<pre><code class="language-python">class BaseVAE(nn.Module):
+    def __init__(self, num_samples):
+        super(BaseVAE, self).__init__()
+
+        self.fc1 = nn.Linear(784, 400)
+        self.fc21 = nn.Linear(400, 20)
+        self.fc22 = nn.Linear(400, 20)
+        self.fc3 = nn.Linear(20, 400)
+        self.fc4 = nn.Linear(400, 784)
+        self.num_samples = num_samples
+</code></pre>
+<p>Original code, using distributions for the latent space.</p>
+<pre><code class="language-python">class StandardVAE(BaseVAE):
+    def encode(self, x):
+        h1 = F.relu(self.fc1(x))
+        return self.fc21(h1), self.fc22(h1)
+
+    def reparameterize(self, mu, logvar):
+        normal = distributions.Normal(mu, logvar.mul(0.5).exp())
+        return normal.rsample(torch.Size([self.num_samples])), normal
+
+    def decode(self, z):
+        h3 = F.relu(self.fc3(z))
+        return torch.sigmoid(self.fc4(h3))
+
+    def forward(self, x):
+        mu, logvar = self.encode(x.view(-1, 784))
+        z, normal = self.reparameterize(mu, logvar)
+        return self.decode(z), normal
+</code></pre>
+<p>Named version. Relatively similar except using named distributions as above to
+propagate named dimensions through sampling. This can be particularly useful
+when using multiple samples to backpropagate.</p>
+<pre><code class="language-python">class NamedVAE(BaseVAE):
+    def encode(self, x):
+        h1 = x.op(self.fc1, F.relu)
+        return h1.op(self.fc21, z=&quot;x&quot;), h1.op(self.fc22, z=&quot;x&quot;)
+
+    def reparameterize(self, mu, logvar):
+        normal = ndistributions.Normal(mu, logvar.mul(0.5).exp())
+        return normal.rsample(samples=self.num_samples), normal
+
+    def decode(self, z):
+        return z.op(self.fc3, F.relu).op(self.fc4, x=&quot;z&quot;).sigmoid()
+
+    def forward(self, x):
+        mu, logvar = self.encode(x.stack(x=(&quot;ch&quot;, &quot;height&quot;, &quot;width&quot;)))
+        z, normal = self.reparameterize(mu, logvar)
+        return self.decode(z), normal
+</code></pre>
+<h1 id="next-steps">Next Steps</h1>
+<p>There was a lot of excellent feedback from the previous post, happy to hear
+other ideas or pointers to other approaches. I feel like personally this is
+getting close to a syntax that I would feel comfortable using. However, the
+chain function call / pseudo-monad style can be a bit off-putting to people, so
+it is possibly a non-starter.</p>
+<p>Please let me know on twitter at @harvardnlp or by filing an issue at
+https://github.com/harvardnlp/namedtensor .</p>
+<p><em>Sorry if there are tacky ads down here :(. Disqus seems to do it automatically.</em></p>
+<p>{::options parse_block_html="true" /}</p>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO
+INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:
+https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL
+variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your
+page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://harvard-nlp.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a
+href="https://disqus.com/?ref_noscript">comments powered by
+Disqus.</a></noscript>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION
+BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:
+https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's
+canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with
+your page's unique identifier variable
+    };
+    */
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+
+        s.src = 'https://EXAMPLE.disqus.com/embed.js';  // IMPORTANT: Replace
+EXAMPLE with your forum shortname!
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a
+href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></article></main>
+</body>
+</html>

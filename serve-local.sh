@@ -1,9 +1,11 @@
 #!/usr/bin/env sh
 set -e
 cd "$(dirname "$0")"
-docker run --rm -it \
-  -p 4000:4000 \
-  -v "$(pwd):/site" \
-  -w /site \
-  ruby:3.3-alpine \
-  sh -c "apk add --no-cache build-base >/dev/null && bundle install --quiet && bundle exec jekyll serve --host 0.0.0.0 --livereload"
+
+if [ ! -x .venv/bin/python ]; then
+  python3 -m venv .venv
+  .venv/bin/pip install -r requirements.txt
+fi
+
+.venv/bin/python site.py
+exec .venv/bin/python -m http.server 4000 --bind 127.0.0.1 --directory docs

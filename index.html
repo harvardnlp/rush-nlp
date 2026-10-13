@@ -5,42 +5,24 @@ weight: 1.5
 show: 1
 ---
 
-<div class="col-7">
-    <center>
-  <table>
-<tr><td style="padding:10px 90px 10px 0px">
-      <img width="200px" class="img-rounded" src="https://avatars0.githubusercontent.com/u/35882?s=460&v=4" />
-  </td><td style="padding:10px">
-    <center>
+<div class="profile-intro">
+  <img class="profile-image" src="https://avatars0.githubusercontent.com/u/35882?s=460&v=4" alt="Sasha Rush" />
+  <div class="profile-details">
     <h1>Sasha Rush</h1>
-    <b>ML Researcher.</b> <b>Cursor.</b> <b>NYC.</b> <br>
-    <span style="font-size:15px"><a href="mailto:srush.research@gmail.com">srush.research@gmail.com</a> <a href="cv/cv.comp.pdf">[cv]</a></span>
-</center>
-
-      </td>
-  </tr>
-  </table>
-  </center>
-<br>
+    <b>ML Researcher.</b> <b>NYC.</b><br>
+    <span><a href="cv/cv.comp.pdf">[cv]</a></span>
+    <div class="profile-links">
+      <a href="mailto:srush.research@gmail.com">email</a>
+      <a href="https://github.com/harvardnlp">github</a>
+      <a href="https://twitter.com/srush_nlp">twitter</a>
+      <a href="https://www.youtube.com/@srush_nlp">youtube</a>
+    </div>
+  </div>
 </div>
 
-<p style="font-size: 18px">
-  I study post-training of AI systems for coding and related tasks.
-  I'm interested in improving model reasoning for long-horizon tasks.
-</p>
-
-<h4>Bio</h4>
-
-<p style="font-size: 18px">
-
-  From 2016–2026, I was a Professor at Harvard and then Cornell. My group's <a href="{{ '/papers/' | prepend: site.baseurl }}">research</a>
-  was recognized with an NSF CAREER Award and a Sloan Fellowship. My students
-  have won paper awards at conferences for NLP, Hardware, and Visualization, and
-  gone on to do <a href="{{ '/members/' | prepend: site.baseurl }}">really neat things</a>. From 2019–2024, I also worked as a researcher at
-  Hugging Face and helped on early open-source LLM projects.
-  In 2024, I helped start the <a href="https://colmweb.org/">Conference on Language Modeling</a>.
-  I have a <a href="https://www.youtube.com/@srush_nlp">youtube channel</a> and, somewhat regretfully, a <a href="https://twitter.com/srush_nlp">twitter</a>. One day I will blog more. 
-</p>
+<div class="home-copy">
+{% home_copy %}
+</div>
 
 <table>
 {% for paper in site.data.papers.notable %}

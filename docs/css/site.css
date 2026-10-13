@@ -1,0 +1,103 @@
+/* A light refresh of the original Jekyll theme, with responsive behavior. */
+:root {
+  --ink: #222;
+  --muted: #828282;
+  --line: #e8e8e8;
+  --link: #2a7ae2;
+  --content-width: 50rem;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { background: #fff; color: var(--ink); font: 400 1rem/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; }
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--ink); text-decoration: underline; }
+img { height: auto; max-width: 100%; vertical-align: middle; }
+
+.site-header { border-bottom: 1px solid var(--line); border-top: 5px solid #424242; min-height: 3.5rem; }
+.header-inner, .page-shell, .site-footer { margin: 0 auto; max-width: var(--content-width); padding-left: 1.875rem; padding-right: 1.875rem; }
+.header-inner { align-items: center; display: flex; justify-content: flex-end; min-height: 3.5rem; }
+nav { display: flex; gap: 1.25rem; }
+nav a { color: var(--ink); line-height: 1.5; }
+nav a.active { color: var(--link); }
+
+.page-shell { min-height: calc(100vh - 9rem); padding-bottom: 1.875rem; padding-top: 1.875rem; }
+.prose { max-width: 100%; }
+.prose p, .prose blockquote, .prose pre, .prose ul, .prose ol, .prose figure { margin: 0 0 .9375rem; }
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 { font-weight: 400; line-height: 1.2; margin: 0 0 .9375rem; }
+.prose > h1, .prose > h3:first-child { font-size: 1.625rem; margin-bottom: 1.25rem; }
+.prose h2 { font-size: 1.625rem; margin-top: 2rem; }
+.prose h3 { font-size: 1.375rem; margin-top: 1.75rem; }
+.prose h4 { font-size: 1.25rem; margin-top: 1.75rem; }
+.prose ul, .prose ol { padding-left: 1.875rem; }
+.prose table { border-collapse: collapse; border-spacing: 0; max-width: 100%; width: 100%; }
+.prose table td { padding: .625rem !important; vertical-align: top; }
+.prose table img { display: block; }
+.paper { color: var(--link); font-weight: 400; }
+.paper-section { margin-bottom: 1.25rem; }
+.label { border-radius: .2rem; color: #fff; display: inline-block; font-size: .75rem; line-height: 1.1; margin: .4rem .2rem 0 0; padding: .22rem .45rem; text-decoration: none; }
+.label-info { background: #5bc0de; }
+.label-success { background: #5cb85c; }
+.label-warning { background: #f0ad4e; }
+.label:hover { color: #fff; text-decoration: none; opacity: .88; }
+.profile-intro { align-items: center; display: flex; gap: clamp(1.25rem, 6vw, 4.5rem); margin-bottom: 1.75rem; }
+.profile-image { border-radius: 4px; flex: 0 0 auto; width: 12.5rem; }
+.profile-details { min-width: 0; text-align: center; }
+.profile-details h1 { font-size: clamp(2rem, 5vw, 2.5rem); margin-bottom: .35rem; }
+.profile-details span { display: inline-block; font-size: .9375rem; margin-top: .25rem; overflow-wrap: anywhere; }
+.profile-links { display: flex; flex-wrap: wrap; font-size: .9rem; gap: .15rem .75rem; justify-content: center; margin-top: .4rem; }
+.profile-details > span a, .profile-links a, .home-copy a { color: #424242; }
+.profile-details > span a:hover, .profile-links a:hover, .home-copy a:hover { color: var(--ink); }
+.content-index > center:last-child img { margin-top: 1.25rem; }
+
+.people-section { margin-bottom: 1.875rem; }
+.people-section h1 { font-size: 1.375rem; font-weight: 400; margin: 0 0 .75rem; }
+.people-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.person-card { color: var(--ink); display: block; min-width: 0; padding: 0 .625rem 1.25rem; text-align: center; text-decoration: none; }
+.person-card:hover { color: var(--link); text-decoration: none; }
+.person-card img { border: 1px solid #ddd; border-radius: 4px; display: block; padding: 4px; width: 100%; }
+.person-name { display: block; font-size: .83rem; font-weight: 600; line-height: 1.25; margin-top: .45rem; }
+.person-role { color: var(--muted); display: block; font-size: .75rem; line-height: 1.25; margin-top: .18rem; }
+
+.longform img { display: block; margin: 0 auto; }
+.longform blockquote { border-left: 4px solid var(--line); color: darkorange; font-size: 1.09rem; font-style: italic; letter-spacing: -.03em; padding-left: .9375rem; }
+.longform pre, .longform code { background: #eef; border: 1px solid var(--line); border-radius: 3px; font-size: .9rem; }
+.longform pre { overflow-x: auto; padding: .5rem .75rem; }
+.longform code { padding: .05rem .25rem; }
+.longform pre code { border: 0; padding: 0; }
+
+.blog-intro { color: var(--muted); }
+.post-preview { border-top: 1px solid var(--line); padding: 1.25rem 0 1.4rem; }
+.post-preview h2 { font-size: 1.375rem; margin: 0 0 .35rem; }
+.post-preview p { margin-bottom: .5rem; }
+.post-date, .post-tags { color: var(--muted); font-size: .875rem; }
+.post-date { margin-bottom: .25rem !important; }
+.post-tag { border: 1px solid var(--line); border-radius: 2px; display: inline-block; margin-right: .35rem; padding: .05rem .35rem; }
+
+.site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9375rem; padding-bottom: 1.875rem; padding-top: 1.875rem; }
+.footer-links { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+
+@media (max-width: 37.5rem) {
+  .header-inner, .page-shell, .site-footer { padding-left: .9375rem; padding-right: .9375rem; }
+  .header-inner { justify-content: flex-start; padding-bottom: .65rem; padding-top: .65rem; }
+  nav { flex-wrap: wrap; gap: .25rem 1rem; }
+  .page-shell { padding-top: 1.5rem; }
+  .prose table, .prose tbody, .prose tr, .prose td { display: block; width: 100% !important; }
+  .prose table tr { margin-bottom: 1.25rem; }
+  .prose table td { padding: .45rem 0 !important; }
+  .prose table td:first-child:empty { display: none; }
+  .prose table td:first-child img { max-height: 12rem; object-fit: contain; width: 100%; }
+  .profile-intro { align-items: flex-start; gap: 1rem; }
+  .profile-image { width: clamp(7.5rem, 31vw, 10rem); }
+  .profile-details { text-align: left; }
+  .profile-links { justify-content: flex-start; }
+  .people-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .person-card { padding-left: .35rem; padding-right: .35rem; }
+}
+
+@media (max-width: 25rem) {
+  .profile-intro { align-items: center; flex-direction: column; text-align: center; }
+  .profile-image { width: 10rem; }
+  .profile-details { text-align: center; }
+  .profile-links { justify-content: center; }
+}

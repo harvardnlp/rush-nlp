@@ -4,6 +4,11 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
+# Python static-site output
+/site/
+/.venv/
+__pycache__/
+
 # bundler (local install path / machine-specific config)
 /vendor/bundle/
 /.bundle/
