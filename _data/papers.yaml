@@ -712,3 +712,7 @@ papers:
     pdf: http://people.seas.harvard.edu/~srush/naacl15.pdf
     code: https://github.com/ikekonglp/PAD
     image: /images/naacl14.png
+  - title: "How much do language models memorize?"
+    authors: John X. Morris, Chawin Sitawarin, Chuan Guo, Narine Kokhlikyan, G. Edward Suh, Alexander M. Rush, Kamalika Chaudhuri, Saeed Mahloujifar
+    conference: ICML 2025 (Outstanding Paper HM)
+    pdf: https://arxiv.org/abs/2505.24832
