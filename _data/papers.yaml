@@ -96,6 +96,10 @@ notable:
     slides: /slides/emnlp15.pdf
     image: /images/summary.png
 papers:
+  - title: "How much do language models memorize?"
+    authors: John X. Morris, Chawin Sitawarin, Chuan Guo, Narine Kokhlikyan, G. Edward Suh, Alexander M. Rush, Kamalika Chaudhuri, Saeed Mahloujifar
+    conference: ICML 2025 (Outstanding Paper HM)
+    pdf: https://arxiv.org/abs/2505.24832
   - title: "NetFlowGen: Leveraging Generative Pre-training for Network Traffic Dynamics"
     authors: "Jiawei Zhou, Woojeong Kim, Zhiying Xu, Alexander M. Rush, Minlan Yu"
     pdf: "https://arxiv.org/abs/2412.20635"
@@ -712,7 +716,3 @@ papers:
     pdf: http://people.seas.harvard.edu/~srush/naacl15.pdf
     code: https://github.com/ikekonglp/PAD
     image: /images/naacl14.png
-  - title: "How much do language models memorize?"
-    authors: John X. Morris, Chawin Sitawarin, Chuan Guo, Narine Kokhlikyan, G. Edward Suh, Alexander M. Rush, Kamalika Chaudhuri, Saeed Mahloujifar
-    conference: ICML 2025 (Outstanding Paper HM)
-    pdf: https://arxiv.org/abs/2505.24832
